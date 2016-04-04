@@ -39,7 +39,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'jizhang',
     'rest_framework',
-    'rest_framework.authtoken'
+    'rest_framework.authtoken',
+    'qrcode_model'
 )
 
 MIDDLEWARE_CLASSES = (

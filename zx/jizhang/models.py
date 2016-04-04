@@ -4,6 +4,10 @@ from django.contrib.auth.models import User
 
 class City(models.Model):
     name = models.CharField(max_length=30, unique=True)
+    objects = models.Manager()
+
+    def __str__(self):
+        return self.name
 
 
 class UserProfile(models.Model):
@@ -19,14 +23,14 @@ class Category(models.Model):
     parent = models.ForeignKey('self', to_field='name', null=True, blank=True)
     description = models.CharField(max_length=60, null=True, blank=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
 class Currency(models.Model):
     name = models.CharField(max_length=14, unique=True, default='RMB')
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
@@ -37,7 +41,7 @@ class Brand(models.Model):
     description = models.CharField(max_length=100, null=True, blank=True)
     cited_times = models.PositiveIntegerField(default=0)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 
@@ -49,7 +53,7 @@ class Tag(models.Model):
     min_price = models.FloatField(default=0.0)
     max_price = models.FloatField(default=0.0)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name + self.category
 
 
