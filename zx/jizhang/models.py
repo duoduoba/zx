@@ -91,6 +91,7 @@ class SpendDetail(models.Model):
 
 '''
 The data calcuated from detail data.
+==========git=============test=====111111
 '''
 class BrandDataWithCityTag(models.Model):
     city = models.ForeignKey(City, to_field='name')
