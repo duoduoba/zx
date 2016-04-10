@@ -89,7 +89,9 @@ class SpendDetail(models.Model):
     def __str__(self):
         return self.price + '_' + self.tag + '_' + self.brand
 
-
+'''
+The data calcuated from detail data.
+'''
 class BrandDataWithCityTag(models.Model):
     city = models.ForeignKey(City, to_field='name')
     tag = models.ForeignKey(Tag, to_field='name')
@@ -109,4 +111,3 @@ class ShopDataWithCityTag(models.Model):
 
     def __str__(self):
         return '_'.join((city.name, tag.name, brand.name, shop.name, str(shop_cited_times)))
-    
