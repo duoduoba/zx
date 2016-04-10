@@ -43,7 +43,10 @@ class Brand(models.Model):
     def __str__(self):
         return self.name
 
-
+'''
+1 As the Tag Data, we can pick up tag as the data
+2 Update the Tag model by detail data.
+'''
 class Tag(models.Model):
     category = models.ForeignKey(Category, to_field='name', related_name='category_tag_set', null=True, blank=True)
     name = models.CharField(max_length=40, unique=True)
@@ -63,6 +66,9 @@ class Shop(models.Model):
     introduction = models.CharField(max_length=200, null=True, blank=True)
     site = models.URLField(verbose_name='web site', null=True, blank=True)
 
+    def __str__(self):
+        return self.name + '_' + self.city
+
 
 class SpendDetail(models.Model):
     owner = models.ForeignKey(User, to_field='username')
@@ -80,12 +86,18 @@ class SpendDetail(models.Model):
     created = models.DateTimeField(default='2016-01-01 00:00:00')
     modified = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return self.price + '_' + self.tag + '_' + self.brand
+
 
 class BrandDataWithCityTag(models.Model):
     city = models.ForeignKey(City, to_field='name')
     tag = models.ForeignKey(Tag, to_field='name')
     brand = models.ForeignKey(Brand, to_field='name')
     brand_cited_times = models.PositiveIntegerField(default=0)
+
+    def __str__(self):
+        return '_'.join((city.name, tag.name, brand.name, str(brand_cited_times)))
 
 
 class ShopDataWithCityTag(models.Model):
@@ -94,3 +106,7 @@ class ShopDataWithCityTag(models.Model):
     brand = models.ForeignKey(Brand, to_field='name')
     shop = models.ForeignKey(Shop, to_field='name')
     shop_cited_times = models.PositiveIntegerField(default=0)
+
+    def __str__(self):
+        return '_'.join((city.name, tag.name, brand.name, shop.name, str(shop_cited_times)))
+    
