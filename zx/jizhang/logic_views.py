@@ -6,7 +6,13 @@ from django.http import Http404
 from jizhang.models import *
 from jizhang.serializers import TagSerializer
 
+'''
+get data from data base
+'''
 
+'''
+get hot tag list based on price/cited_times
+'''
 class HotTagsListView(APIView):
 	def get(self, request, format=None):
 		data = request.GET
@@ -32,7 +38,9 @@ class HotTagsListView(APIView):
 
 		return Response(serializer.data, status=status.HTTP_200_OK)
 
-
+'''
+get tags under one category name
+'''
 class CategoryTagView(APIView):
 	def get(self, request, pk):
 		print('category-tag-set pk=%s' % pk)
@@ -40,3 +48,10 @@ class CategoryTagView(APIView):
 		query_set = category_obj.category_tag_set
 		tags = TagSerializer(query_set, many=True, context={'request': request})
 		return Response(tags.data, status=status.HTTP_200_OK)
+
+'''
+	get brand list with city and tag data
+'''
+class BrandListView(APIView):
+	def get(self, request, tag):
+		pass

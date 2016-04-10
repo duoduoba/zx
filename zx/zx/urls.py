@@ -46,9 +46,9 @@ urlpatterns = [
     url(r'^jz/tags/$', TagListView.as_view(), name='tag-list'),
     url(r'^jz/tags/(?P<pk>\d+)/$', TagDetailView.as_view(), name='tag-detail'),
 
-    url(r'^jz/spend-details/$', SpendDetailListView.as_view(), name='spenddetail-list'),
-    url(r'^jz/spend-details/(?P<pk>\d+)/$', SpendDetailEditView.as_view(), name='spenddetail-detail'),
-    url(r'^jz/spend-overview/$', SpendOverView.as_view(), name='overview-detail'),
+    url(r'^jz/spend-details/$', SpendDetailListView.as_view(), name='detail-list'),
+    url(r'^jz/spend-details/(?P<pk>\d+)/$', SpendDetailEditView.as_view(), name='detail-detail'),
+    # url(r'^jz/spend-overview/$', SpendOverView.as_view(), name='overview-detail'),
     #
     # # url(r'^jz/tagdata/$', TagDataListView.as_view(), name=''),
     url(r'^jz/tags/hot/$', HotTagsListView.as_view(), name='hot-tags-list'),

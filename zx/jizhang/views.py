@@ -134,7 +134,7 @@ class SpendDetailEditView(generics.RetrieveUpdateDestroyAPIView):
     queryset = SpendDetail.objects.all()
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
 
-
+'''
 class SpendOverView(generics.ListAPIView):
     serializer_class = SpendOverViewSerializer
     # queryset = SpendDetail.objects.filter(owner=self.request.user)
@@ -142,3 +142,4 @@ class SpendOverView(generics.ListAPIView):
     def get_queryset(self):
         self.queryset = SpendDetail.objects.filter(owner=self.request.user)
         return super(SpendOverView, self).get_queryset()
+'''

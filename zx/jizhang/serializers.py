@@ -68,6 +68,19 @@ class SpendDetailSerializer(serializers.ModelSerializer):
     created = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
     modified = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", read_only=True)
 
+    def is_valid(self, raise_exception=False):
+        print(self.initial_data)
+        try:
+            tag = self.initial_data['tag']
+            Tag.objects.get_or_create(name=tag)
+            brand = self.initial_data['brand']
+            Brand.objects.get_or_create(name=brand)
+            addr = self.initial_data['addr']
+            Shop.objects.get_or_create(name=addr)
+        except Exception as ex:
+            print(ex)
+        return super(SpendDetailSerializer, self).is_valid(raise_exception)
+
     class Meta:
         model = SpendDetail
         fields = '__all__'
@@ -77,7 +90,7 @@ class SpendDetailSerializer(serializers.ModelSerializer):
             print('wrong case : price < 0')
             return None
         return value
-
+    # def validate_cate:
 
 class SpendOverViewSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
@@ -88,3 +101,13 @@ class SpendOverViewSerializer(serializers.ModelSerializer):
         fields = ('id', 'owner', 'tag', 'price', 'created')
 
 
+class BrandDataSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BrandDataWithCityTag
+        # filds = ('brand')
+
+
+class ShopDataSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ShopDataWithCityTag
+        # filds = ('brand')

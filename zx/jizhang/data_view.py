@@ -37,6 +37,10 @@ class InitView(APIView):
         Brand.objects.create(name=u'三星')
         Brand.objects.create(name=u'博世')
 
+        city = City.objects.get(name='南京')
+        Shop.objects.create(city=city, name='金盛国际家具')
+        Shop.objects.create(city=city, name='卡子门')
+        Shop.objects.create(city=city, name='红太阳')
 
         Tag.objects.all().delete()
         category = Category.objects.get(name=u'家电')
