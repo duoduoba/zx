@@ -1,5 +1,4 @@
 __author__ = 'Administrator'
-# -*- encoding: utf-8 -*-
 from jizhang.models import *
 from rest_framework import serializers
 
@@ -87,7 +86,7 @@ class SpendDetailSerializer(serializers.ModelSerializer):
 
     def validate_price(self, value):
         if value < 0.0:
-            print('wrong case : price < 0')
+            print('wrong     case : price < 0')
             return None
         return value
     # def validate_cate:
@@ -104,7 +103,7 @@ class SpendOverViewSerializer(serializers.ModelSerializer):
 class BrandDataSerializer(serializers.ModelSerializer):
     class Meta:
         model = BrandDataWithCityTag
-        # filds = ('brand')
+        # fields = ('id', 'brand',)
 
 
 class ShopDataSerializer(serializers.ModelSerializer):

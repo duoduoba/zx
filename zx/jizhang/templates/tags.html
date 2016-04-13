@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Get Tags</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript"> 
+		$(document).ready(function(){
+			console.log('log start........');
+			$('#tagbtn').click(function(){
+				console.log('click button...');
+				$.ajax({
+					type:"get",
+					url:"http://localhost:8000/jz/tags/",
+					async:true
+				}).done(function(data){
+					console.log(data);
+
+					<!--ret = JSON.parse(data);-->
+					console.log($('#tagsdata').val());
+					<!--document.write(data[0].name);-->
+                    $('#tagsdata').text(data[0].name);
+				});
+			});
+		});
+		
+
+    </script>
+</head>
+<body>
+<button id='tagbtn'>获取Tag列表</button>
+<p id='tagsdata'>ddd</p>
+</body>
+</html>

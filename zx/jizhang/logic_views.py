@@ -1,10 +1,11 @@
-__author__ = 'Administrator'
+#coding: utf-8
+# __author__ = 'Administrator'
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.http import Http404
 from jizhang.models import *
-from jizhang.serializers import TagSerializer
+from jizhang.serializers import TagSerializer, BrandDataSerializer, ShopDataSerializer
 
 '''
 get data from data base
@@ -13,7 +14,20 @@ get data from data base
 '''
 get hot tag list based on price/cited_times
 '''
+class NumberUtil():
+	@staticmethod
+	def number(request):
+		data = request.GET
+		number = data.get('number', None)
+		if not number:
+			number = 20
+		else:
+			# import string
+			number = int(number)
+		return number
+
 class HotTagsListView(APIView):
+
 	def get(self, request, format=None):
 		data = request.GET
 		try:
@@ -22,15 +36,10 @@ class HotTagsListView(APIView):
 			print('no price value from client')
 			raise Http404
 
-		import string
-		price = string.atoi(price)
-		print('get price=%d' % price)
-
-		number = data.get('number',None)
-		if not number:
-			number = 15
-		else:
-			number = string.atoi(number)
+		# import string
+		price = float(price)
+		number = NumberUtil.number(request)
+		print('get price=%d number=%d' % (price, number))
 
 		query_list = Tag.objects.filter(average_price__range=(price - 1000, price + 1000)).order_by('-cited_times')
 		query_list = query_list[:number]
@@ -51,7 +60,47 @@ class CategoryTagView(APIView):
 
 '''
 	get brand list with city and tag data
+	argument:
+	1: tag name
+	2: city name
+	style:
 '''
-class BrandListView(APIView):
-	def get(self, request, tag):
-		pass
+class HotBrandListView(APIView):
+	def get(self, request):
+		data = request.GET
+		# print(data)
+		sql = {}
+		sql['tag'] = data.get('tag', None)
+		if data.get('city', None):
+			sql['city'] = data.get('city')
+
+		number = NumberUtil.number(request)
+		# query_list = BrandDataWithCityTag.objects.filter(tag=tag, city=city).order_by('-brand_cited_times')
+		query_list = BrandDataWithCityTag.objects.filter(**sql).order_by('-brand_cited_times')
+		query_list = query_list[:number]
+
+		serializer = BrandDataSerializer(query_list, many=True, context={'request': request})
+		print('get right data from HoTBrandListView')
+		return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+class HotShopListView(APIView):
+	def get(self, request):
+		data = request.GET
+		sql = {}
+		sql['tag'] = data.get('tag', None)
+		if data.get('city', None):
+			sql['city'] = data.get('city')
+		else:
+			print('not got city data from client')
+		if data.get('brand', None):
+			sql['brand'] = data.get('brand')
+		else:
+			print('not got brand data from client')
+		print(sql)
+		number = NumberUtil.number(request)
+		query_list = ShopDataWithCityTag.objects.filter(**sql).order_by('-shop_cited_times')
+		query_list = query_list[:number]
+
+		serializer = ShopDataSerializer(query_list, many=True)
+		return Response(serializer.data, status=status.HTTP_200_OK)

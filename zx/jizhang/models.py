@@ -36,7 +36,7 @@ class Currency(models.Model):
 class Brand(models.Model):
     name = models.CharField(max_length=40, unique=True)
     logo = models.ImageField(upload_to='logo/', null=True, blank=True)
-    webite_site = models.CharField(max_length=100, null=True, blank=True)
+    website_site = models.CharField(max_length=100, null=True, blank=True)
     description = models.CharField(max_length=100, null=True, blank=True)
     cited_times = models.PositiveIntegerField(default=0)
 
@@ -90,8 +90,7 @@ class SpendDetail(models.Model):
         return self.price + '_' + self.tag + '_' + self.brand
 
 '''
-The data calcuated from detail data.
-==========git=============test=====111111
+The data model build from detail data.
 '''
 class BrandDataWithCityTag(models.Model):
     city = models.ForeignKey(City, to_field='name')

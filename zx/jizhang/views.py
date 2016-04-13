@@ -4,7 +4,7 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.authtoken.models import Token
-from django.core.exceptions import ObjectDoesNotExist
+# from django.core.exceptions import ObjectDoesNotExist
 from django.contrib import auth
 from jizhang.serializers import *
 from rest_framework import generics, permissions
@@ -80,7 +80,6 @@ class BrandListView(generics.ListCreateAPIView):
 class BrandDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = BrandSerializer
     queryset = Brand.objects.all()
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
 
 
 class TagListView(generics.ListCreateAPIView):
@@ -110,12 +109,13 @@ class TagDetailView(generics.RetrieveUpdateDestroyAPIView):
 class ShopListView(generics.ListCreateAPIView):
     serializer_class = ShopSerializer
     queryset = Shop.objects.all()
+    # permission_classes = (permissions.IsAdminUser,)
 
 
 class ShopDetailView(generics.RetrieveUpdateAPIView):
     serializer_class = ShopSerializer
     queryset = Shop.objects.all()
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
+    # permission_classes = (permissions.IsAdminUser,)
 
 
 class SpendDetailListView(generics.ListCreateAPIView):

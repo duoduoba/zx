@@ -21,6 +21,7 @@ from jizhang.data_view import *
 from jizhang.logic_views import *
 from django.conf import settings
 from django.conf.urls.static import static
+from jizhang.webview.webviews import get_tags
 
 
 urlpatterns = [
@@ -46,15 +47,23 @@ urlpatterns = [
     url(r'^jz/tags/$', TagListView.as_view(), name='tag-list'),
     url(r'^jz/tags/(?P<pk>\d+)/$', TagDetailView.as_view(), name='tag-detail'),
 
-    url(r'^jz/spend-details/$', SpendDetailListView.as_view(), name='detail-list'),
-    url(r'^jz/spend-details/(?P<pk>\d+)/$', SpendDetailEditView.as_view(), name='detail-detail'),
+    url(r'^jz/shops/$', ShopListView.as_view(), name='shop-list'),
+    url(r'^jz/shops/(?P<pk>\d+)/$', ShopDetailView.as_view(), name='shop-detail'),
+
+    url(r'^jz/details/$', SpendDetailListView.as_view(), name='detail-list'),
+    url(r'^jz/details/(?P<pk>\d+)/$', SpendDetailEditView.as_view(), name='detail-detail'),
     # url(r'^jz/spend-overview/$', SpendOverView.as_view(), name='overview-detail'),
     #
-    # # url(r'^jz/tagdata/$', TagDataListView.as_view(), name=''),
+    # data recommendation : tag, brand, shop
     url(r'^jz/tags/hot/$', HotTagsListView.as_view(), name='hot-tags-list'),
+    url(r'^jz/brands/hot/$', HotBrandListView.as_view(), name='hot-brands-list'),
+    url(r'^jz/shops/hot/$', HotShopListView.as_view(), name='hot-brands-list'),
 
     # =======================jizhang urls end============================================
     url(r'^qr/(?P<pk>\d+)/$', QRView.as_view(), name='qr-list'),
+
+    # =========================Web View================================
+    url(r'^web/tags/$', get_tags, name='tags'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
