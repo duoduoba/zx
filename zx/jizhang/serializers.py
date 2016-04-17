@@ -1,4 +1,6 @@
 __author__ = 'Administrator'
+# coding: GBK
+
 from jizhang.models import *
 from rest_framework import serializers
 
@@ -67,19 +69,6 @@ class SpendDetailSerializer(serializers.ModelSerializer):
     created = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
     modified = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", read_only=True)
 
-    def is_valid(self, raise_exception=False):
-        print(self.initial_data)
-        try:
-            tag = self.initial_data['tag']
-            Tag.objects.get_or_create(name=tag)
-            brand = self.initial_data['brand']
-            Brand.objects.get_or_create(name=brand)
-            addr = self.initial_data['addr']
-            Shop.objects.get_or_create(name=addr)
-        except Exception as ex:
-            print(ex)
-        return super(SpendDetailSerializer, self).is_valid(raise_exception)
-
     class Meta:
         model = SpendDetail
         fields = '__all__'
@@ -90,6 +79,7 @@ class SpendDetailSerializer(serializers.ModelSerializer):
             return None
         return value
     # def validate_cate:
+
 
 class SpendOverViewSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')

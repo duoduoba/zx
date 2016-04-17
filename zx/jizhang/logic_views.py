@@ -65,6 +65,8 @@ class CategoryTagView(APIView):
 	2: city name
 	style:
 '''
+
+
 class HotBrandListView(APIView):
 	def get(self, request):
 		data = request.GET
@@ -97,7 +99,7 @@ class HotShopListView(APIView):
 			sql['brand'] = data.get('brand')
 		else:
 			print('not got brand data from client')
-		print(sql)
+		# print(sql)
 		number = NumberUtil.number(request)
 		query_list = ShopDataWithCityTag.objects.filter(**sql).order_by('-shop_cited_times')
 		query_list = query_list[:number]

@@ -121,11 +121,32 @@ class ShopDetailView(generics.RetrieveUpdateAPIView):
 class SpendDetailListView(generics.ListCreateAPIView):
     serializer_class = SpendDetailSerializer
 
+    def create(self, request, *args, **kwargs):
+        data = request.data
+        tag = data.get('tag', None)
+        if tag:
+            Tag.objects.get_or_create(name=tag)
+        brand = data.get('brand', None)
+        if brand:
+            Brand.objects.get_or_create(name=brand)
+        addr = data.get('addr', None)
+        if addr:
+            print('submit detail data ,user is -->', self.request.user.username)
+            user = User.objects.get(username=self.request.user.username)
+            print(user)
+            userprofile = UserProfile.objects.get(user=user)
+            print(userprofile)
+            city = userprofile.city
+            print(city)
+            Shop.objects.get_or_create(name=addr, city=city)
+        return super(SpendDetailListView, self).create(request, *args, **kwargs)
+
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
 
     def get_queryset(self):
         self.queryset = SpendDetail.objects.filter(owner=self.request.user)
+        self.queryset = SpendDetail.objects.all()
         return super(SpendDetailListView, self).get_queryset()
 
 

@@ -16,6 +16,8 @@ class UserProfile(models.Model):
     picture = models.ImageField(upload_to='user/', blank=True, null=True)
     signature = models.CharField(max_length=30, )
 
+    def __str__(self):
+        return '_'.join((self.user.username, self.city.name))
 
 class Category(models.Model):
     name = models.CharField(max_length=20, unique=True)
@@ -85,6 +87,7 @@ class SpendDetail(models.Model):
     image4 = models.ImageField(upload_to='detail/', blank=True, null=True)
     created = models.DateTimeField(default='2016-01-01 00:00:00')
     modified = models.DateTimeField(auto_now_add=True)
+    local_id = models.IntegerField(default=-1)
 
     def __str__(self):
         return self.price + '_' + self.tag + '_' + self.brand
@@ -99,7 +102,7 @@ class BrandDataWithCityTag(models.Model):
     brand_cited_times = models.PositiveIntegerField(default=0)
 
     def __str__(self):
-        return '_'.join((city.name, tag.name, brand.name, str(brand_cited_times)))
+        return '_'.join((self.city.name, self.tag.name, self.brand.name, str(self.brand_cited_times)))
 
 
 class ShopDataWithCityTag(models.Model):
@@ -110,4 +113,4 @@ class ShopDataWithCityTag(models.Model):
     shop_cited_times = models.PositiveIntegerField(default=0)
 
     def __str__(self):
-        return '_'.join((city.name, tag.name, brand.name, shop.name, str(shop_cited_times)))
+        return '_'.join((self.city.name, self.tag.name, self.brand.name, self.shop.name, str(self.shop_cited_times)))
