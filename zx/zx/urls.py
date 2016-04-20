@@ -21,7 +21,9 @@ from jizhang.data_view import *
 from jizhang.logic_views import *
 from django.conf import settings
 from django.conf.urls.static import static
-from jizhang.webview.webviews import get_tags
+from jizhang.webview.webviews import *
+from django.contrib.auth.views import login, logout
+from jizhang.webview.webviews import register, login_after, test
 
 
 urlpatterns = [
@@ -64,6 +66,11 @@ urlpatterns = [
 
     # =========================Web View================================
     url(r'^web/tags/$', get_tags, name='tags'),
+    url(r'^web/accounts/login/$', login),
+    url(r'^web/accounts/login/index.html/$', login_after),
+    url(r'^web/accounts/logout/$', logout),
+    url(r'^web/accounts/register/$', register),
+    url(r'^web/$', test),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

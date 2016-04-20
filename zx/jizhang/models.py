@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.db.models.signals import post_delete
+from django.dispatch import receiver
 
 class City(models.Model):
     name = models.CharField(max_length=30, unique=True)
@@ -89,8 +91,18 @@ class SpendDetail(models.Model):
     modified = models.DateTimeField(auto_now_add=True)
     local_id = models.IntegerField(default=-1)
 
-    def __str__(self):
-        return self.price + '_' + self.tag + '_' + self.brand
+    # def __str__(self):
+    #     if not self.price:
+    #         return "price is empty"
+    #     return str(self.price) + '_' + self.tag + '_' + self.brand
+
+
+@receiver(post_delete, sender=SpendDetail)
+def photo_post_delete_handler(sender, **kwargs):
+    photo = kwargs['instance']
+    print(photo)
+    storage, path = photo.original_image.storage, photo.original_image.path
+    storage.delete(path)
 
 '''
 The data model build from detail data.

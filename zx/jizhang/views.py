@@ -118,10 +118,8 @@ class ShopDetailView(generics.RetrieveUpdateAPIView):
     # permission_classes = (permissions.IsAdminUser,)
 
 
-class SpendDetailListView(generics.ListCreateAPIView):
-    serializer_class = SpendDetailSerializer
-
-    def create(self, request, *args, **kwargs):
+class GetOrCreateMixin():
+    def pre_get_or_create(self, request):
         data = request.data
         tag = data.get('tag', None)
         if tag:
@@ -131,14 +129,21 @@ class SpendDetailListView(generics.ListCreateAPIView):
             Brand.objects.get_or_create(name=brand)
         addr = data.get('addr', None)
         if addr:
-            print('submit detail data ,user is -->', self.request.user.username)
-            user = User.objects.get(username=self.request.user.username)
+            print('submit detail data ,user is -->', request.user.username)
+            user = User.objects.get(username=request.user.username)
             print(user)
             userprofile = UserProfile.objects.get(user=user)
             print(userprofile)
             city = userprofile.city
             print(city)
             Shop.objects.get_or_create(name=addr, city=city)
+
+
+class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
+    serializer_class = SpendDetailSerializer
+
+    def create(self, request, *args, **kwargs):
+        self.pre_get_or_create(request)
         return super(SpendDetailListView, self).create(request, *args, **kwargs)
 
     def perform_create(self, serializer):
@@ -150,11 +155,20 @@ class SpendDetailListView(generics.ListCreateAPIView):
         return super(SpendDetailListView, self).get_queryset()
 
 
-class SpendDetailEditView(generics.RetrieveUpdateDestroyAPIView):
+class SpendDetailEditView(generics.RetrieveUpdateDestroyAPIView, GetOrCreateMixin):
     serializer_class = SpendDetailSerializer
     queryset = SpendDetail.objects.all()
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
 
+    def update(self, request, *args, **kwargs):
+        self.pre_get_or_create(request)
+        return super(SpendDetailEditView, self).update(request, *args, **kwargs)
+
+    def destroy(self, request, *args, **kwargs):
+        instance = self.get_object()
+        serializer = SpendDetailSerializer(instance=instance)
+        self.perform_destroy(instance)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 '''
 class SpendOverView(generics.ListAPIView):
     serializer_class = SpendOverViewSerializer
