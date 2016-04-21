@@ -91,22 +91,33 @@ class SpendDetail(models.Model):
     modified = models.DateTimeField(auto_now_add=True)
     local_id = models.IntegerField(default=-1)
 
-    # def __str__(self):
-    #     if not self.price:
-    #         return "price is empty"
+    def __str__(self):
+        return str(self.price)
     #     return str(self.price) + '_' + self.tag + '_' + self.brand
 
 
 @receiver(post_delete, sender=SpendDetail)
 def photo_post_delete_handler(sender, **kwargs):
-    photo = kwargs['instance']
-    print(photo)
-    storage, path = photo.original_image.storage, photo.original_image.path
-    storage.delete(path)
+    detail = kwargs['instance']
+    print(detail)
+    for index in range(1, 5):
+        image_name = 'image' + str(index)
+        print(image_name)
+        image_path = detail.__dict__[image_name]
+        image_path = image_path.replace('/', '\\')
+        import os
+        from zx.settings import MEDIA_ROOT
+        image_path = MEDIA_ROOT + '\\' + image_path
+        print(image_path)
+        if os.path.isfile(image_path):
+            os.remove(image_path)
+
 
 '''
 The data model build from detail data.
 '''
+
+
 class BrandDataWithCityTag(models.Model):
     city = models.ForeignKey(City, to_field='name')
     tag = models.ForeignKey(Tag, to_field='name')
