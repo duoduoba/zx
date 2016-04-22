@@ -2,9 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+		    
+			$('#tags').click(function(event){
+                $('#tags-area').show();
+                console.log(event)
+				console.log('click button...');
+				$.ajax({
+					type:"get",
+					url:"http://localhost:8000/jz/tags/",
+					async:true
+				}).done(/*
+					function(data){
+						
+	
+						<!--ret = JSON.parse(data);-->
+						console.log($('#tagsdata').val());
+						<!--document.write(data[0].name);-->
+	                    $('#tagsdata').text(data[0].name);
+					}*/
+					hottags
+					);
+			});
+
+			function hottags(data){
+			    console.log('start hot tags.......');
+			    //console.log(data);
+			    console.log(data.length);
+			    console.log(data[0]);
+			    console.log(data[0].categories);
+			    for(var i=0; i < data.length; i++)
+			    {
+			    	//console.log(data[i].name);
+			    	button = document.createElement("button");
+			    	button.innerHTML = 'data[i].name';
+			    	button.id = 'tag' + i;
+			    	$('tags-area').append(button)
+			    };
+			    //$('tags-area').append('')
+			}
+		});
+
+    </script>
     <title></title>
 </head>
 <body>
 wwwwwwwwwwwwwwwwwwwwwwwwww
+<br>
+{{message}}
+<br>
+欢迎你登陆 :{{ user }}
+<br>
+客户端地址：{{addr}}
+<br>
+价格：<input type="text" name="price">
+标签: <input type="text" name="tag" id="tags">
+<div id="tags-area" onshow="hottags">
+ddddddddddddddd
+</div>
 </body>
 </html>
