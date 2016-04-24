@@ -4,63 +4,116 @@
     <meta charset="UTF-8">
     <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript">
+    "use strict";
+    	
+    	String.prototype.format= function(){
+	        var args = arguments;
+	        return this.replace(/\{(\d+)\}/g,function(s,i){
+	          return args[i];
+        	});
+      	};
+      	
+      	var city = '{{city}}';
+    	console.log(city);
+    	
+		function click_tag(index){
+			console.log('click tag callback');
+			console.log(index);
+			var btn = $('#data-area').children()[index];
+			var id = '#{0}'.format(btn.id);
+			console.log($(id).attr('data-type'));
+			$('#tag').val($(id).text());
+		};	
+		
 		$(document).ready(function(){
-		    
-			$('#tags').click(function(event){
-                $('#tags-area').show();
-                console.log(event)
-				console.log('click button...');
+			
+			//get brand data from server
+			$('#brand').click(function(){
+				var tag = $('#tag').val();
+				//var city = city;
+				if( tag == false || city == false){
+					alert('无效的城市或标签数据');return;
+				}
+				
+				var brands_url = "http://localhost:8000/jz/brands/hot/?city=" + city + "&tag=" + tag;
 				$.ajax({
 					type:"get",
-					url:"http://localhost:8000/jz/tags/",
+					url:brands_url,
 					async:true
-				}).done(/*
-					function(data){
-						
-	
-						<!--ret = JSON.parse(data);-->
-						console.log($('#tagsdata').val());
-						<!--document.write(data[0].name);-->
-	                    $('#tagsdata').text(data[0].name);
-					}*/
-					hottags
-					);
+				}).done(hotbrands);
+			});
+			
+			//get tag data from server
+			$('#tag').click(function(event){
+                var price = $('#price').val();
+                if(price.length < 1 || !parseFloat(price) ){
+                	alert('先输入正确的价格。。。');
+                	return;
+                }
+                //console.log(event)
+				//console.log('click button...');
+				var price_float = parseFloat(price);
+				$.ajax({
+					type:"get",
+					url:"http://localhost:8000/jz/tags/hot/?price="+price,
+					async:true
+				}).done(hottags);
 			});
 
 			function hottags(data){
-			    console.log('start hot tags.......');
-			    //console.log(data);
-			    console.log(data.length);
-			    console.log(data[0]);
-			    console.log(data[0].categories);
+			    console.log('got hot tags.......');
+			    $('#data-area').empty();
 			    for(var i=0; i < data.length; i++)
 			    {
-			    	//console.log(data[i].name);
-			    	button = document.createElement("button");
-			    	button.innerHTML = 'data[i].name';
-			    	button.id = 'tag' + i;
-			    	$('tags-area').append(button)
+					var button = '<button type="button" onclick="click_tag({2})" id="tag{0}" data-type="tag"> {1} </button>'.format(i,data[i].name,i);
+			    	$('#data-area').append(button);			    	
 			    };
-			    //$('tags-area').append('')
-			}
+			    //$('data-area').append('')
+			};
+			
+			function hotbrands(data){
+				console.log('got hot brands.....');
+				
+				$('#data-area').empty();
+				console.log(data[0]);
+				for (var i = 0; i < data.length; i++){
+					var button = '<button type="button" onclick="click_tag({2})" id="brand{0}" data-type="brand"> {1} </button>'.format(i,data[i].name,i);
+			    	$('#data-area').append(button);		
+				}
+			};
+			
+			
 		});
 
     </script>
     <title></title>
 </head>
 <body>
-wwwwwwwwwwwwwwwwwwwwwwwwww
 <br>
 {{message}}
 <br>
 欢迎你登陆 :{{ user }}
 <br>
-客户端地址：{{addr}}
+客户端地址：{{addr}}, 来自{{city}} <input type="button" id="logout" value="退出">
 <br>
-价格：<input type="text" name="price">
-标签: <input type="text" name="tag" id="tags">
-<div id="tags-area" onshow="hottags">
-ddddddddddddddd
+	<form action="">
+		记一笔
+	</form>
+价格:<input type="text" name="price" id='price'>
+<br>
+标签:<input type="text" name="tag" id="tag">
+<br>
+品牌:<input type="text" name="tag" id="brand">
+	<br>
+地点:<input type="text" name="tag" id="place">
+	<br>
+备注:<input type="text" name="tag" id="note">
+	<br>
+图片:<input type="file" name="tag" id="image1">
+<div id="data-area">
 </div>
+<br>
+	----------------------------------------------<br>
+<button id="text-button" name="test-button" onclick="click_tag">test button</button>
 </body>
 </html>
