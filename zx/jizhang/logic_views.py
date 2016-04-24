@@ -20,7 +20,7 @@ class NumberUtil():
 		data = request.GET
 		number = data.get('number', None)
 		if not number:
-			number = 20
+			number = 30
 		else:
 			# import string
 			number = int(number)
@@ -90,7 +90,8 @@ class HotShopListView(APIView):
 	def get(self, request):
 		data = request.GET
 		sql = {}
-		sql['tag'] = data.get('tag', None)
+		sql['city'] = data.get('city', None)
+		'''
 		if data.get('city', None):
 			sql['city'] = data.get('city')
 		else:
@@ -100,6 +101,7 @@ class HotShopListView(APIView):
 		else:
 			print('not got brand data from client')
 		# print(sql)
+		'''
 		number = NumberUtil.number(request)
 		query_list = ShopDataWithCityTag.objects.filter(**sql).order_by('-shop_cited_times')
 		query_list = query_list[:number]
