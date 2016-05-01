@@ -100,3 +100,11 @@ class ShopDataSerializer(serializers.ModelSerializer):
     class Meta:
         model = ShopDataWithCityTag
         # filds = ('brand')
+
+class ProvinceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Province
+
+class CitySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = City

@@ -7,13 +7,7 @@ from django.http import Http404
 from jizhang.models import *
 from jizhang.serializers import TagSerializer, BrandDataSerializer, ShopDataSerializer
 
-'''
-get data from data base
-'''
 
-'''
-get hot tag list based on price/cited_times
-'''
 class NumberUtil():
 	@staticmethod
 	def number(request):
@@ -25,6 +19,7 @@ class NumberUtil():
 			# import string
 			number = int(number)
 		return number
+
 
 class HotTagsListView(APIView):
 

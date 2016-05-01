@@ -37,6 +37,7 @@ urlpatterns = [
     url(r'^jz/categories/(?P<pk>\d+)/$', CategoryDetailView.as_view(), name='category-detail'),
     url(r'^jz/categories/(?P<pk>\d+)/tags/$', CategoryTagView.as_view(), name='category-tags'),
     #
+    url(r'^jz/provinces/$', ProvinceListView.as_view(), name='province-list'),
     url(r'^jz/cities/$', CityListView.as_view(), name='city-list'),
     url(r'^jz/cities/(?P<pk>\d+)/$', CityDetailView.as_view(), name='city-detail'),
 

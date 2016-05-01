@@ -1,3 +1,12 @@
 from django.contrib import admin
-
+from jizhang.models import *
 # Register your models here.
+admin.site.register(City)
+admin.site.register(Tag)
+admin.site.register(Category)
+admin.site.register(Brand)
+admin.site.register(Shop)
+admin.site.register(SpendDetail)
+admin.site.register(Province)
+admin.site.register(DecorationCompany)
+admin.site.register(UserProfile)

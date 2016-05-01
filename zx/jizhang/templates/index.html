@@ -40,7 +40,7 @@
 		
 		$(document).ready(function(){
 			$('#detail-form').submit(function(){
-    			console.log('submit form data');
+				console.log('submit detail form');
     			var data = {};
 				$("#detail-form").serializeArray().map(function(x){data[x.name] = x.value;});
 				console.log(data);
@@ -137,6 +137,13 @@
     <title></title>
 </head>
 <body>
+{% if messages %}
+ <ul class="message">
+	 {% for message in messages%}
+	 <li class="{{message.tags}}">{{message}}</li>
+	 {%endfor%}
+ </ul>
+{%endif%}
 <br>
 {{message}}
 <br>

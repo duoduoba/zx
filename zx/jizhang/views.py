@@ -1,5 +1,4 @@
-from django.shortcuts import render
-# from .permissions import IsOwnerOrReadOnly
+# coding=utf8
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -52,9 +51,25 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
     # permission_classes = (permissions.IsAdminUser,)
 
 
+class ProvinceListView(generics.ListCreateAPIView):
+    serializer_class = ProvinceSerializer
+    queryset = Province.objects.all()
+
+
 class CityListView(generics.ListCreateAPIView):
     serializer_class = CitySerializer
-    queryset = City.objects.all()
+
+    def get_queryset(self):
+        self.queryset = City.objects.all()
+        try:
+            province = self.request.query_params['province']
+            print(province)
+            self.queryset = City.objects.filter(province=province)
+
+            print(self.queryset)
+        finally:
+            print('22222')
+            return super(CityListView, self).get_queryset()
 
 
 class CityDetailView(generics.RetrieveUpdateDestroyAPIView):
@@ -169,12 +184,3 @@ class SpendDetailEditView(generics.RetrieveUpdateDestroyAPIView, GetOrCreateMixi
         serializer = SpendDetailSerializer(instance=instance)
         self.perform_destroy(instance)
         return Response(serializer.data, status=status.HTTP_200_OK)
-'''
-class SpendOverView(generics.ListAPIView):
-    serializer_class = SpendOverViewSerializer
-    # queryset = SpendDetail.objects.filter(owner=self.request.user)
-
-    def get_queryset(self):
-        self.queryset = SpendDetail.objects.filter(owner=self.request.user)
-        return super(SpendOverView, self).get_queryset()
-'''

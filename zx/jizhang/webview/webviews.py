@@ -44,7 +44,10 @@ def login_after(request):
 	data = request.GET
 	print(data)
 	from django.template.context_processors import media
-	return render_to_response('index.html', context_instance=RequestContext(request, {'message': '成功登陆啦~~~'}, processors=[user_profile, ]))
+	from django.contrib import messages
+	messages.info(request, '恭喜，你登陆成功了')
+	messages.warning(request, '注意，还没有设置自己的昵称')
+	return render_to_response('index.html', context_instance=RequestContext(request, processors=[user_profile, ]))
 
 
 def test(request):
