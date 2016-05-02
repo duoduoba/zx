@@ -1,0 +1,18 @@
+2016-05-02 19:34:29,645 WARNING [FILE:views.py LINE: 22] warn message
+2016-05-02 19:34:29,645 ERROR [FILE:views.py LINE: 23] error message
+2016-05-02 19:34:29,646 CRITICAL [FILE:views.py LINE: 24] critical message
+2016-05-02 19:46:12,031 WARNING [FILE:views.py LINE:22] warn message
+2016-05-02 19:46:12,032 ERROR [FILE:views.py LINE:23] error message
+2016-05-02 19:46:12,032 CRITICAL [FILE:views.py LINE:24] critical message
+2016-05-02 19:46:22,016 WARNING [FILE:views.py LINE:22] warn message
+2016-05-02 19:46:22,017 ERROR [FILE:views.py LINE:23] error message
+2016-05-02 19:46:22,017 CRITICAL [FILE:views.py LINE:24] critical message
+2016-05-02 19:47:19,328 WARNING [FILE:views.py LINE:22] warn message
+2016-05-02 19:47:19,328 ERROR [FILE:views.py LINE:23] error message
+2016-05-02 19:47:19,329 CRITICAL [FILE:views.py LINE:24] critical message
+2016-05-02 19:47:25,966 WARNING [FILE:views.py LINE:22] warn message
+2016-05-02 19:47:25,966 ERROR [FILE:views.py LINE:23] error message
+2016-05-02 19:47:25,966 CRITICAL [FILE:views.py LINE:24] critical message
+2016-05-02 19:50:08,905 WARNING [FILE:views.py LINE:22] warn message
+2016-05-02 19:50:08,905 ERROR [FILE:views.py LINE:23] error message
+2016-05-02 19:50:08,906 CRITICAL [FILE:views.py LINE:24] critical message

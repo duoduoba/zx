@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.signals import post_delete
 from django.dispatch import receiver
+from jizhang.log.logger import logger
 
 
 class Province(models.Model):
@@ -20,6 +21,7 @@ class City(models.Model):
 
     def __str__(self):
         return self.name
+
 
 class DecorationCompany(models.Model):
     city = models.ForeignKey(City, to_field='name', related_name='city_company_set', verbose_name='城市')
@@ -105,7 +107,7 @@ class Shop(models.Model):
     site = models.URLField(verbose_name='web site', null=True, blank=True)
 
     def __str__(self):
-        return self.name + '_' + self.city
+        return self.name + '_' + self.city.name
 
 
 class SpendDetail(models.Model):
@@ -133,16 +135,16 @@ class SpendDetail(models.Model):
 @receiver(post_delete, sender=SpendDetail)
 def photo_post_delete_handler(sender, **kwargs):
     detail = kwargs['instance']
-    print(detail)
+    logger.info(detail)
     for index in range(1, 5):
         image_name = 'image' + str(index)
-        print(image_name)
+        logger.info(image_name)
         image_path = detail.__dict__[image_name]
         image_path = image_path.replace('/', '\\')
         import os
         from zx.settings import MEDIA_ROOT
         image_path = MEDIA_ROOT + '\\' + image_path
-        print(image_path)
+        logger.info(image_path)
         if os.path.isfile(image_path):
             os.remove(image_path)
 '''

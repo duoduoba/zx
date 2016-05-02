@@ -1,7 +1,7 @@
 __author__ = 'Administrator'
 
 from rest_framework import permissions
-
+from jizhang.log.logger import logger
 
 class IsOwnerOrReadOnly(permissions.BasePermission):
     '''
@@ -10,11 +10,11 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
     def has_object_permission(self, request, view, obj):
         # if request.method in permissions.SAFE_METHODS:
         #     return True
-        print('==============IsOwnerOrReadOnly====================')
+        logger.info('==============IsOwnerOrReadOnly====================')
         ok = (obj.owner == request.user)
         if ok:
-            print('you are the owner, continue')
+            logger.info('you are the owner, continue')
         else:
-            print( 'you are not the owner, can not edit current item')
+            logger.info( 'you are not the owner, can not edit current item')
         return ok
 

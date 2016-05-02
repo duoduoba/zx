@@ -184,4 +184,3 @@ class InitView(APIView):
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=4333)
 
 		return Response({'result': 'init data ok'}, status=status.HTTP_201_CREATED)
-

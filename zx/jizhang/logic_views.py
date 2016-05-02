@@ -6,6 +6,7 @@ from rest_framework.views import APIView
 from django.http import Http404
 from jizhang.models import *
 from jizhang.serializers import TagSerializer, BrandDataSerializer, ShopDataSerializer
+from jizhang.log.logger import logger
 
 
 class NumberUtil():
@@ -28,13 +29,13 @@ class HotTagsListView(APIView):
 		try:
 			price = data['price']
 		except:
-			print('no price value from client')
+			logger.info('no price value from client')
 			raise Http404
 
 		# import string
 		price = float(price)
 		number = NumberUtil.number(request)
-		print('get price=%d number=%d' % (price, number))
+		logger.info('get price=%d number=%d' % (price, number))
 
 		query_list = Tag.objects.filter(average_price__range=(price - 1000, price + 1000)).order_by('-cited_times')
 		query_list = query_list[:number]
@@ -47,7 +48,7 @@ get tags under one category name
 '''
 class CategoryTagView(APIView):
 	def get(self, request, pk):
-		print('category-tag-set pk=%s' % pk)
+		logger.info('category-tag-set pk=%s' % pk)
 		category_obj = Category.objects.get(pk=pk)
 		query_set = category_obj.category_tag_set
 		tags = TagSerializer(query_set, many=True, context={'request': request})
@@ -65,7 +66,7 @@ class CategoryTagView(APIView):
 class HotBrandListView(APIView):
 	def get(self, request):
 		data = request.GET
-		# print(data)
+		# logger.info(data)
 		sql = {}
 		sql['tag'] = data.get('tag', None)
 		if data.get('city', None):
@@ -77,7 +78,7 @@ class HotBrandListView(APIView):
 		query_list = query_list[:number]
 
 		serializer = BrandDataSerializer(query_list, many=True, context={'request': request})
-		print('get right data from HoTBrandListView')
+		logger.info('get right data from HoTBrandListView')
 		return Response(serializer.data, status=status.HTTP_200_OK)
 
 
@@ -90,12 +91,12 @@ class HotShopListView(APIView):
 		if data.get('city', None):
 			sql['city'] = data.get('city')
 		else:
-			print('not got city data from client')
+			logger.info('not got city data from client')
 		if data.get('brand', None):
 			sql['brand'] = data.get('brand')
 		else:
-			print('not got brand data from client')
-		# print(sql)
+			logger.info('not got brand data from client')
+		# logger.info(sql)
 		'''
 		number = NumberUtil.number(request)
 		query_list = ShopDataWithCityTag.objects.filter(**sql).order_by('-shop_cited_times')

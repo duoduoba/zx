@@ -9,7 +9,7 @@ from jizhang.serializers import *
 from rest_framework import generics, permissions
 from django.http import Http404
 from jizhang.permissions import IsOwnerOrReadOnly
-from django.views.decorators.csrf import csrf_exempt,csrf_protect
+from jizhang.log.logger import logger
 # Create your views here.
 
 
@@ -17,14 +17,18 @@ class TestView(APIView):
     permission_classes = (permissions.AllowAny,)
 
     def get(self, request, format=None):
-        print('get test view')
+        logger.debug("debug message")
+        logger.info("info message")
+        logger.warn("warn message")
+        logger.error("error message")
+        logger.critical("critical message")
         return Response('OK')
 
     def post(self, request, format=None):
         try:
             data = request.data
         except Exception as e:
-            print('get request.data error')
+            logger.info('get request.data error')
             return Response(e.message)
 
         if not ('username' in data and 'password' in data):
@@ -63,12 +67,11 @@ class CityListView(generics.ListCreateAPIView):
         self.queryset = City.objects.all()
         try:
             province = self.request.query_params['province']
-            print(province)
+            logger.info(province)
             self.queryset = City.objects.filter(province=province)
-
-            print(self.queryset)
+            logger.info(self.queryset)
         finally:
-            print('22222')
+            # logger.info('22222')
             return super(CityListView, self).get_queryset()
 
 
@@ -110,14 +113,14 @@ class TagDetailView(generics.RetrieveUpdateDestroyAPIView):
         if self.request.user.is_superuser:
             super(TagDetailView, self).perform_update(serializer)
         else:
-            print('tag can not be modified')
+            logger.info('tag can not be modified')
             pass
 
     def perform_destroy(self, instance):
         if self.request.user.is_superuser:
             super(TagDetailView, self).perform_update(instance)
         else:
-            print('tag can not be deleted')
+            logger.info('tag can not be deleted')
             pass
 
 
@@ -144,13 +147,13 @@ class GetOrCreateMixin():
             Brand.objects.get_or_create(name=brand)
         addr = data.get('addr', None)
         if addr:
-            print('submit detail data ,user is -->', request.user.username)
+            logger.info('submit detail data ,user is -->', request.user.username)
             user = User.objects.get(username=request.user.username)
-            print(user)
+            logger.info(user)
             userprofile = UserProfile.objects.get(user=user)
-            print(userprofile)
+            logger.info(userprofile)
             city = userprofile.city
-            print(city)
+            logger.info(city)
             Shop.objects.get_or_create(name=addr, city=city)
 
 

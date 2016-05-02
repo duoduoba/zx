@@ -1,0 +1,24 @@
+2016-05-02 19:03:07,828 - jizhang.log.logger - WARNING - warn message
+2016-05-02 19:03:07,828 - jizhang.log.logger - ERROR - error message
+2016-05-02 19:03:07,829 - jizhang.log.logger - CRITICAL - critical message
+2016-05-02 19:10:26,444 - jizhang.log.logger - WARNING - warn message
+2016-05-02 19:10:26,445 - jizhang.log.logger - ERROR - error message
+2016-05-02 19:10:26,445 - jizhang.log.logger - CRITICAL - critical message
+2016-05-02 19:12:36,136 - jizhang.log.logger - WARNING - warn message
+2016-05-02 19:12:36,136 - jizhang.log.logger - ERROR - error message
+2016-05-02 19:12:36,137 - jizhang.log.logger - CRITICAL - critical message
+2016-05-02 19:14:36,756 - jizhang.log.logger - WARNING - warn message
+2016-05-02 19:14:36,757 - jizhang.log.logger - ERROR - error message
+2016-05-02 19:14:36,758 - jizhang.log.logger - CRITICAL - critical message
+2016-05-02 19:16:30,775 - jizhang.log.logger - WARNING - warn message
+2016-05-02 19:16:30,776 - jizhang.log.logger - ERROR - error message
+2016-05-02 19:16:30,776 - jizhang.log.logger - CRITICAL - critical message
+2016-05-02 19:31:38,125 WARNING [FILE:views.py LINE: 22] warn message
+2016-05-02 19:31:38,126 ERROR [FILE:views.py LINE: 23] error message
+2016-05-02 19:31:38,127 CRITICAL [FILE:views.py LINE: 24] critical message
+2016-05-02 19:32:44,418 WARNING [FILE:views.py LINE: 22] warn message
+2016-05-02 19:32:44,419 ERROR [FILE:views.py LINE: 23] error message
+2016-05-02 19:32:44,420 CRITICAL [FILE:views.py LINE: 24] critical message
+2016-05-02 19:32:50,256 WARNING [FILE:views.py LINE: 22] warn message
+2016-05-02 19:32:50,257 ERROR [FILE:views.py LINE: 23] error message
+2016-05-02 19:32:50,258 CRITICAL [FILE:views.py LINE: 24] critical message
