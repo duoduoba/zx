@@ -29,6 +29,9 @@ class InitView(APIView):
 		city = City.objects.get(name='南京')
 		DecorationCompany.objects.create(city=city, name='米兰装饰')
 
+		user = User.objects.get(username='zx')
+		userprofile = UserProfile.objects.create(user=user, city=city)
+
 		if self.debug:
 			Category.objects.all().delete()
 			Category.objects.create(name='设计')

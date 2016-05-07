@@ -25,6 +25,8 @@ class LoginView(APIView):
         return Response('OK')
 
     def post(self, request, format=None):
+        print(request.META)
+        print(request.data)
         try:
             data = request.data
         except Exception as e:

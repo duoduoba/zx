@@ -51,7 +51,7 @@ class UserProfile(models.Model):
                      ('50-80万', '50-80万'), ('80-100万', '80-100万'),('>100万', '>100万')
                      )
     budget = models.FloatField(verbose_name='预算', choices=budget_choice, blank=True, null=True)
-    company = models.ForeignKey(DecorationCompany, to_field='name', verbose_name='装修公司')
+    company = models.ForeignKey(DecorationCompany, to_field='name', verbose_name='装修公司', null=True, blank=True)
 
     def __str__(self):
         return '_'.join((self.user.username, self.city.name))
