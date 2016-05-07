@@ -13,11 +13,11 @@ from jizhang.log.logger import logger
 # Create your views here.
 
 
-class TestView(APIView):
+class LoginView(APIView):
     permission_classes = (permissions.AllowAny,)
 
     def get(self, request, format=None):
-        logger.debug("debug message")
+        print("debug message")
         logger.info("info message")
         logger.warn("warn message")
         logger.error("error message")
@@ -32,15 +32,19 @@ class TestView(APIView):
             return Response(e.message)
 
         if not ('username' in data and 'password' in data):
-            return Response('No username and passwd', status=status.HTTP_401_UNAUTHORIZED)
+            result = {'result': 'error', 'message': 'no username or password'}
+            return Response(result, status=status.HTTP_401_UNAUTHORIZED)
 
         username = data['username']
         password = data['password']
         user = auth.authenticate(username=username, password=password)
         if not user:
-            return Response('user name or password is wrong!')
+            result = {'result': 'error', 'message': 'user name or password is wrong!'}
+            return Response(result, status=status.HTTP_401_UNAUTHORIZED)
+
         token = Token.objects.get_or_create(user=user)
-        return Response({'token': token[0].key})
+        result = {'result': 'ok', 'message': token[0].key}
+        return Response(result)
 
 
 class CategoryListView(generics.ListCreateAPIView):

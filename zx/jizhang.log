@@ -1,18 +1,21 @@
-2016-05-02 19:34:29,645 WARNING [FILE:views.py LINE: 22] warn message
-2016-05-02 19:34:29,645 ERROR [FILE:views.py LINE: 23] error message
-2016-05-02 19:34:29,646 CRITICAL [FILE:views.py LINE: 24] critical message
-2016-05-02 19:46:12,031 WARNING [FILE:views.py LINE:22] warn message
-2016-05-02 19:46:12,032 ERROR [FILE:views.py LINE:23] error message
-2016-05-02 19:46:12,032 CRITICAL [FILE:views.py LINE:24] critical message
-2016-05-02 19:46:22,016 WARNING [FILE:views.py LINE:22] warn message
-2016-05-02 19:46:22,017 ERROR [FILE:views.py LINE:23] error message
-2016-05-02 19:46:22,017 CRITICAL [FILE:views.py LINE:24] critical message
-2016-05-02 19:47:19,328 WARNING [FILE:views.py LINE:22] warn message
-2016-05-02 19:47:19,328 ERROR [FILE:views.py LINE:23] error message
-2016-05-02 19:47:19,329 CRITICAL [FILE:views.py LINE:24] critical message
-2016-05-02 19:47:25,966 WARNING [FILE:views.py LINE:22] warn message
-2016-05-02 19:47:25,966 ERROR [FILE:views.py LINE:23] error message
-2016-05-02 19:47:25,966 CRITICAL [FILE:views.py LINE:24] critical message
-2016-05-02 19:50:08,905 WARNING [FILE:views.py LINE:22] warn message
-2016-05-02 19:50:08,905 ERROR [FILE:views.py LINE:23] error message
-2016-05-02 19:50:08,906 CRITICAL [FILE:views.py LINE:24] critical message
+2016-05-02 20:36:43,004 WARNING [FILE:views.py LINE:22] warn message
+2016-05-02 20:36:43,008 ERROR [FILE:views.py LINE:23] error message
+2016-05-02 20:36:43,012 CRITICAL [FILE:views.py LINE:24] critical message
+2016-05-02 20:37:56,065 WARNING [FILE:views.py LINE:22] warn message
+2016-05-02 20:37:56,065 ERROR [FILE:views.py LINE:23] error message
+2016-05-02 20:37:56,066 CRITICAL [FILE:views.py LINE:24] critical message
+2016-05-07 10:39:24,588 WARNING [FILE:views.py LINE:22] warn message
+2016-05-07 10:39:24,589 ERROR [FILE:views.py LINE:23] error message
+2016-05-07 10:39:24,589 CRITICAL [FILE:views.py LINE:24] critical message
+2016-05-07 10:39:34,785 WARNING [FILE:views.py LINE:22] warn message
+2016-05-07 10:39:34,785 ERROR [FILE:views.py LINE:23] error message
+2016-05-07 10:39:34,786 CRITICAL [FILE:views.py LINE:24] critical message
+2016-05-07 10:41:01,071 WARNING [FILE:views.py LINE:22] warn message
+2016-05-07 10:41:01,071 ERROR [FILE:views.py LINE:23] error message
+2016-05-07 10:41:01,071 CRITICAL [FILE:views.py LINE:24] critical message
+2016-05-07 10:41:25,594 WARNING [FILE:views.py LINE:22] warn message
+2016-05-07 10:41:25,594 ERROR [FILE:views.py LINE:23] error message
+2016-05-07 10:41:25,595 CRITICAL [FILE:views.py LINE:24] critical message
+2016-05-07 11:02:33,251 WARNING [FILE:views.py LINE:22] warn message
+2016-05-07 11:02:33,252 ERROR [FILE:views.py LINE:23] error message
+2016-05-07 11:02:33,252 CRITICAL [FILE:views.py LINE:24] critical message

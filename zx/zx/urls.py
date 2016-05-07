@@ -28,7 +28,7 @@ from jizhang.webview.webviews import register, login_after, test
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^auth/$', TestView.as_view()),
+    url(r'^auth/$', LoginView.as_view()),
     # =======================jizhang urls start==========================================
 
     url(r'^jz/init/$', InitView.as_view(), name='init'),
@@ -67,8 +67,8 @@ urlpatterns = [
 
     # =========================Web View================================
     url(r'^web/tags/$', get_tags, name='tags'),
-    url(r'^web/accounts/login/$', login),
-    url(r'^web/accounts/login/index.html/$', login_after),
+    url(r'^web/accounts/LoginView/$', login),
+    url(r'^web/accounts/LoginView/index.html/$', login_after),
     url(r'^web/accounts/logout/$', logout),
     url(r'^web/accounts/register/$', register),
     url(r'^web/$', test),
