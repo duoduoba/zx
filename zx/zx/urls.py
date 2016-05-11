@@ -26,9 +26,13 @@ from django.contrib.auth.views import login, logout
 from jizhang.webview.webviews import register, login_after, test
 
 
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^auth/$', LoginView.as_view()),
+    url(r'^auth/$', ObtainExpiringAuthToken.as_view()),
+    url(r'^api-token-auth/', ObtainExpiringAuthToken.as_view()),
+    url(r'^login/', ObtainExpiringAuthToken.as_view()),
+    url(r'^register/', RegisterView.as_view()),
     # =======================jizhang urls start==========================================
 
     url(r'^jz/init/$', InitView.as_view(), name='init'),

@@ -117,6 +117,33 @@ REST_FRAMEWORK = {
     ),
 
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework.authentication.TokenAuthentication',
+        # 'rest_framework.authentication.TokenAuthentication',
+        'jizhang.authentication.ExpiredTokenAuthentication',
     )
 }
+
+
+'''
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'WARNING',
+            'class': 'logging.FileHandler',
+            'filename': 'jizhang.log',
+        },
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+
+    },
+    'loggers': {
+        'jizhang': {
+            'handlers': ['file', 'console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
+'''

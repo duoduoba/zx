@@ -3,17 +3,33 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.authtoken.models import Token
-# from django.core.exceptions import ObjectDoesNotExist
 from django.contrib import auth
 from jizhang.serializers import *
 from rest_framework import generics, permissions
 from django.http import Http404
 from jizhang.permissions import IsOwnerOrReadOnly
 from jizhang.log.logger import logger
+from rest_framework.authtoken.views import ObtainAuthToken
+import datetime
 # Create your views here.
 
 
-class LoginView(APIView):
+class ObtainExpiringAuthToken(ObtainAuthToken):
+    def post(self, request, *args, **kwargs):
+        serializer = self.serializer_class(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.validated_data['user']
+        token, created = Token.objects.get_or_create(user=user)
+        now = datetime.datetime.now()
+        if not created and token.created < now - datetime.timedelta(seconds=60):
+            token.delete()
+            token = Token.objects.create(user=user)
+            token.created = datetime.datetime.now()
+            token.save()
+        return Response({'token': token.key})
+
+
+class RegisterView(APIView):
     permission_classes = (permissions.AllowAny,)
 
     def get(self, request, format=None):
@@ -25,28 +41,29 @@ class LoginView(APIView):
         return Response('OK')
 
     def post(self, request, format=None):
-        print(request.META)
-        print(request.data)
         try:
             data = request.data
-        except Exception as e:
-            logger.info('get request.data error')
-            return Response(e.message)
+            username = data['username']
+            password = data['password']
+            print(username)
+            print(password)
+        except Exception as ex:
+            print('get user name or password data error')
+            # raise Http404
+            return Response('No username or password data', status=status.HTTP_400_BAD_REQUEST)
 
-        if not ('username' in data and 'password' in data):
-            result = {'result': 'error', 'message': 'no username or password'}
-            return Response(result, status=status.HTTP_401_UNAUTHORIZED)
 
-        username = data['username']
-        password = data['password']
-        user = auth.authenticate(username=username, password=password)
-        if not user:
-            result = {'result': 'error', 'message': 'user name or password is wrong!'}
-            return Response(result, status=status.HTTP_401_UNAUTHORIZED)
-
-        token = Token.objects.get_or_create(user=user)
-        result = {'result': 'ok', 'message': token[0].key}
-        return Response(result)
+        try:
+            print('create user....')
+            user = User.objects.create(username=username, password=password)
+        except Exception as ex:
+            return Response('Invalid username', status=status.HTTP_400_BAD_REQUEST)
+        # print(user)
+        token, created = Token.objects.get_or_create(user=user)
+        # token = Token.objects.get_or_create(user=user)
+        print(token)
+        # result = {'result': 'ok', 'message': token.key}
+        return Response({'token': token.key})
 
 
 class CategoryListView(generics.ListCreateAPIView):
@@ -109,6 +126,7 @@ class BrandDetailView(generics.RetrieveUpdateDestroyAPIView):
 class TagListView(generics.ListCreateAPIView):
     serializer_class = TagSerializer
     queryset = Tag.objects.all()
+    permission_classes = (permissions.IsAuthenticated,)
 
 
 class TagDetailView(generics.RetrieveUpdateDestroyAPIView):
