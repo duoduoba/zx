@@ -12,7 +12,7 @@ from jizhang.models import UserProfile
 
 
 def register(request):
-	if request.method == 'POST':
+	if request.method == 'PO ST':
 		form = UserCreationForm(request.POST)
 
 		if form.is_valid():

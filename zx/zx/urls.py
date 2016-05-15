@@ -33,6 +33,7 @@ urlpatterns = [
     url(r'^api-token-auth/', ObtainExpiringAuthToken.as_view()),
     url(r'^login/', ObtainExpiringAuthToken.as_view()),
     url(r'^register/', RegisterView.as_view()),
+    url(r'^register2/', RegisterView_Andorid.as_view()),
     # =======================jizhang urls start==========================================
 
     url(r'^jz/init/$', InitView.as_view(), name='init'),

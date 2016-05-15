@@ -5,7 +5,7 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework import exceptions
 import datetime
 
-EXPIRED_TOKEN = 7 #days
+EXPIRED_TOKEN = 14
 
 
 class ExpiredTokenAuthentication(TokenAuthentication):
@@ -19,7 +19,6 @@ class ExpiredTokenAuthentication(TokenAuthentication):
 		if not token.user.is_active:
 			raise exceptions.AuthenticationFailed(_('User inactive or deleted.'))
 
-		# now = token.created
 		now = datetime.datetime.now()
 		interval = (now - token.created).days
 		# interval = (now - token.created).seconds

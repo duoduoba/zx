@@ -1,20 +1,26 @@
 # coding=utf8
+import datetime
+
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.authtoken.models import Token
-from django.contrib import auth
-from jizhang.serializers import *
 from rest_framework import generics, permissions
-from django.http import Http404
+from rest_framework.authtoken.views import ObtainAuthToken
+
+from jizhang.serializers import *
 from jizhang.permissions import IsOwnerOrReadOnly
 from jizhang.log.logger import logger
-from rest_framework.authtoken.views import ObtainAuthToken
-import datetime
+
+
 # Create your views here.
 
 
 class ObtainExpiringAuthToken(ObtainAuthToken):
+    '''
+    Login and get token
+    '''
+
     def post(self, request, *args, **kwargs):
         serializer = self.serializer_class(data=request.data)
         serializer.is_valid(raise_exception=True)
@@ -52,7 +58,6 @@ class RegisterView(APIView):
             # raise Http404
             return Response('No username or password data', status=status.HTTP_400_BAD_REQUEST)
 
-
         try:
             print('create user....')
             user = User.objects.create(username=username, password=password)
@@ -63,6 +68,33 @@ class RegisterView(APIView):
         # token = Token.objects.get_or_create(user=user)
         print(token)
         # result = {'result': 'ok', 'message': token.key}
+        return Response({'token': token.key})
+
+
+class RegisterView_Andorid(APIView):
+    permission_classes = (permissions.AllowAny,)
+
+    def random_str(self, randomlength=8):
+        str = ''
+        chars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789'
+        length = len(chars) - 1
+        import random
+        for i in range(randomlength):
+            str += chars[random.randint(0, length)]
+        return str
+
+    def post(self, request, format=None):
+        try:
+            data = request.data
+            username = data['username']
+            type = data['type']
+            username = username + '_' + type
+            password = self.random_str(6)
+
+            user = User.objects.get_or_create(username=username, password=password)
+            token, created = Token.objects.get_or_create(user=user)
+        except Exception as ex:
+            return Response('Invalid username', status=status.HTTP_400_BAD_REQUEST)
         return Response({'token': token.key})
 
 
