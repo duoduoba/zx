@@ -4,7 +4,7 @@ from jizhang.models import *
 
 
 class CityAdmin(admin.ModelAdmin):
-	list_display = ('province', 'name', 'state',)
+    list_display = ('province', 'name', 'state',)
 
 admin.site.register(City, CityAdmin)
 admin.site.register(Tag)

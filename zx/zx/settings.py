@@ -122,6 +122,10 @@ REST_FRAMEWORK = {
     )
 }
 
+EMAIL_HOST = 'smtp.qq.com'
+EMAIL_HOST_PASSWORD = 'wu12345!@'
+EMAIL_HOST_USER='1211057058@qq.com'
+EMAIL_PORT = 465
 
 '''
 LOGGING = {

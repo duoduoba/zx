@@ -16,7 +16,7 @@ from jizhang.log.logger import logger
 # Create your views here.
 
 
-class ObtainExpiringAuthToken(ObtainAuthToken):
+class LoginAndObtainExpiringAuthToken(ObtainAuthToken):
     '''
     Login and get token
     '''
@@ -44,6 +44,9 @@ class RegisterView(APIView):
         logger.warn("warn message")
         logger.error("error message")
         logger.critical("critical message")
+        from django.core.mail import send_mail
+        send_mail('test email tile', 'i am email mmkkkkkkkkkkkkkkkkkk', '1211057058@qq.com', ('1211057058@qq.com',))
+
         return Response('OK')
 
     def post(self, request, format=None):
