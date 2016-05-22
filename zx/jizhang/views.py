@@ -77,6 +77,10 @@ class RegisterView(APIView):
 class RegisterView_Andorid(APIView):
     permission_classes = (permissions.AllowAny,)
 
+    def get(self, request):
+        user = User.objects.get(username='18625177794_')
+        return Response('RegisterView_Andorid')
+
     def random_str(self, randomlength=8):
         str = ''
         chars = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789'
@@ -88,14 +92,21 @@ class RegisterView_Andorid(APIView):
 
     def post(self, request, format=None):
         try:
+            print('enter register from mobile client')
             data = request.data
             username = data['username']
             type = data['type']
             username = username + '_' + type
-            password = self.random_str(6)
-
-            user = User.objects.get_or_create(username=username, password=password)
+            user = User.objects.get(username=username)
+            if not user:
+                password = self.random_str(6)
+                print(username)
+                print(password)
+                user = User.objects.create(username=username, password=password)
+            print('------------------')
+            print(user.username)
             token, created = Token.objects.get_or_create(user=user)
+            print(token)
         except Exception as ex:
             return Response('Invalid username', status=status.HTTP_400_BAD_REQUEST)
         return Response({'token': token.key})
