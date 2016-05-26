@@ -78,7 +78,7 @@ class RegisterView_Andorid(APIView):
     permission_classes = (permissions.AllowAny,)
 
     def get(self, request):
-        user = User.objects.get(username='18625177794_')
+
         return Response('RegisterView_Andorid')
 
     def random_str(self, randomlength=8):

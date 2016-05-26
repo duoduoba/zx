@@ -46,3 +46,6 @@ critical message
 2016-05-22 11:14:04,802 WARNING [FILE:views.py LINE:44] warn message
 2016-05-22 11:14:04,802 ERROR [FILE:views.py LINE:45] error message
 2016-05-22 11:14:04,802 CRITICAL [FILE:views.py LINE:46] critical message
+2016-05-22 14:37:06,607 WARNING [FILE:views.py LINE:44] warn message
+2016-05-22 14:37:06,621 ERROR [FILE:views.py LINE:45] error message
+2016-05-22 14:37:06,621 CRITICAL [FILE:views.py LINE:46] critical message

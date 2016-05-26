@@ -40,7 +40,8 @@ INSTALLED_APPS = (
     'jizhang',
     'rest_framework',
     'rest_framework.authtoken',
-    'qrcode_model'
+    'qrcode_model',
+    'anymail',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -122,32 +123,30 @@ REST_FRAMEWORK = {
     )
 }
 
-EMAIL_HOST = 'smtp.qq.com'
-EMAIL_HOST_PASSWORD = 'wu12345!@'
-EMAIL_HOST_USER='1211057058@qq.com'
-EMAIL_PORT = 465
-
-'''
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'file': {
-            'level': 'WARNING',
-            'class': 'logging.FileHandler',
-            'filename': 'jizhang.log',
-        },
-        'console': {
-            'class': 'logging.StreamHandler',
-        },
-
-    },
-    'loggers': {
-        'jizhang': {
-            'handlers': ['file', 'console'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-    },
+ANYMAIL = {
+    "MAILGUN_API_KEY": "<your Mailgun key>",
 }
-'''
+
+
+EMAIL_BACKEND = 'anymail.backends.mailgun.MailgunBackend'  # or sendgrid.SendGridBackend, or...
+DEFAULT_FROM_EMAIL = "zx@zx.com"  # if you don't already have this in settings
+
+import logging
+from logging.handlers import TimedRotatingFileHandler
+
+root = logging.getLogger()
+if len(root.handlers) == 0:
+    level = logging.INFO
+    filename = 'zx.log'
+    format =  '%(asctiome)s  %(levelname)s  %(module)s .%(funcName)s  Line:%(lineno)d  %(message)s'
+    handler = TimedRotatingFileHandler(filename, 'midnight', 1, 5)
+    fmt = logging.Formatter(format)
+    handler.setFormatter(fmt)
+    root.addHandler(handler)
+    root.setLevel(level)
+    #中文的注释
+
+
+
+
+
