@@ -48,9 +48,9 @@ class UserProfile(models.Model):
     house_style = models.ForeignKey(Style, to_field='name', related_name='stype_user_set', blank=True, null=True,verbose_name='装修风格')
     budget_choice = (('<5万', '<5万'), ('<10万', '<10万'), ('10-15万', '10-15万'),
                      ('15-20万', '15-20万'), ('20-30万', '20-30万'), ('30-50万', '30-50万'),
-                     ('50-80万', '50-80万'), ('80-100万', '80-100万'),('>100万', '>100万')
+                     ('50-80万', '50-80万'), ('80-100万', '80-100万'), ('>100万', '>100万')
                      )
-    budget = models.FloatField(verbose_name='预算', choices=budget_choice, blank=True, null=True)
+    budget = models.CharField(verbose_name='预算', max_length=20, choices=budget_choice, blank=True, null=True)
     company = models.ForeignKey(DecorationCompany, to_field='name', verbose_name='装修公司', null=True, blank=True)
 
     def __str__(self):
@@ -58,9 +58,9 @@ class UserProfile(models.Model):
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=20, unique=True)
-    parent = models.ForeignKey('self', to_field='name', null=True, blank=True)
-    description = models.CharField(max_length=60, null=True, blank=True)
+    name = models.CharField(verbose_name='分类名称', max_length=20, unique=True)
+    parent = models.ForeignKey('self', to_field='name', null=True, blank=True, verbose_name='上级分类')
+    description = models.CharField(max_length=60, null=True, blank=True, verbose_name='简要描述')
 
     def __str__(self):
         return self.name
@@ -74,11 +74,11 @@ class Currency(models.Model):
 
 
 class Brand(models.Model):
-    name = models.CharField(max_length=40, unique=True)
+    name = models.CharField(verbose_name='品牌名称', max_length=40, unique=True)
     logo = models.ImageField(upload_to='logo/%Y-%m-%d/', null=True, blank=True)
-    website_site = models.CharField(max_length=100, null=True, blank=True)
-    description = models.CharField(max_length=100, null=True, blank=True)
-    cited_times = models.PositiveIntegerField(default=0)
+    website_site = models.CharField(verbose_name='网址', max_length=100, null=True, blank=True)
+    description = models.CharField(verbose_name='简要描述', max_length=100, null=True, blank=True)
+    cited_times = models.PositiveIntegerField(verbose_name='引用次数', default=0)
 
     def __str__(self):
         return self.name
@@ -88,13 +88,13 @@ class Brand(models.Model):
 2 Update the Tag model by detail data.
 '''
 class Tag(models.Model):
-    category = models.ForeignKey(Category, to_field='name', related_name='category_tag_set', null=True, blank=True)
-    name = models.CharField(max_length=40, unique=True)
-    cited_times = models.PositiveIntegerField(default=0)
-    average_price = models.FloatField(default=0.0)
-    min_price = models.FloatField(default=0.0)
-    max_price = models.FloatField(default=0.0)
-    city = models.ForeignKey(City, to_field='name', related_name='city_tag_set', null=True, blank=True)
+    category = models.ForeignKey(Category, to_field='name', related_name='category_tag_set', null=True, blank=True,verbose_name='分类')
+    name = models.CharField(max_length=40, unique=True, verbose_name='名称')
+    cited_times = models.PositiveIntegerField(default=0, verbose_name='引用次数')
+    average_price = models.FloatField(default=0.0,verbose_name='平均价格')
+    min_price = models.FloatField(default=0.0, verbose_name='最低价格')
+    max_price = models.FloatField(default=0.0, verbose_name='最高价格')
+    city = models.ForeignKey(City, to_field='name', related_name='city_tag_set', null=True, blank=True, verbose_name='城市')
 
     def __str__(self):
         return self.name + str(self.category)

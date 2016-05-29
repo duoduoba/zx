@@ -1,0 +1,37 @@
+2016-05-29 13:05:04,487 WARNING [FILE:base.py LINE:182] Not Found: /jz/details.
+2016-05-29 13:21:58,270 ERROR [FILE:views.py LINE:94] enter register from mobile client
+2016-05-29 13:21:59,809 ERROR [FILE:views.py LINE:94] enter register from mobile client
+2016-05-29 14:04:05,300 WARNING [FILE:views.py LINE:98] enter register from mobile client
+2016-05-29 14:04:54,154 WARNING [FILE:views.py LINE:98] enter register from mobile client
+2016-05-29 14:04:54,160 WARNING [FILE:views.py LINE:115] f1e0c17f00006aab83494d01ca1108a855f0faad
+2016-05-29 14:11:46,346 WARNING [FILE:views.py LINE:98] enter register from mobile client
+2016-05-29 14:11:46,359 WARNING [FILE:views.py LINE:115] f1e0c17f00006aab83494d01ca1108a855f0faad
+2016-05-29 14:14:00,856 WARNING [FILE:views.py LINE:114] f1e0c17f00006aab83494d01ca1108a855f0faad
+2016-05-29 14:14:20,156 WARNING [FILE:views.py LINE:114] f1e0c17f00006aab83494d01ca1108a855f0faad
+2016-05-29 14:15:46,518 WARNING [FILE:views.py LINE:114] f1e0c17f00006aab83494d01ca1108a855f0faad
+2016-05-29 14:17:14,838 WARNING [FILE:views.py LINE:48] warn message
+2016-05-29 14:17:14,838 ERROR [FILE:views.py LINE:49] error message
+2016-05-29 14:17:14,839 CRITICAL [FILE:views.py LINE:50] critical message
+2016-05-29 14:17:43,171 WARNING [FILE:views.py LINE:48] warn message
+2016-05-29 14:17:43,171 ERROR [FILE:views.py LINE:49] error message
+2016-05-29 14:17:43,172 CRITICAL [FILE:views.py LINE:50] critical message
+2016-05-29 14:18:02,132 WARNING [FILE:views.py LINE:48] warn message
+2016-05-29 14:18:02,133 ERROR [FILE:views.py LINE:49] error message
+2016-05-29 14:18:02,133 CRITICAL [FILE:views.py LINE:50] critical message
+2016-05-29 14:20:00,522 WARNING [FILE:views.py LINE:48] warn message
+2016-05-29 14:20:00,522 ERROR [FILE:views.py LINE:49] error message
+2016-05-29 14:20:00,523 CRITICAL [FILE:views.py LINE:50] critical message
+2016-05-29 14:20:41,166 WARNING [FILE:views.py LINE:48] warn message
+2016-05-29 14:20:41,167 ERROR [FILE:views.py LINE:49] error message
+2016-05-29 14:20:41,168 CRITICAL [FILE:views.py LINE:50] critical message
+2016-05-29 14:21:21,457 WARNING [FILE:views.py LINE:49] warn message
+2016-05-29 14:21:21,457 ERROR [FILE:views.py LINE:50] error message
+2016-05-29 14:21:21,458 CRITICAL [FILE:views.py LINE:51] critical message
+2016-05-29 14:21:23,985 WARNING [FILE:views.py LINE:49] warn message
+2016-05-29 14:21:23,985 ERROR [FILE:views.py LINE:50] error message
+2016-05-29 14:21:23,985 CRITICAL [FILE:views.py LINE:51] critical message
+2016-05-29 14:22:29,295 DEBUG [FILE:views.py LINE:47] debug message
+2016-05-29 14:22:29,296 INFO [FILE:views.py LINE:48] info message
+2016-05-29 14:22:29,296 WARNING [FILE:views.py LINE:49] warn message
+2016-05-29 14:22:29,297 ERROR [FILE:views.py LINE:50] error message
+2016-05-29 14:22:29,297 CRITICAL [FILE:views.py LINE:51] critical message

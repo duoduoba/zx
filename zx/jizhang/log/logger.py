@@ -1,24 +1,26 @@
 # coding：utf-8
 import logging
-from logging.handlers import TimedRotatingFileHandler
+from logging.handlers import TimedRotatingFileHandler, RotatingFileHandler
 # from zx.settings import BASE_DIR
 
 
-logger = logging.getLogger('jizhang')
-logger.setLevel(logging.DEBUG)
+logger = logging.getLogger('zx')
+MAXLOGSIZE = 10*1024*1024 #Bytes
+BACKUPCOUNT = 4
 
-sh = logging.StreamHandler()
-sh.setLevel(logging.DEBUG)
-fh = logging.FileHandler('jizhang.log')
-fh.setLevel(logging.WARNING)
-# rfh = TimedRotatingFileHandler('t_jizhang','S', 1, 10)
-# rfh.suffix = '%Y-%m-%d.log'
-# rfh.setLevel(logging.DEBUG)
-
+level = logging.INFO
+filename = 'zx.log'
 formatter = logging.Formatter('%(asctime)s %(levelname)s [FILE:%(filename)s LINE:%(lineno)s] %(message)s')
-sh.setFormatter(formatter)
-fh.setFormatter(formatter)
-# rfh.setFormatter(formatter)
-# logger.addHandler(rfh)
-logger.addHandler(sh)
-logger.addHandler(fh)
+
+file_handler = RotatingFileHandler(filename, mode='a', backupCount=BACKUPCOUNT, maxBytes=MAXLOGSIZE)
+stream_handler = logging.StreamHandler()
+
+stream_handler.setLevel(logging.DEBUG)
+stream_handler.setFormatter(formatter)
+
+file_handler.setFormatter(formatter)
+file_handler.setLevel(logging.WARNING)
+
+logger.addHandler(file_handler)
+logger.addHandler(stream_handler)
+logger.setLevel(logging.DEBUG)

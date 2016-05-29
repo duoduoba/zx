@@ -131,19 +131,7 @@ ANYMAIL = {
 EMAIL_BACKEND = 'anymail.backends.mailgun.MailgunBackend'  # or sendgrid.SendGridBackend, or...
 DEFAULT_FROM_EMAIL = "zx@zx.com"  # if you don't already have this in settings
 
-import logging
-from logging.handlers import TimedRotatingFileHandler
 
-root = logging.getLogger()
-if len(root.handlers) == 0:
-    level = logging.INFO
-    filename = 'zx.log'
-    format =  '%(asctiome)s  %(levelname)s  %(module)s .%(funcName)s  Line:%(lineno)d  %(message)s'
-    handler = TimedRotatingFileHandler(filename, 'midnight', 1, 5)
-    fmt = logging.Formatter(format)
-    handler.setFormatter(fmt)
-    root.addHandler(handler)
-    root.setLevel(level)
 
 
 

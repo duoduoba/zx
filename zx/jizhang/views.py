@@ -26,6 +26,9 @@ class LoginAndObtainExpiringAuthToken(ObtainAuthToken):
         serializer.is_valid(raise_exception=True)
         user = serializer.validated_data['user']
         token, created = Token.objects.get_or_create(user=user)
+        # do not use expiring token anymore
+        return Response({'token': token.key})
+'''
         now = datetime.datetime.now()
         if not created and token.created < now - datetime.timedelta(seconds=60):
             token.delete()
@@ -33,6 +36,7 @@ class LoginAndObtainExpiringAuthToken(ObtainAuthToken):
             token.created = datetime.datetime.now()
             token.save()
         return Response({'token': token.key})
+'''
 
 
 class RegisterView(APIView):
@@ -40,13 +44,11 @@ class RegisterView(APIView):
 
     def get(self, request, format=None):
         print("debug message")
+        logger.debug("debug message")
         logger.info("info message")
         logger.warn("warn message")
         logger.error("error message")
         logger.critical("critical message")
-        from django.core.mail import send_mail
-        send_mail('test email tile', 'i am email mmkkkkkkkkkkkkkkkkkk', '1211057058@qq.com', ('1211057058@qq.com',))
-
         return Response('OK')
 
     def post(self, request, format=None):
@@ -74,12 +76,11 @@ class RegisterView(APIView):
         return Response({'token': token.key})
 
 
-class RegisterView_Andorid(APIView):
+class RegisterView2(APIView):
     permission_classes = (permissions.AllowAny,)
 
     def get(self, request):
-
-        return Response('RegisterView_Andorid')
+        return Response('RegisterView2')
 
     def random_str(self, randomlength=8):
         str = ''
@@ -92,21 +93,26 @@ class RegisterView_Andorid(APIView):
 
     def post(self, request, format=None):
         try:
-            print('enter register from mobile client')
+            logger.info('enter register from mobile client')
             data = request.data
             username = data['username']
             type = data['type']
             username = username + '_' + type
-            user = User.objects.get(username=username)
-            if not user:
+            logger.debug(username)
+            try:
+                user = User.objects.get(username=username)
+            except Exception as ex:
+                logger.debug('new user enter register2')
                 password = self.random_str(6)
-                print(username)
-                print(password)
+                logger.info(username)
+                logger(password)
                 user = User.objects.create(username=username, password=password)
-            print('------------------')
-            print(user.username)
+
+            # print(user.username)
+            city = City.objects.get(name='南京')
+            UserProfile.objects.get_or_create(user=user, city=city)
             token, created = Token.objects.get_or_create(user=user)
-            print(token)
+            logger.debug(token)
         except Exception as ex:
             return Response('Invalid username', status=status.HTTP_400_BAD_REQUEST)
         return Response({'token': token.key})
@@ -210,6 +216,7 @@ class GetOrCreateMixin():
     def pre_get_or_create(self, request):
         data = request.data
         tag = data.get('tag', None)
+        print(data)
         if tag:
             Tag.objects.get_or_create(name=tag)
         brand = data.get('brand', None)
