@@ -172,7 +172,7 @@ class BrandDetailView(generics.RetrieveUpdateDestroyAPIView):
 class TagListView(generics.ListCreateAPIView):
     serializer_class = TagSerializer
     queryset = Tag.objects.all()
-    permission_classes = (permissions.IsAuthenticated,)
+    # permission_classes = (permissions.IsAuthenticated,)
 
 
 class TagDetailView(generics.RetrieveUpdateDestroyAPIView):
