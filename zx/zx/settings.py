@@ -144,8 +144,6 @@ if len(root.handlers) == 0:
     handler.setFormatter(fmt)
     root.addHandler(handler)
     root.setLevel(level)
-    #中文的注释
-
 
 
 

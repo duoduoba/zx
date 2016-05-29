@@ -97,7 +97,7 @@ class Tag(models.Model):
     city = models.ForeignKey(City, to_field='name', related_name='city_tag_set', null=True, blank=True)
 
     def __str__(self):
-        return self.name + self.category
+        return self.name + str(self.category)
 
 
 class Shop(models.Model):
