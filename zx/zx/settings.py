@@ -41,7 +41,7 @@ INSTALLED_APPS = (
     'rest_framework',
     'rest_framework.authtoken',
     'qrcode_model',
-    'anymail',
+    # 'anymail',
 )
 
 MIDDLEWARE_CLASSES = (
