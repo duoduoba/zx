@@ -1,6 +1,4 @@
-__author__ = 'Administrator'
-# coding: GBK
-
+# coding£ºutf-8
 from jizhang.models import *
 from rest_framework import serializers
 

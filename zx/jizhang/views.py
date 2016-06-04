@@ -246,7 +246,7 @@ class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
 
     def get_queryset(self):
         self.queryset = SpendDetail.objects.filter(owner=self.request.user)
-        self.queryset = SpendDetail.objects.all()
+        #self.queryset = SpendDetail.objects.all()
         return super(SpendDetailListView, self).get_queryset()
 
 
