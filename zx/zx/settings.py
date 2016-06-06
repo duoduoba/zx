@@ -118,8 +118,8 @@ REST_FRAMEWORK = {
     ),
 
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        # 'rest_framework.authentication.TokenAuthentication',
-        'jizhang.authentication.ExpiredTokenAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+        # 'jizhang.authentication.ExpiredTokenAuthentication',
     )
 }
 

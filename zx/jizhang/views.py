@@ -27,8 +27,7 @@ class LoginAndObtainExpiringAuthToken(ObtainAuthToken):
         user = serializer.validated_data['user']
         token, created = Token.objects.get_or_create(user=user)
         # do not use expiring token anymore
-        return Response({'token': token.key})
-'''
+        # return Response({'token': token.key})
         now = datetime.datetime.now()
         if not created and token.created < now - datetime.timedelta(seconds=60):
             token.delete()
@@ -36,7 +35,6 @@ class LoginAndObtainExpiringAuthToken(ObtainAuthToken):
             token.created = datetime.datetime.now()
             token.save()
         return Response({'token': token.key})
-'''
 
 
 class RegisterView(APIView):
@@ -238,6 +236,7 @@ class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
     serializer_class = SpendDetailSerializer
 
     def create(self, request, *args, **kwargs):
+        logger.info('sync the detailed data')
         self.pre_get_or_create(request)
         return super(SpendDetailListView, self).create(request, *args, **kwargs)
 
@@ -246,7 +245,7 @@ class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
 
     def get_queryset(self):
         self.queryset = SpendDetail.objects.filter(owner=self.request.user)
-        #self.queryset = SpendDetail.objects.all()
+        self.queryset = SpendDetail.objects.all()
         return super(SpendDetailListView, self).get_queryset()
 
 

@@ -29,9 +29,9 @@ from jizhang.webview.webviews import register, login_after, test
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^auth/$', LoginAndObtainExpiringAuthToken.as_view()),
-    url(r'^api-token-auth/', LoginAndObtainExpiringAuthToken.as_view()),
-    url(r'^login/', LoginAndObtainExpiringAuthToken.as_view()),
+    # url(r'^auth/$', LoginAndObtainExpiringAuthToken.as_view()),
+    # url(r'^api-token-auth/', LoginAndObtainExpiringAuthToken.as_view()),
+    # url(r'^login/', LoginAndObtainExpiringAuthToken.as_view()),
     url(r'^register/', RegisterView.as_view()),
     url(r'^register2/', RegisterView2.as_view()),
     # =======================jizhang urls start==========================================
