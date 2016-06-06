@@ -103,7 +103,7 @@ class RegisterView2(APIView):
                 logger.debug('new user enter register2')
                 password = self.random_str(6)
                 logger.info(username)
-                logger(password)
+                logger.info(password)
                 user = User.objects.create(username=username, password=password)
 
             # print(user.username)
