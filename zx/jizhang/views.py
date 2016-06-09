@@ -11,9 +11,11 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from jizhang.serializers import *
 from jizhang.permissions import IsOwnerOrReadOnly
 from jizhang.log.logger import logger
+from django.contrib.auth import authenticate
 
 
 # Create your views here.
+
 
 
 class LoginAndObtainExpiringAuthToken(ObtainAuthToken):
@@ -35,6 +37,27 @@ class LoginAndObtainExpiringAuthToken(ObtainAuthToken):
             token.created = datetime.datetime.now()
             token.save()
         return Response({'token': token.key})
+
+
+class Login(APIView):
+    permission_classes = (permissions.AllowAny,)
+    def post(self, request, *args, **kwargs):
+        try:
+            data = request.data
+            username = data['username']
+            password = data['password']
+            logger.debug(username)
+            logger.debug(password)
+            user = User.objects.get(username=username, password=password)
+            if user:
+                token, created = Token.objects.get_or_create(user=user)
+                logger.debug(token)
+                logger.debug(created)
+                return Response({'token': token.key})
+            else:
+                return Response('User not exist', status=status.HTTP_400_BAD_REQUEST)
+        except Exception as ex:
+            return Response('Invalid username or password data', status=status.HTTP_400_BAD_REQUEST)
 
 
 class RegisterView(APIView):
@@ -73,6 +96,23 @@ class RegisterView(APIView):
         # result = {'result': 'ok', 'message': token.key}
         return Response({'token': token.key})
 
+'''
+class Login2(APIView):
+    def post(request, format=None):
+        data = request.data
+        username = data['username']
+        type = data['type']
+        username = username + '_' + type
+        logger.debug(username)
+        try:
+            user = User.objects.get(username=username)
+        except Exception as ex:
+            raise('Invalid username')
+
+        token, created = Token.objects.get_or_create(user=user)
+        logger.debug(token)
+        return Response({'token': token.key})
+'''
 
 class RegisterView2(APIView):
     permission_classes = (permissions.AllowAny,)
@@ -97,23 +137,32 @@ class RegisterView2(APIView):
             type = data['type']
             username = username + '_' + type
             logger.debug(username)
-            try:
-                user = User.objects.get(username=username)
-            except Exception as ex:
-                logger.debug('new user enter register2')
-                password = self.random_str(6)
-                logger.info(username)
-                logger.info(password)
-                user = User.objects.create(username=username, password=password)
 
-            # print(user.username)
+            # if user exist , delete token and create new token.
+            try:
+                logger.debug('check user name')
+                user = User.objects.get(username=username)
+                if user:
+                    logger.debug('delete user')
+                    user.delete()
+            except Exception as ex:
+                pass
+
+            # if user not exist, create token
+            logger.debug('new user enter register2')
+            password = self.random_str(6)
+            logger.info('username=%s' % username)
+            logger.info('password=%s' % password)
+            user = User.objects.create(username=username, password=password)
+            logger.info('create user finish' )
+            token, created = Token.objects.get_or_create(user=user)
+            logger.info(token)
+                # print(user.username)
             city = City.objects.get(name='南京')
             UserProfile.objects.get_or_create(user=user, city=city)
-            token, created = Token.objects.get_or_create(user=user)
-            logger.debug(token)
         except Exception as ex:
             return Response('Invalid username', status=status.HTTP_400_BAD_REQUEST)
-        return Response({'token': token.key})
+        return Response({'token': token.key, 'username': username, 'password':password})
 
 
 class CategoryListView(generics.ListCreateAPIView):

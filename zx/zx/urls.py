@@ -1,18 +1,4 @@
-"""zx URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/1.8/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  url(r'^$', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  url(r'^$', Home.as_view(), name='home')
-Including another URLconf
-    1. Add an import:  from blog import urls as blog_urls
-    2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
-"""
+# coding=utf8
 from django.conf.urls import include, url
 from django.contrib import admin
 from jizhang.views import *
@@ -24,15 +10,17 @@ from django.conf.urls.static import static
 from jizhang.webview.webviews import *
 from django.contrib.auth.views import login, logout
 from jizhang.webview.webviews import register, login_after, test
-
+from rest_framework.authtoken import views as authtoken_views
 
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    # url(r'^auth/$', LoginAndObtainExpiringAuthToken.as_view()),
-    # url(r'^api-token-auth/', LoginAndObtainExpiringAuthToken.as_view()),
-    # url(r'^login/', LoginAndObtainExpiringAuthToken.as_view()),
+    url(r'^api-token-auth/',  authtoken_views.obtain_auth_token),
+    #for username&password
+    url(r'^auth/', Login.as_view()),
     url(r'^register/', RegisterView.as_view()),
+    #for mobile register
+    #url(r'^login2/', Login2.as_view()),
     url(r'^register2/', RegisterView2.as_view()),
     # =======================jizhang urls start==========================================
 
