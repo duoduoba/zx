@@ -48,8 +48,8 @@ class Login(APIView):
             password = data['password']
             logger.debug(username)
             logger.debug(password)
-            user = User.objects.get(username=username, password=password)
-            if user:
+            user = User.objects.get(username=username)
+            if user and user.check_password(password):
                 token, created = Token.objects.get_or_create(user=user)
                 logger.debug(token)
                 logger.debug(created)
@@ -64,7 +64,7 @@ class RegisterView(APIView):
     permission_classes = (permissions.AllowAny,)
 
     def get(self, request, format=None):
-        print("debug message")
+        # print("debug message")
         logger.debug("debug message")
         logger.info("info message")
         logger.warn("warn message")
@@ -154,15 +154,15 @@ class RegisterView2(APIView):
             logger.info('username=%s' % username)
             logger.info('password=%s' % password)
             user = User.objects.create(username=username, password=password)
-            logger.info('create user finish' )
+            logger.info('create user finish')
             token, created = Token.objects.get_or_create(user=user)
             logger.info(token)
-                # print(user.username)
+
             city = City.objects.get(name='南京')
             UserProfile.objects.get_or_create(user=user, city=city)
         except Exception as ex:
             return Response('Invalid username', status=status.HTTP_400_BAD_REQUEST)
-        return Response({'token': token.key, 'username': username, 'password':password})
+        return Response({'token': token.key, 'username': username, })
 
 
 class CategoryListView(generics.ListCreateAPIView):
@@ -312,3 +312,11 @@ class SpendDetailEditView(generics.RetrieveUpdateDestroyAPIView, GetOrCreateMixi
         serializer = SpendDetailSerializer(instance=instance)
         self.perform_destroy(instance)
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+class FeedbackView(generics.ListCreateAPIView):
+    serializer_class = FeedbackSerializer
+
+    def get_queryset(self):
+        self.queryset = Feedback.filter(owner=self.request.user)
+        return super(FeedbackView, self).get_queryset()

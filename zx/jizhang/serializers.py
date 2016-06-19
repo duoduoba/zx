@@ -1,4 +1,4 @@
-# coding£ºutf-8
+# codingï¿½ï¿½utf-8
 from jizhang.models import *
 from rest_framework import serializers
 
@@ -99,10 +99,18 @@ class ShopDataSerializer(serializers.ModelSerializer):
         model = ShopDataWithCityTag
         # filds = ('brand')
 
+
 class ProvinceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Province
 
+
 class CitySerializer(serializers.ModelSerializer):
     class Meta:
         model = City
+
+
+class FeedbackSerializer(serializers.ModelSerializer):
+    created = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", read_only=True)
+    class Meta:
+        model = Feedback

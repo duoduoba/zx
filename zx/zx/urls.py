@@ -55,6 +55,8 @@ urlpatterns = [
     url(r'^jz/brands/hot/$', HotBrandListView.as_view(), name='hot-brands-list'),
     url(r'^jz/shops/hot/$', HotShopListView.as_view(), name='hot-brands-list'),
 
+    url(r'^jz/feedback/$', FeedbackView.as_view(), name='feadback-list'),
+
     # =======================jizhang urls end============================================
     url(r'^qr/(?P<pk>\d+)/$', QRView.as_view(), name='qr-list'),
 

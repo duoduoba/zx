@@ -125,8 +125,9 @@ class SpendDetail(models.Model):
     image2 = models.ImageField(upload_to='detail/%Y-%m-%d/', blank=True, null=True)
     image3 = models.ImageField(upload_to='detail/%Y-%m-%d/', blank=True, null=True)
     image4 = models.ImageField(upload_to='detail/%Y-%m-%d/', blank=True, null=True)
+    # created = models.DateTimeField(auto_created=True)
     created = models.DateTimeField(default='2016-01-01 00:00:00')
-    modified = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
     local_id = models.IntegerField(default=-1)
 
     def __str__(self):
@@ -173,3 +174,8 @@ class ShopDataWithCityTag(models.Model):
 
     def __str__(self):
         return '_'.join((self.city.name, self.tag.name, self.brand.name, self.shop.name, str(self.shop_cited_times)))
+
+
+class Feedback(models.Model):
+    content = models.TextField(verbose_name='反馈')
+    created = models.DateTimeField(auto_now_add=True)
