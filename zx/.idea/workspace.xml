@@ -25,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/jizhang/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="162" column="18" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
+              <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
               <folding>
                 <element signature="e#14#29#0" expanded="true" />
               </folding>
@@ -33,11 +33,51 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="permissions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jizhang/permissions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="52" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generics.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python34/Lib/site-packages/rest_framework/generics.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="9.766666">
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mixins.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python34/Lib/site-packages/rest_framework/mixins.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jizhang/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.4282116">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.58524173">
+              <caret line="44" column="14" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_view.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jizhang/data_view.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -47,27 +87,7 @@
         <entry file="file://$PROJECT_DIR$/jizhang/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="113" column="67" selection-start-line="113" selection-start-column="67" selection-end-line="113" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logic_views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jizhang/logic_views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="zx.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zx.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,7 +96,7 @@
       <file leaf-file-name="authentication.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jizhang/authentication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.25">
+            <state vertical-scroll-proportion="0.0">
               <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding />
             </state>
@@ -93,31 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Python34/Lib/site-packages/rest_framework/authtoken/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zx/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Python34/Lib/site-packages/django/conf/urls/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
+              <caret line="28" column="72" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -161,12 +161,12 @@
         <option value="$PROJECT_DIR$/jizhang/authentication.py" />
         <option value="$PROJECT_DIR$/zx.log" />
         <option value="$PROJECT_DIR$/jizhang/log/logger.py" />
-        <option value="$PROJECT_DIR$/jizhang/data_view.py" />
         <option value="$PROJECT_DIR$/jizhang/logic_views.py" />
         <option value="D:/Python34/Lib/site-packages/rest_framework/mixins.py" />
         <option value="$PROJECT_DIR$/zx/settings.py" />
         <option value="$PROJECT_DIR$/jizhang/serializers.py" />
         <option value="$PROJECT_DIR$/jizhang/models.py" />
+        <option value="$PROJECT_DIR$/jizhang/data_view.py" />
         <option value="$PROJECT_DIR$/zx/urls.py" />
         <option value="$PROJECT_DIR$/jizhang/views.py" />
       </list>
@@ -219,8 +219,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,6 +267,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -487,7 +487,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1370" height="735" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18833087" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -495,7 +495,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31948882" sideWeight="0.4974208" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3258786" sideWeight="0.4974208" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42367068" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -548,6 +548,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://D:/Python34/Lib/site-packages/django/conf/urls/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="102" column="26" selection-start-line="102" selection-start-column="26" selection-end-line="102" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -629,7 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="150" column="8" selection-start-line="150" selection-start-column="8" selection-end-line="150" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,9 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding>
-            <element signature="e#15#29#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,14 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="740" column="17" selection-start-line="740" selection-start-column="17" selection-end-line="740" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jizhang/data_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.821428">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,7 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,23 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15869017">
           <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python34/Lib/site-packages/rest_framework/mixins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3324937">
-          <caret line="38" column="7" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Python34/Lib/site-packages/rest_framework/generics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="235" column="6" selection-start-line="235" selection-start-column="6" selection-end-line="235" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -821,13 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.3627204">
           <caret line="209" column="8" selection-start-line="209" selection-start-column="8" selection-end-line="209" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jizhang/permissions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8214286">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -851,7 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3324937">
           <caret line="113" column="8" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,16 +851,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jizhang/authentication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.25">
+        <state vertical-scroll-proportion="0.0">
           <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jizhang/serializers.py">
+    <entry file="file://$PROJECT_DIR$/jizhang/permissions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="113" column="67" selection-start-line="113" selection-start-column="67" selection-end-line="113" selection-end-column="67" />
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jizhang/data_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -898,7 +876,31 @@
     <entry file="file://$PROJECT_DIR$/zx/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <caret line="28" column="72" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jizhang/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python34/Lib/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="9.766666">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python34/Lib/site-packages/rest_framework/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -906,7 +908,7 @@
     <entry file="file://$PROJECT_DIR$/jizhang/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="162" column="18" selection-start-line="162" selection-start-column="18" selection-end-line="162" selection-end-column="18" />
+          <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
           <folding>
             <element signature="e#14#29#0" expanded="true" />
           </folding>
@@ -915,8 +917,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jizhang/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.4282116">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.58524173">
+          <caret line="44" column="14" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="14" />
           <folding />
         </state>
       </provider>

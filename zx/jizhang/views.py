@@ -165,6 +165,29 @@ class RegisterView2(APIView):
         return Response({'token': token.key, 'username': username, })
 
 
+class UserProfileListView(generics.ListCreateAPIView):
+    serializer_class = UserProfileSerializer
+
+    def get_queryset(self):
+        logger.debug(self.request.user)
+        self.queryset = UserProfile.objects.filter(user=self.request.user.username)
+        return super(UserProfileListView, self).get_queryset()
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+
+class UserProfileDetailView(generics.RetrieveUpdateAPIView):
+    serializer_class = UserProfileSerializer
+
+    def get_queryset(self):
+        self.queryset = UserProfile.objects.filter(user=self.request.user)
+        return super(UserProfileDetailView, self).get_queryset()
+
+    def perform_update(self, serializer):
+        serializer.save(user=self.request.user)
+
+
 class CategoryListView(generics.ListCreateAPIView):
     serializer_class = CategorySerializer
     queryset = Category.objects.all()
@@ -318,5 +341,8 @@ class FeedbackView(generics.ListCreateAPIView):
     serializer_class = FeedbackSerializer
 
     def get_queryset(self):
-        self.queryset = Feedback.filter(owner=self.request.user)
+        self.queryset = Feedback.objects.filter(owner=self.request.user)
         return super(FeedbackView, self).get_queryset()
+
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)

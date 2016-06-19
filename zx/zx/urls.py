@@ -25,6 +25,8 @@ urlpatterns = [
     # =======================jizhang urls start==========================================
 
     url(r'^jz/init/$', InitView.as_view(), name='init'),
+    url(r'^jz/user-profiles/$', UserProfileListView.as_view(), name='profile-list'),
+    url(r'^jz/user-profiles/(?P<pk>\d+)/$', UserProfileDetailView.as_view(), name='profile-detail'),
 
     url(r'^jz/categories/$', CategoryListView.as_view(), name='category-list'),
     url(r'^jz/categories/(?P<pk>\d+)/$', CategoryDetailView.as_view(), name='category-detail'),

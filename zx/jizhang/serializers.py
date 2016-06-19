@@ -5,7 +5,7 @@ from rest_framework import serializers
 
 class UserProfileSerializer(serializers.ModelSerializer):
     user = serializers.ReadOnlyField(source='user.name')
-    city = serializers.ReadOnlyField(source='city.name')
+    # city = serializers.ReadOnlyField(source='city.name')
     class Meta:
         model = UserProfile
 
@@ -112,5 +112,6 @@ class CitySerializer(serializers.ModelSerializer):
 
 class FeedbackSerializer(serializers.ModelSerializer):
     created = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", read_only=True)
+    owner = serializers.ReadOnlyField(source='owner.username')
     class Meta:
         model = Feedback

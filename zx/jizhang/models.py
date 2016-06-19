@@ -36,24 +36,17 @@ class DecorationCompany(models.Model):
         return self.name
 
 
-class Style(models.Model):
-    name = models.CharField(verbose_name='风格', max_length=20, unique=True)
-
-
 class UserProfile(models.Model):
-    user = models.OneToOneField(User, to_field='username')
+    user = models.OneToOneField(User, to_field='username', related_name='user_profile')
     nick_name = models.CharField(verbose_name='昵称', max_length=30, null=True, blank=True)
     city = models.ForeignKey(City, to_field='name', related_name='city_user_set', verbose_name='城市')
     portrayal = models.ImageField(verbose_name='头像', upload_to='user/%Y-%m-%d/', blank=True, null=True)
-    signature = models.CharField(verbose_name='签名', max_length=30, default='签名')
+    signature = models.CharField(verbose_name='签名', max_length=30, default='我的签名')
     house_area = models.FloatField(verbose_name='面积', default=0.0)
-    house_style = models.ForeignKey(Style, to_field='name', related_name='stype_user_set', blank=True, null=True,verbose_name='装修风格')
-    budget_choice = (('<5万', '<5万'), ('<10万', '<10万'), ('10-15万', '10-15万'),
-                     ('15-20万', '15-20万'), ('20-30万', '20-30万'), ('30-50万', '30-50万'),
-                     ('50-80万', '50-80万'), ('80-100万', '80-100万'), ('>100万', '>100万')
-                     )
-    budget = models.CharField(verbose_name='预算', max_length=20, choices=budget_choice, blank=True, null=True)
-    company = models.ForeignKey(DecorationCompany, to_field='name', verbose_name='装修公司', null=True, blank=True)
+    house_shape = models.CharField(verbose_name='户型', max_length=20, blank=True, null=True)
+    decoration_style = models.CharField(verbose_name='装修风格', max_length=30, blank=True, null=True)
+    budget = models.FloatField(verbose_name='预算', max_length=10, default=0.0)
+    company = models.CharField(verbose_name='装修公司', max_length=30, null=True, blank=True)
 
     def __str__(self):
         return '_'.join((self.user.username, self.city.name))
@@ -177,5 +170,6 @@ class ShopDataWithCityTag(models.Model):
 
 
 class Feedback(models.Model):
+    owner = models.ForeignKey(User, to_field='username', verbose_name='用户')
     content = models.TextField(verbose_name='反馈')
-    created = models.DateTimeField(auto_now_add=True)
+    created = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
