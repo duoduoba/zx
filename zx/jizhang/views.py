@@ -272,13 +272,13 @@ class TagDetailView(generics.RetrieveUpdateDestroyAPIView):
 
 class ShopListView(generics.ListCreateAPIView):
     serializer_class = ShopSerializer
-    queryset = Shop.objects.all()
+    queryset = BuyPlace.objects.all()
     # permission_classes = (permissions.IsAdminUser,)
 
 
 class ShopDetailView(generics.RetrieveUpdateAPIView):
     serializer_class = ShopSerializer
-    queryset = Shop.objects.all()
+    queryset = BuyPlace.objects.all()
     # permission_classes = (permissions.IsAdminUser,)
 
 
@@ -301,7 +301,7 @@ class GetOrCreateMixin():
             logger.info(userprofile)
             city = userprofile.city
             logger.info(city)
-            Shop.objects.get_or_create(name=addr, city=city)
+            BuyPlace.objects.get_or_create(name=addr, city=city)
 
 
 class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):

@@ -58,7 +58,7 @@ class ShopSerializer(serializers.ModelSerializer):
     city = serializers.ReadOnlyField(source='city.name')
     band = serializers.ReadOnlyField(source='brand.name')
     class Meta:
-        model = Shop
+        model = BuyPlace
 
 
 class SpendDetailSerializer(serializers.ModelSerializer):

@@ -54,18 +54,18 @@ class InitView(APIView):
 			Brand.objects.create(name='博世')
 
 			# city = City.objects.get(name='南京')
-			Shop.objects.create(city=city, name='金盛国际家具')
-			Shop.objects.create(city=city, name='卡子门')
-			Shop.objects.create(city=city, name='红太阳装饰城')
-			Shop.objects.create(city=city, name='苏宁易购')
-			Shop.objects.create(city=city, name='国美')
-			Shop.objects.create(city=city, name='苏果超市')
-			Shop.objects.create(city=city, name='红星美凯龙卡子门店')
-			Shop.objects.create(city=city, name='苏宁乐购仕')
-			Shop.objects.create(city=city, name='大洋百货')
-			Shop.objects.create(city=city, name='沃尔玛新街口店')
-			Shop.objects.create(city=city, name='金鹰江宁店')
-			Shop.objects.create(city=city, name='京东商城')
+			BuyPlace.objects.create(name='金盛国际家具')
+			BuyPlace.objects.create(name='卡子门')
+			BuyPlace.objects.create(name='红太阳装饰城')
+			BuyPlace.objects.create(name='苏宁易购')
+			BuyPlace.objects.create(name='国美')
+			BuyPlace.objects.create(name='苏果超市')
+			BuyPlace.objects.create(name='红星美凯龙卡子门店')
+			BuyPlace.objects.create(name='苏宁乐购仕')
+			BuyPlace.objects.create(name='大洋百货')
+			BuyPlace.objects.create(name='沃尔玛新街口店')
+			BuyPlace.objects.create(name='金鹰江宁店')
+			BuyPlace.objects.create(name='京东商城')
 
 
 			Tag.objects.all().delete()
@@ -100,40 +100,40 @@ class InitView(APIView):
 			brand = Brand.objects.get(name='博世')
 			cited_time = 2334
 			BrandDataWithCityTag.objects.create(city=city, tag=tag, brand=brand, brand_cited_times=cited_time)
-			shop = Shop.objects.get(name='红太阳装饰城')
+			shop = BuyPlace.objects.get(name='红太阳装饰城')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=2322)
 
 			tag = Tag.objects.get(name='洗衣机')
 			brand = Brand.objects.get(name='西门子')
 			cited_time = 2554
 			BrandDataWithCityTag.objects.create(city=city, tag=tag, brand=brand, brand_cited_times=cited_time)
-			shop = Shop.objects.get(name='苏宁易购')
+			shop = BuyPlace.objects.get(name='苏宁易购')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=4333)
 
 			tag = Tag.objects.get(name='洗衣机')
 			brand = Brand.objects.get(name='三星')
 			cited_time = 2500
 			BrandDataWithCityTag.objects.create(city=city, tag=tag, brand=brand, brand_cited_times=cited_time)
-			shop = Shop.objects.get(name='金鹰江宁店')
+			shop = BuyPlace.objects.get(name='金鹰江宁店')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=1985)
 
 			tag = Tag.objects.get(name='洗衣机')
 			brand = Brand.objects.get(name='海尔')
 			cited_time = 1233
 			BrandDataWithCityTag.objects.create(city=city, tag=tag, brand=brand, brand_cited_times=cited_time)
-			shop = Shop.objects.get(name='大洋百货')
+			shop = BuyPlace.objects.get(name='大洋百货')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=1985)
-			shop = Shop.objects.get(name='苏宁乐购仕')
+			shop = BuyPlace.objects.get(name='苏宁乐购仕')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=2333)
-			shop = Shop.objects.get(name='国美')
+			shop = BuyPlace.objects.get(name='国美')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=1224)
-			shop = Shop.objects.get(name='金鹰江宁店')
+			shop = BuyPlace.objects.get(name='金鹰江宁店')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=2121)
-			shop = Shop.objects.get(name='金盛国际家具')
+			shop = BuyPlace.objects.get(name='金盛国际家具')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=2222)
-			shop = Shop.objects.get(name='京东商城')
+			shop = BuyPlace.objects.get(name='京东商城')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=1211)
-			shop = Shop.objects.get(name='红星美凯龙卡子门店')
+			shop = BuyPlace.objects.get(name='红星美凯龙卡子门店')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=32)
 
 
@@ -141,49 +141,49 @@ class InitView(APIView):
 			brand = Brand.objects.get(name='海尔')
 			cited_time = 1333
 			BrandDataWithCityTag.objects.create(city=city, tag=tag, brand=brand, brand_cited_times=cited_time)
-			shop = Shop.objects.get(name='苏宁乐购仕')
+			shop = BuyPlace.objects.get(name='苏宁乐购仕')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=2542)
 
 			tag = Tag.objects.get(name='电饭煲')
 			brand = Brand.objects.get(name='九阳')
 			cited_time = 2551
 			BrandDataWithCityTag.objects.create(city=city, tag=tag, brand=brand, brand_cited_times=cited_time)
-			shop = Shop.objects.get(name='苏宁乐购仕')
+			shop = BuyPlace.objects.get(name='苏宁乐购仕')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=4333)
 
 			tag = Tag.objects.get(name='滚筒洗衣机')
 			brand = Brand.objects.get(name='西门子')
 			cited_time = 3235
 			BrandDataWithCityTag.objects.create(city=city, tag=tag, brand=brand, brand_cited_times=cited_time)
-			shop = Shop.objects.get(name='苏宁乐购仕')
+			shop = BuyPlace.objects.get(name='苏宁乐购仕')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=4333)
 
 			tag = Tag.objects.get(name='对开门冰箱')
 			brand = Brand.objects.get(name='海尔')
 			cited_time = 1998
 			BrandDataWithCityTag.objects.create(city=city, tag=tag, brand=brand, brand_cited_times=cited_time)
-			shop = Shop.objects.get(name='苏宁易购')
+			shop = BuyPlace.objects.get(name='苏宁易购')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=4333)
 
 			tag = Tag.objects.get(name='对开门冰箱')
 			brand = Brand.objects.get(name='博世')
 			cited_time = 1055
 			BrandDataWithCityTag.objects.create(city=city, tag=tag, brand=brand, brand_cited_times=cited_time)
-			shop = Shop.objects.get(name='苏宁乐购仕')
+			shop = BuyPlace.objects.get(name='苏宁乐购仕')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=4333)
 
 			tag = Tag.objects.get(name='对开门冰箱')
 			brand = Brand.objects.get(name='西门子')
 			cited_time = 3636
 			BrandDataWithCityTag.objects.create(city=city, tag=tag, brand=brand, brand_cited_times=cited_time)
-			shop = Shop.objects.get(name='苏宁乐购仕')
+			shop = BuyPlace.objects.get(name='苏宁乐购仕')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=4333)
 
 			tag = Tag.objects.get(name='电饭煲')
 			brand = Brand.objects.get(name='美的')
 			cited_time = 1995
 			BrandDataWithCityTag.objects.create(city=city, tag=tag, brand=brand, brand_cited_times=cited_time)
-			shop = Shop.objects.get(name='沃尔玛新街口店')
+			shop = BuyPlace.objects.get(name='沃尔玛新街口店')
 			ShopDataWithCityTag.objects.create(tag=tag, city=city, brand=brand, shop=shop, shop_cited_times=4333)
 
 		return Response({'result': 'init data ok'}, status=status.HTTP_201_CREATED)
