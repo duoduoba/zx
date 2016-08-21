@@ -54,7 +54,7 @@ class TagSerializer(serializers.ModelSerializer):
         fields = ('id', 'category', 'name')
 
 
-class ShopSerializer(serializers.ModelSerializer):
+class BuyPlaceSerializer(serializers.ModelSerializer):
     city = serializers.ReadOnlyField(source='city.name')
     band = serializers.ReadOnlyField(source='brand.name')
     class Meta:

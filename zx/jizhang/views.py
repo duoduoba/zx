@@ -270,14 +270,14 @@ class TagDetailView(generics.RetrieveUpdateDestroyAPIView):
             pass
 
 
-class ShopListView(generics.ListCreateAPIView):
-    serializer_class = ShopSerializer
+class BuyPlaceListView(generics.ListCreateAPIView):
+    serializer_class = BuyPlaceSerializer
     queryset = BuyPlace.objects.all()
     # permission_classes = (permissions.IsAdminUser,)
 
 
-class ShopDetailView(generics.RetrieveUpdateAPIView):
-    serializer_class = ShopSerializer
+class BuyPlaceDetailView(generics.RetrieveUpdateAPIView):
+    serializer_class = BuyPlaceSerializer
     queryset = BuyPlace.objects.all()
     # permission_classes = (permissions.IsAdminUser,)
 
@@ -285,23 +285,20 @@ class ShopDetailView(generics.RetrieveUpdateAPIView):
 class GetOrCreateMixin():
     def pre_get_or_create(self, request):
         data = request.data
+
         tag = data.get('tag', None)
-        print(data)
+        # print(data)
         if tag:
             Tag.objects.get_or_create(name=tag)
+
         brand = data.get('brand', None)
         if brand:
             Brand.objects.get_or_create(name=brand)
+
         addr = data.get('addr', None)
         if addr:
-            logger.info('submit detail data ,user is -->', request.user.username)
-            user = User.objects.get(username=request.user.username)
-            logger.info(user)
-            userprofile = UserProfile.objects.get(user=user)
-            logger.info(userprofile)
-            city = userprofile.city
-            logger.info(city)
-            BuyPlace.objects.get_or_create(name=addr, city=city)
+            obj, created = BuyPlace.objects.get_or_create(name=addr)
+            logger.info(obj)
 
 
 class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):

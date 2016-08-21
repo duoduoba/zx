@@ -118,7 +118,7 @@ class SpendDetail(models.Model):
     city = models.ForeignKey(City, to_field='name', null=True, blank=True)
     tag = models.ForeignKey(Tag, to_field='name', null=True, blank=True)
     brand = models.ForeignKey(Brand, to_field='name', null=True, blank=True)
-    addr = models.ForeignKey(BuyPlace, to_field='name', null=True, blank=True)
+    buy_pace = models.ForeignKey(BuyPlace, to_field='name', null=True, blank=True)
     note = models.TextField(null=True, blank=True)
     image1 = models.ImageField(upload_to='detail/%Y-%m-%d/', blank=True, null=True)
     image2 = models.ImageField(upload_to='detail/%Y-%m-%d/', blank=True, null=True)
