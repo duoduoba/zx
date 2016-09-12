@@ -5,7 +5,7 @@ from logging.handlers import TimedRotatingFileHandler, RotatingFileHandler
 
 
 logger = logging.getLogger('zx')
-MAXLOGSIZE = 10*1024*1024 #Bytes
+MAXLOGSIZE = 10 * 1024 * 1024 #Bytes
 BACKUPCOUNT = 4
 
 level = logging.INFO

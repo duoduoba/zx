@@ -14,6 +14,7 @@ from rest_framework.authtoken import views as authtoken_views
 
 
 urlpatterns = [
+    # url(r'^/', RootView),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api-token-auth/',  authtoken_views.obtain_auth_token),
     #for username&password
@@ -31,10 +32,10 @@ urlpatterns = [
     url(r'^jz/categories/$', CategoryListView.as_view(), name='category-list'),
     url(r'^jz/categories/(?P<pk>\d+)/$', CategoryDetailView.as_view(), name='category-detail'),
     url(r'^jz/categories/(?P<pk>\d+)/tags/$', CategoryTagView.as_view(), name='category-tags'),
-    #
-    url(r'^jz/provinces/$', ProvinceListView.as_view(), name='province-list'),
+    # #
+    # url(r'^jz/provinces/$', ProvinceListView.as_view(), name='province-list'),
     url(r'^jz/cities/$', CityListView.as_view(), name='city-list'),
-    url(r'^jz/cities/(?P<pk>\d+)/$', CityDetailView.as_view(), name='city-detail'),
+    # url(r'^jz/cities/(?P<pk>\d+)/$', CityDetailView.as_view(), name='city-detail'),
 
     url(r'^jz/currencies/$', CurrencyListView.as_view(), name='currency-detail'),
     url(r'^jz/currencies/(?P<pk>\d+)/$', CurrencyDetailView.as_view(), name='currency-detail'),

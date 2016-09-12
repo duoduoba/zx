@@ -17,9 +17,9 @@ class Province(models.Model):
 
 
 class City(models.Model):
-    province = models.ForeignKey(Province, to_field='name', related_name='province_city_set', verbose_name='所在省份')
+    # province = models.ForeignKey(Province, to_field='name', related_name='province_city_set', verbose_name='所在省份')
     name = models.CharField(verbose_name='城市名', max_length=30, unique=True)
-    state = models.BooleanField(verbose_name='可用状态', default=True)
+    # state = models.BooleanField(verbose_name='可用状态', default=True)
 
     def __str__(self):
         return self.name
@@ -39,7 +39,7 @@ class DecorationCompany(models.Model):
 class UserProfile(models.Model):
     user = models.OneToOneField(User, to_field='username', related_name='user_profile')
     nick_name = models.CharField(verbose_name='昵称', max_length=30, null=True, blank=True)
-    city = models.ForeignKey(City, to_field='name', related_name='city_user_set', verbose_name='城市')
+    city = models.ForeignKey(City, to_field='name', related_name='city_user_set', null=True, blank=True, verbose_name='城市')
     portrayal = models.ImageField(verbose_name='头像', upload_to='user/%Y-%m-%d/', blank=True, null=True)
     signature = models.CharField(verbose_name='签名', max_length=30, default='我的签名')
     house_area = models.FloatField(verbose_name='面积', default=0.0)
@@ -78,26 +78,18 @@ class Brand(models.Model):
     def __str__(self):
         return self.name
 
-'''
-1 As the Tag Data, we can pick up tag as the data
-2 Update the Tag model by detail data.
-'''
+
 class Tag(models.Model):
-    category = models.ForeignKey(Category, to_field='name', related_name='category_tag_set', null=True, blank=True,verbose_name='分类')
+    category = models.ForeignKey(Category, to_field='name', related_name='category_tag_set', null=True, blank=True, verbose_name='分类')
     name = models.CharField(max_length=40, unique=True, verbose_name='名称')
-    cited_times = models.PositiveIntegerField(default=0, verbose_name='引用次数')
-    average_price = models.FloatField(default=0.0,verbose_name='平均价格')
-    min_price = models.FloatField(default=0.0, verbose_name='最低价格')
-    max_price = models.FloatField(default=0.0, verbose_name='最高价格')
-    city = models.ForeignKey(City, to_field='name', related_name='city_tag_set', null=True, blank=True, verbose_name='城市')
 
     def __str__(self):
-        return self.name + str(self.category)
+        return self.name + "_" + str(self.category)
 
 
 class BuyPlace(models.Model):
-    # city = models.ForeignKey(City, to_field='name')
-    name = models.CharField(max_length=50, unique=True)
+    city = models.CharField(max_length=20, default='未知')
+    name = models.CharField(max_length=50)
     latitude = models.FloatField(default=0.0)
     longitude = models.FloatField(default=0.0)
     latitudeE6 = models.FloatField(default=0.0)
@@ -110,21 +102,27 @@ class BuyPlace(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        unique_together = (("city", "name"),)
+
 
 class SpendDetail(models.Model):
     owner = models.ForeignKey(User, to_field='username')
     price = models.FloatField()
     unit = models.ForeignKey(Currency, to_field='name', null=True, blank=True)
-    city = models.ForeignKey(City, to_field='name', null=True, blank=True)
+
     tag = models.ForeignKey(Tag, to_field='name', null=True, blank=True)
     brand = models.ForeignKey(Brand, to_field='name', null=True, blank=True)
-    buy_pace = models.ForeignKey(BuyPlace, to_field='name', null=True, blank=True)
+    buy_pace = models.ForeignKey(BuyPlace, null=True, blank=True)
+    # buy_pace = models.CharField(max_length=30, null=True, blank=True)
+    # buy_city = models.CharField(max_length=20, null=True, blank=True)
+
     note = models.TextField(null=True, blank=True)
     image1 = models.ImageField(upload_to='detail/%Y-%m-%d/', blank=True, null=True)
     image2 = models.ImageField(upload_to='detail/%Y-%m-%d/', blank=True, null=True)
     image3 = models.ImageField(upload_to='detail/%Y-%m-%d/', blank=True, null=True)
     image4 = models.ImageField(upload_to='detail/%Y-%m-%d/', blank=True, null=True)
-    # created = models.DateTimeField(auto_created=True)
+
     created = models.DateTimeField(default='2016-01-01 00:00:00')
     modified = models.DateTimeField(auto_now=True)
     local_id = models.IntegerField(default=-1)
@@ -151,13 +149,32 @@ def photo_post_delete_handler(sender, **kwargs):
             os.remove(image_path)
 
 
-'''
-=======================================================================
-'''
+#############################################################
+# 根据用户的“记一笔”数据，统计完成
+###########################################################
+
+
+class TagDataWithCity(models.Model):
+    '''
+    每个城市里面，根据价格，给出推荐的标签
+    '''
+    tag = models.OneToOneField(Tag, related_name='tag_data_of', verbose_name='')
+    cited_times = models.PositiveIntegerField(default=0, verbose_name='引用次数')
+    average_price = models.FloatField(default=0.0, verbose_name='平均价格')
+    min_price = models.FloatField(default=0.0, verbose_name='最低价格')
+    max_price = models.FloatField(default=0.0, verbose_name='最高价格')
+    city = models.ForeignKey(City, to_field='name', related_name='city_tag_set', null=True, blank=True, verbose_name='城市')
+
+    class Meta:
+        unique_together = ('tag', 'city')
+
+    def __str__(self):
+        return self.tag.name + "_" + self.city.name + "_" + str(self.cited_times)
+
 
 class BrandDataWithCityTag(models.Model):
     """
-    The data model build from detail data.
+    根据城市和标签，给出推荐的品牌
     """
     city = models.ForeignKey(City, to_field='name')
     tag = models.ForeignKey(Tag, to_field='name')
@@ -168,15 +185,19 @@ class BrandDataWithCityTag(models.Model):
         return '_'.join((self.city.name, self.tag.name, self.brand.name, str(self.brand_cited_times)))
 
 
-class ShopDataWithCityTag(models.Model):
-    city = models.ForeignKey(City, to_field='name')
-    tag = models.ForeignKey(Tag, to_field='name')
-    brand = models.ForeignKey(Brand, to_field='name')
-    shop = models.ForeignKey(BuyPlace, to_field='name')
-    shop_cited_times = models.PositiveIntegerField(default=0)
+class BuyPlaceDataWithCity(models.Model):
+    '''
+    根据每个城市，给出常见的购买地点
+    '''
+    buy_city = models.CharField(max_length=20, verbose_name='城市')
+    buy_place = models.CharField(max_length=50, verbose_name='具体地点')
+    place_cited_times = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        unique_together = (("buy_city", "buy_place"),)
 
     def __str__(self):
-        return '_'.join((self.city.name, self.tag.name, self.brand.name, self.shop.name, str(self.shop_cited_times)))
+        return '_'.join((self.buy_city, self.buy_place, str(self.place_cited_times)))
 
 
 class Feedback(models.Model):

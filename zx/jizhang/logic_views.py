@@ -99,7 +99,7 @@ class HotShopListView(APIView):
 		# logger.info(sql)
 		'''
 		number = NumberUtil.number(request)
-		query_list = ShopDataWithCityTag.objects.filter(**sql).order_by('-shop_cited_times')
+		query_list = BuyPlaceDataWithCity.objects.filter(**sql).order_by('-shop_cited_times')
 		query_list = query_list[:number]
 
 		serializer = ShopDataSerializer(query_list, many=True)

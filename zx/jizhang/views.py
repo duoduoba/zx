@@ -11,12 +11,8 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from jizhang.serializers import *
 from jizhang.permissions import IsOwnerOrReadOnly
 from jizhang.log.logger import logger
-from django.contrib.auth import authenticate
-
-
-# Create your views here.
-
-
+from django.http import HttpResponse
+# from django.contrib.auth import authenticate
 
 class LoginAndObtainExpiringAuthToken(ObtainAuthToken):
     '''
@@ -157,9 +153,6 @@ class RegisterView2(APIView):
             logger.info('create user finish')
             token, created = Token.objects.get_or_create(user=user)
             logger.info(token)
-
-            city = City.objects.get(name='南京')
-            UserProfile.objects.get_or_create(user=user, city=city)
         except Exception as ex:
             return Response('Invalid username', status=status.HTTP_400_BAD_REQUEST)
         return Response({'token': token.key, 'username': username, })
@@ -176,6 +169,13 @@ class UserProfileListView(generics.ListCreateAPIView):
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
 
+    def create(self, request, *args, **kwargs):
+        print('create user profile data')
+        data = request.data
+        if data.get('city', None):
+            City.objects.get_or_create(name=data.get('city'))
+        return super(UserProfileListView, self).create(request, *args, **kwargs)
+
 
 class UserProfileDetailView(generics.RetrieveUpdateAPIView):
     serializer_class = UserProfileSerializer
@@ -186,6 +186,12 @@ class UserProfileDetailView(generics.RetrieveUpdateAPIView):
 
     def perform_update(self, serializer):
         serializer.save(user=self.request.user)
+
+    def update(self, request, *args, **kwargs):
+        data = request.data
+        if data.get('city', None):
+            City.objects.get_or_create(name=data.get('city'))
+        return super(UserProfileDetailView, self).update(request, *args, **kwargs)
 
 
 class CategoryListView(generics.ListCreateAPIView):
@@ -207,17 +213,7 @@ class ProvinceListView(generics.ListCreateAPIView):
 
 class CityListView(generics.ListCreateAPIView):
     serializer_class = CitySerializer
-
-    def get_queryset(self):
-        self.queryset = City.objects.all()
-        try:
-            province = self.request.query_params['province']
-            logger.info(province)
-            self.queryset = City.objects.filter(province=province)
-            logger.info(self.queryset)
-        finally:
-            # logger.info('22222')
-            return super(CityListView, self).get_queryset()
+    queryset = City.objects.all()
 
 
 class CityDetailView(generics.RetrieveUpdateDestroyAPIView):
@@ -287,7 +283,7 @@ class GetOrCreateMixin():
         data = request.data
 
         tag = data.get('tag', None)
-        # print(data)
+        # print(data)00
         if tag:
             Tag.objects.get_or_create(name=tag)
 

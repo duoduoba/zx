@@ -55,8 +55,6 @@ class TagSerializer(serializers.ModelSerializer):
 
 
 class BuyPlaceSerializer(serializers.ModelSerializer):
-    city = serializers.ReadOnlyField(source='city.name')
-    band = serializers.ReadOnlyField(source='brand.name')
     class Meta:
         model = BuyPlace
 
@@ -96,7 +94,7 @@ class BrandDataSerializer(serializers.ModelSerializer):
 
 class ShopDataSerializer(serializers.ModelSerializer):
     class Meta:
-        model = ShopDataWithCityTag
+        model = BuyPlaceDataWithCity
         # filds = ('brand')
 
 
