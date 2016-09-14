@@ -57,18 +57,18 @@ class InitView(APIView):
 
 			# city = City.objects.get(name='南京')
 			BuyPlace.objects.all().delete()
-			BuyPlace.objects.create(city='南京', name='金盛国际家具')
-			BuyPlace.objects.create(city='南京',name='卡子门')
-			BuyPlace.objects.create(city='南京',name='红太阳装饰城')
-			BuyPlace.objects.create(city='南京',name='苏宁易购')
-			BuyPlace.objects.create(city='南京',name='国美')
-			BuyPlace.objects.create(city='南京',name='苏果超市')
-			BuyPlace.objects.create(city='南京',name='红星美凯龙卡子门店')
-			BuyPlace.objects.create(city='南京',name='苏宁乐购仕')
-			BuyPlace.objects.create(city='南京',name='大洋百货')
-			BuyPlace.objects.create(city='南京',name='沃尔玛新街口店')
-			BuyPlace.objects.create(city='南京',name='金鹰江宁店')
-			BuyPlace.objects.create(city='南京',name='京东商城')
+			BuyPlace.objects.create(city='南京', place_name='金盛国际家具')
+			BuyPlace.objects.create(city='南京', place_name='卡子门')
+			BuyPlace.objects.create(city='南京', place_name='红太阳装饰城')
+			BuyPlace.objects.create(city='南京', place_name='苏宁易购')
+			BuyPlace.objects.create(city='南京', place_name='国美')
+			BuyPlace.objects.create(city='南京', place_name='苏果超市')
+			BuyPlace.objects.create(city='南京', place_name='红星美凯龙卡子门店')
+			BuyPlace.objects.create(city='南京', place_name='苏宁乐购仕')
+			BuyPlace.objects.create(city='南京', place_name='大洋百货')
+			BuyPlace.objects.create(city='南京', place_name='沃尔玛新街口店')
+			BuyPlace.objects.create(city='南京', place_name='金鹰江宁店')
+			BuyPlace.objects.create(city='南京', place_name='京东商城')
 
 
 			Tag.objects.all().delete()
@@ -118,15 +118,15 @@ class InitView(APIView):
 			brand = Brand.objects.get(name='博世')
 			cited_time = 2334
 			BrandDataWithCityTag.objects.create(city=city, tag=tag, brand=brand, brand_cited_times=cited_time)
-			shop = BuyPlace.objects.get(city='南京', name='红太阳装饰城')
-			BuyPlaceDataWithCity.objects.create(buy_city=shop.city, buy_place=shop.name, place_cited_times=2322)
+			shop = BuyPlace.objects.get(city='南京', place_name='红太阳装饰城')
+			BuyPlaceDataWithCity.objects.create(buy_city=shop.city, buy_place=shop.place_name, place_cited_times=2322)
 
 			tag = Tag.objects.get(name='洗衣机')
 			brand = Brand.objects.get(name='西门子')
 			cited_time = 2554
 			BrandDataWithCityTag.objects.create(city=city, tag=tag, brand=brand, brand_cited_times=cited_time)
-			shop = BuyPlace.objects.get(city='南京',name='苏宁易购')
-			BuyPlaceDataWithCity.objects.create( buy_city = shop.city, buy_place=shop.name, place_cited_times=4333)
+			shop = BuyPlace.objects.get(city='南京', place_name='苏宁易购')
+			BuyPlaceDataWithCity.objects.create( buy_city = shop.city, buy_place=shop.place_name, place_cited_times=4333)
 
 
 			return Response({'result': 'init data ok'}, status=status.HTTP_201_CREATED)

@@ -89,21 +89,21 @@ class Tag(models.Model):
 
 class BuyPlace(models.Model):
     city = models.CharField(max_length=20, default='未知')
-    name = models.CharField(max_length=50)
-    latitude = models.FloatField(default=0.0)
-    longitude = models.FloatField(default=0.0)
-    latitudeE6 = models.FloatField(default=0.0)
-    longitudeE6 = models.FloatField(default=0.0)
+    place_name = models.CharField(max_length=50)
+    latitude = models.FloatField(default=0.0, null=True, blank=True)
+    longitude = models.FloatField(default=0.0, null=True, blank=True)
+    latitudeE6 = models.FloatField(default=0.0, null=True, blank=True)
+    longitudeE6 = models.FloatField(default=0.0, null=True, blank=True)
     address = models.CharField(max_length=100, null=True, blank=True)
     phone = models.CharField(max_length=20, null=True, blank=True)
     # poitype = models.CharField(max_length=20, null=True, blank=True)
     site = models.URLField(verbose_name='web site', null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return self.place_name
 
     class Meta:
-        unique_together = (("city", "name"),)
+        unique_together = (("city", "place_name"),)
 
 
 class SpendDetail(models.Model):
@@ -113,9 +113,7 @@ class SpendDetail(models.Model):
 
     tag = models.ForeignKey(Tag, to_field='name', null=True, blank=True)
     brand = models.ForeignKey(Brand, to_field='name', null=True, blank=True)
-    buy_pace = models.ForeignKey(BuyPlace, null=True, blank=True)
-    # buy_pace = models.CharField(max_length=30, null=True, blank=True)
-    # buy_city = models.CharField(max_length=20, null=True, blank=True)
+    buy_place = models.ForeignKey(BuyPlace, null=True, blank=True)
 
     note = models.TextField(null=True, blank=True)
     image1 = models.ImageField(upload_to='detail/%Y-%m-%d/', blank=True, null=True)

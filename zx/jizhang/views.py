@@ -283,7 +283,6 @@ class GetOrCreateMixin():
         data = request.data
 
         tag = data.get('tag', None)
-        # print(data)00
         if tag:
             Tag.objects.get_or_create(name=tag)
 
@@ -291,22 +290,37 @@ class GetOrCreateMixin():
         if brand:
             Brand.objects.get_or_create(name=brand)
 
-        addr = data.get('addr', None)
-        if addr:
-            obj, created = BuyPlace.objects.get_or_create(name=addr)
-            logger.info(obj)
+        # buy place data
+        place_name = data.get('place_name', None)
+        logger.info(place_name )
+        if place_name:
+            fields = {}
+            fields.update({'city': data.get('city', None),
+                           'place_name': place_name,
+                           'latitude': data.get('latitude', None),
+                           'longitude': data.get('longitude', 0.0),
+                           'latitudeE6': data.get('latitudeE6', 0.0),
+                           'longitudeE6': data.get('longitudeE6', 0.0),
+                           'address': data.get('address', ''),
+                           'phone': data.get('phone', ''),
+                           'site': data.get('site', '')})
+            logger.info(fields)
+            obj, created = BuyPlace.objects.get_or_create(**fields)
+            self.place_obj = obj
 
 
 class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
     serializer_class = SpendDetailSerializer
 
     def create(self, request, *args, **kwargs):
-        logger.info('sync the detailed data')
         self.pre_get_or_create(request)
         return super(SpendDetailListView, self).create(request, *args, **kwargs)
 
     def perform_create(self, serializer):
-        serializer.save(owner=self.request.user)
+        if not hasattr(self, 'place_obj'):
+            serializer.save(owner=self.request.user)
+        else:
+            serializer.save(owner=self.request.user, buy_place=self.place_obj)
 
     def get_queryset(self):
         self.queryset = SpendDetail.objects.filter(owner=self.request.user)

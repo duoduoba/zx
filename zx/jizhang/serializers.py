@@ -61,9 +61,9 @@ class BuyPlaceSerializer(serializers.ModelSerializer):
 
 class SpendDetailSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
-
     created = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
     modified = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", read_only=True)
+    buy_place = serializers.ReadOnlyField(source='buy_place.place_name')
 
     class Meta:
         model = SpendDetail
