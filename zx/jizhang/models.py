@@ -37,7 +37,7 @@ class DecorationCompany(models.Model):
 
 
 class UserProfile(models.Model):
-    user = models.OneToOneField(User, to_field='username', related_name='user_profile')
+    user = models.OneToOneField(User, to_field='username', related_name='user_profile', verbose_name='用户名')
     nick_name = models.CharField(verbose_name='昵称', max_length=30, null=True, blank=True)
     city = models.ForeignKey(City, to_field='name', related_name='city_user_set', null=True, blank=True, verbose_name='城市')
     portrayal = models.ImageField(verbose_name='头像', upload_to='user/%Y-%m-%d/', blank=True, null=True)

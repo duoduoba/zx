@@ -160,6 +160,7 @@ class RegisterView2(APIView):
 
 class UserProfileListView(generics.ListCreateAPIView):
     serializer_class = UserProfileSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly, )
 
     def get_queryset(self):
         logger.debug(self.request.user)
@@ -170,7 +171,7 @@ class UserProfileListView(generics.ListCreateAPIView):
         serializer.save(user=self.request.user)
 
     def create(self, request, *args, **kwargs):
-        print('create user profile data')
+        logger.info('create user profile data')
         data = request.data
         if data.get('city', None):
             City.objects.get_or_create(name=data.get('city'))
@@ -179,6 +180,7 @@ class UserProfileListView(generics.ListCreateAPIView):
 
 class UserProfileDetailView(generics.RetrieveUpdateAPIView):
     serializer_class = UserProfileSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
 
     def get_queryset(self):
         self.queryset = UserProfile.objects.filter(user=self.request.user)
@@ -297,7 +299,7 @@ class GetOrCreateMixin():
             fields = {}
             fields.update({'city': data.get('city', None),
                            'place_name': place_name,
-                           'latitude': data.get('latitude', None),
+                           'latitude': data.get('latitude', 0.0),
                            'longitude': data.get('longitude', 0.0),
                            'latitudeE6': data.get('latitudeE6', 0.0),
                            'longitudeE6': data.get('longitudeE6', 0.0),
@@ -305,12 +307,29 @@ class GetOrCreateMixin():
                            'phone': data.get('phone', ''),
                            'site': data.get('site', '')})
             logger.info(fields)
-            obj, created = BuyPlace.objects.get_or_create(**fields)
+            obj = None
+            try:
+                obj = BuyPlace.objects.get(city=data.get('city', None), place_name=place_name)
+            except:
+                pass
+            if not obj:
+                obj = BuyPlace.objects.create(**fields)
+
+            obj.latitude = fields['latitude']
+            obj.longitude = fields['longitude']
+            obj.latitudeE6 = fields['latitudeE6']
+            obj.longitudeE6 = fields['longitudeE6']
+            obj.address = fields['address']
+            obj.phone = fields['phone']
+            obj.site = fields['site']
+            obj.save()
             self.place_obj = obj
 
 
 class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
     serializer_class = SpendDetailSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
+    place_obj = None
 
     def create(self, request, *args, **kwargs):
         self.pre_get_or_create(request)

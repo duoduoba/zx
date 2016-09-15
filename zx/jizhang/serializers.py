@@ -64,6 +64,7 @@ class SpendDetailSerializer(serializers.ModelSerializer):
     created = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
     modified = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", read_only=True)
     buy_place = serializers.ReadOnlyField(source='buy_place.place_name')
+    buy_city = serializers.ReadOnlyField(source='buy_place.city')
 
     class Meta:
         model = SpendDetail

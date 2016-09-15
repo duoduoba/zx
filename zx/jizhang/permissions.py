@@ -11,10 +11,10 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
         # if request.method in permissions.SAFE_METHODS:
         #     return True
         logger.info('==============IsOwnerOrReadOnly====================')
-        ok = (obj.owner == request.user)
+        ok = (hasattr(obj, 'owner') and obj.owner == request.user) or (hasattr(obj, 'user') and obj.user == request.user)
         if ok:
             logger.info('you are the owner, continue')
         else:
-            logger.info( 'you are not the owner, can not edit current item')
+            logger.info('you are not the owner, can not edit current item')
         return ok
 
