@@ -51,7 +51,7 @@ class TagSerializer(serializers.ModelSerializer):
     # category = serializers.ReadOnlyField()
     class Meta:
         model = Tag
-        fields = ('id', 'category', 'name')
+        fields = ('id', 'name')
 
 
 class BuyPlaceSerializer(serializers.ModelSerializer):
@@ -63,8 +63,8 @@ class SpendDetailSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
     created = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
     modified = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", read_only=True)
-    buy_place = serializers.ReadOnlyField(source='buy_place.place_name')
-    buy_city = serializers.ReadOnlyField(source='buy_place.city')
+    buy_place_name = serializers.ReadOnlyField(source='buy_place.place_name')
+    # buy_place_area = serializers.ReadOnlyField(source='buy_place.place_area')
 
     class Meta:
         model = SpendDetail
@@ -93,7 +93,17 @@ class BrandDataSerializer(serializers.ModelSerializer):
         # fields = ('id', 'brand',)
 
 
-class ShopDataSerializer(serializers.ModelSerializer):
+class TagDataSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TagDataWithCity
+
+
+class TagDataWithoudCitySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TagDataWithoutCity
+
+
+class BuyPlaceDataSerializer(serializers.ModelSerializer):
     class Meta:
         model = BuyPlaceDataWithCity
         # filds = ('brand')

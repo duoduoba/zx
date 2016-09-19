@@ -294,10 +294,13 @@ class GetOrCreateMixin():
 
         # buy place data
         place_name = data.get('place_name', None)
-        logger.info(place_name )
+        place_area = data.get('place_area', None)
+        logger.info(place_area)
+        logger.info(place_name)
+
         if place_name:
             fields = {}
-            fields.update({'city': data.get('city', None),
+            fields.update({'place_area': place_area,
                            'place_name': place_name,
                            'latitude': data.get('latitude', 0.0),
                            'longitude': data.get('longitude', 0.0),
@@ -306,29 +309,31 @@ class GetOrCreateMixin():
                            'address': data.get('address', ''),
                            'phone': data.get('phone', ''),
                            'site': data.get('site', '')})
-            logger.info(fields)
-            obj = None
-            try:
-                obj = BuyPlace.objects.get(city=data.get('city', None), place_name=place_name)
-            except:
-                pass
-            if not obj:
-                obj = BuyPlace.objects.create(**fields)
 
-            obj.latitude = fields['latitude']
-            obj.longitude = fields['longitude']
-            obj.latitudeE6 = fields['latitudeE6']
-            obj.longitudeE6 = fields['longitudeE6']
-            obj.address = fields['address']
-            obj.phone = fields['phone']
-            obj.site = fields['site']
-            obj.save()
-            self.place_obj = obj
+            logger.info(fields)
+            if place_area and place_name:
+                obj = None
+                try:
+                    obj = BuyPlace.objects.get(place_area=data.get('place_area', None), place_name=place_name)
+                except:
+                    pass
+                if not obj:
+                    obj = BuyPlace.objects.create(**fields)
+
+                obj.latitude = fields['latitude']
+                obj.longitude = fields['longitude']
+                obj.latitudeE6 = fields['latitudeE6']
+                obj.longitudeE6 = fields['longitudeE6']
+                obj.address = fields['address']
+                obj.phone = fields['phone']
+                obj.site = fields['site']
+                obj.save()
+                self.place_obj = obj
 
 
 class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
     serializer_class = SpendDetailSerializer
-    permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
+    # permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
     place_obj = None
 
     def create(self, request, *args, **kwargs):
@@ -342,8 +347,8 @@ class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
             serializer.save(owner=self.request.user, buy_place=self.place_obj)
 
     def get_queryset(self):
-        self.queryset = SpendDetail.objects.filter(owner=self.request.user)
-        # self.queryset = SpendDetail.objects.all()
+        # self.queryset = SpendDetail.objects.filter(owner=self.request.user)
+        self.queryset = SpendDetail.objects.all()
         return super(SpendDetailListView, self).get_queryset()
 
 
