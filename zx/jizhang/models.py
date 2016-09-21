@@ -45,7 +45,7 @@ class UserProfile(models.Model):
     house_area = models.FloatField(verbose_name='面积', default=0.0)
     house_shape = models.CharField(verbose_name='户型', max_length=20, blank=True, null=True)
     decoration_style = models.CharField(verbose_name='装修风格', max_length=30, blank=True, null=True)
-    budget = models.FloatField(verbose_name='预算', max_length=10, default=0.0)
+    budget = models.CharField(verbose_name='预算', max_length=10,  blank=True, null=True)
     company = models.CharField(verbose_name='装修公司', max_length=30, null=True, blank=True)
 
     def __str__(self):

@@ -224,7 +224,7 @@ class HotBrandListView(APIView):
 			sql['city'] = UserProfile.objects.get(user=user).city
 		except:
 			return Response('Invalid User Error!')
-		
+
 		number = NumberUtil.number(request)
 		query_list = BrandDataWithCityTag.objects.filter(**sql).order_by('-cited_times')
 		query_list = query_list[:number]
