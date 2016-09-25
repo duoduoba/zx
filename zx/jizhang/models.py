@@ -42,7 +42,7 @@ class UserProfile(models.Model):
     city = models.ForeignKey(City, to_field='name', related_name='city_user_set', null=True, blank=True, verbose_name='城市')
     portrayal = models.ImageField(verbose_name='头像', upload_to='user/%Y-%m-%d/', blank=True, null=True)
     signature = models.CharField(verbose_name='签名', max_length=30, default='我的签名')
-    house_area = models.FloatField(verbose_name='面积', default=0.0)
+    house_area = models.CharField(verbose_name='面积', max_length=30, default='0.0')
     house_shape = models.CharField(verbose_name='户型', max_length=20, blank=True, null=True)
     decoration_style = models.CharField(verbose_name='装修风格', max_length=30, blank=True, null=True)
     budget = models.CharField(verbose_name='预算', max_length=10,  blank=True, null=True)
@@ -88,7 +88,7 @@ class Tag(models.Model):
 
 
 class BuyPlace(models.Model):
-    place_area = models.CharField(max_length=20, default='所在城市', verbose_name='所在购买城市')
+    place_area = models.CharField(max_length=20, null=True, blank=True, verbose_name='所在购买城市')
     place_name = models.CharField(max_length=50, verbose_name='购买地点')
     latitude = models.FloatField(default=0.0, null=True, blank=True, verbose_name='经度')
     longitude = models.FloatField(default=0.0, null=True, blank=True, verbose_name='维度')
@@ -100,9 +100,6 @@ class BuyPlace(models.Model):
 
     def __str__(self):
         return self.place_area + "_" + self.place_name
-
-    class Meta:
-        unique_together = (("place_area", "place_name"),)
 
 
 class SpendDetail(models.Model):
@@ -179,7 +176,7 @@ class TagDataWithCity(models.Model):
         unique_together = ("tag", "city")
 
     def __str__(self):
-        return self.tag.name + " city:" + self.city + " cited times:" + str(self.cited_times)
+        return self.tag.name + " city:" + self.city.name + " cited times:" + str(self.cited_times)
 
 
 class BrandDataWithCityTag(models.Model):
@@ -219,3 +216,5 @@ class Feedback(models.Model):
     content = models.TextField(verbose_name='反馈')
     created = models.DateTimeField(auto_now_add=True, verbose_name='创建时间')
 
+    def __str__(self):
+        return self.owner.username

@@ -54,20 +54,21 @@ urlpatterns = [
     # url(r'^jz/spend-overview/$', SpendOverView.as_view(), name='overview-detail'),
     #
     # data recommendation : tag, brand, shop
-    url(r'^jz/tags/hot/$', HotTagsListView.as_view(), name='hot-tags-list'),
-    url(r'^jz/brands/hot/$', HotBrandListView.as_view(), name='hot-brands-list'),
-    url(r'^jz/buy-places/hot/$', HotShopListView.as_view(), name='hot-buy-place-list'),
 
-    url(r'^jz/feedback/$', FeedbackView.as_view(), name='feadback-list'),
+    url(r'^jz/feedbacks/$', FeedbackView.as_view(), name='feadback-list'),
+
     url(r'^jz/create-tag-data/$', generate_tag_data, name='create-tag-data'),
     url(r'^jz/tag-data-list/$', TagDataListView.as_view(), name='tag-data-list'),
     url(r'^jz/tag-data-list-without-city/$', TagDataWithoutCityListView.as_view(), name='tag-data-list2'),
+    url(r'^jz/tags/hot/$', HotTagsListView.as_view(), name='hot-tags-list'),
 
     url(r'^jz/create-brand-data/$', generate_brand_data, name='create-brand-data'),
     url(r'^jz/brand-data-list/$', BrandDataListView.as_view(), name='brand-data-list'),
+    url(r'^jz/brands/hot/$', HotBrandListView.as_view(), name='hot-brands-list'),
 
     url(r'^jz/create-buy-place-data/$', generate_buy_place_data, name='create-buy-place-data'),
     url(r'^jz/buy-place-data-list/$', BuyPlaceDataListView.as_view(), name='buy-place-data-list'),
+    url(r'^jz/buy-places/hot/$', HotShopListView.as_view(), name='hot-buy-place-list'),
     # =======================jizhang urls end============================================
     url(r'^qr/(?P<pk>\d+)/$', QRView.as_view(), name='qr-list'),
 

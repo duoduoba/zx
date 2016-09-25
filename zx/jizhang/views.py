@@ -173,6 +173,7 @@ class UserProfileListView(generics.ListCreateAPIView):
     def create(self, request, *args, **kwargs):
         logger.info('create user profile data')
         data = request.data
+        logger.info(data)
         if data.get('city', None):
             City.objects.get_or_create(name=data.get('city'))
         return super(UserProfileListView, self).create(request, *args, **kwargs)
@@ -311,7 +312,7 @@ class GetOrCreateMixin():
                            'site': data.get('site', '')})
 
             logger.info(fields)
-            if place_area and place_name:
+            if place_name:
                 obj = None
                 try:
                     obj = BuyPlace.objects.get(place_area=data.get('place_area', None), place_name=place_name)
@@ -329,6 +330,8 @@ class GetOrCreateMixin():
                 obj.site = fields['site']
                 obj.save()
                 self.place_obj = obj
+        else:
+            logger.info('user did not submit buy place infor.')
 
 
 class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
@@ -376,4 +379,5 @@ class FeedbackView(generics.ListCreateAPIView):
         return super(FeedbackView, self).get_queryset()
 
     def perform_create(self, serializer):
+        logger.info(self.request.data)
         serializer.save(owner=self.request.user)

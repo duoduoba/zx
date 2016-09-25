@@ -16,3 +16,9 @@ admin.site.register(Province)
 admin.site.register(DecorationCompany)
 admin.site.register(UserProfile)
 admin.site.register(Feedback)
+
+admin.site.register(TagDataWithCity)
+admin.site.register(TagDataWithoutCity)
+admin.site.register(BrandDataWithCityTag)
+admin.site.register(BuyPlaceDataWithCity)
+
