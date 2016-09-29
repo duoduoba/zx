@@ -296,6 +296,9 @@ class GetOrCreateMixin():
         # buy place data
         place_name = data.get('place_name', None)
         place_area = data.get('place_area', None)
+        if place_area is '':
+            place_area = None
+
         logger.info(place_area)
         logger.info(place_name)
 
@@ -318,17 +321,20 @@ class GetOrCreateMixin():
                     obj = BuyPlace.objects.get(place_area=data.get('place_area', None), place_name=place_name)
                 except:
                     pass
-                if not obj:
-                    obj = BuyPlace.objects.create(**fields)
 
-                obj.latitude = fields['latitude']
-                obj.longitude = fields['longitude']
-                obj.latitudeE6 = fields['latitudeE6']
-                obj.longitudeE6 = fields['longitudeE6']
-                obj.address = fields['address']
-                obj.phone = fields['phone']
-                obj.site = fields['site']
-                obj.save()
+                if not obj:
+                    logger.info('create new buy-place data')
+                    obj = BuyPlace.objects.create(**fields)
+                else:
+                    obj.latitude = fields['latitude']
+                    obj.longitude = fields['longitude']
+                    obj.latitudeE6 = fields['latitudeE6']
+                    obj.longitudeE6 = fields['longitudeE6']
+                    obj.address = fields['address']
+                    obj.phone = fields['phone']
+                    obj.site = fields['site']
+                    obj.save()
+
                 self.place_obj = obj
         else:
             logger.info('user did not submit buy place infor.')
@@ -363,6 +369,9 @@ class SpendDetailEditView(generics.RetrieveUpdateDestroyAPIView, GetOrCreateMixi
     def update(self, request, *args, **kwargs):
         self.pre_get_or_create(request)
         return super(SpendDetailEditView, self).update(request, *args, **kwargs)
+
+    def perform_update(self, serializer):
+        serializer.save(buy_place=self.place_obj)
 
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()

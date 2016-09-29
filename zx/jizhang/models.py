@@ -99,7 +99,7 @@ class BuyPlace(models.Model):
     site = models.URLField(null=True, blank=True, verbose_name='网址')
 
     def __str__(self):
-        return self.place_area + "_" + self.place_name
+        return self.place_name
 
 
 class SpendDetail(models.Model):
