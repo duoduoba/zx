@@ -209,11 +209,6 @@ class CategoryDetailView(generics.RetrieveUpdateDestroyAPIView):
     # permission_classes = (permissions.IsAdminUser,)
 
 
-class ProvinceListView(generics.ListCreateAPIView):
-    serializer_class = ProvinceSerializer
-    queryset = Province.objects.all()
-
-
 class CityListView(generics.ListCreateAPIView):
     serializer_class = CitySerializer
     queryset = City.objects.all()

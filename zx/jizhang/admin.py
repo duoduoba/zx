@@ -8,11 +8,10 @@ from jizhang.models import *
 
 admin.site.register(City)
 admin.site.register(Tag)
-admin.site.register(Category)
+# admin.site.register(Category)
 admin.site.register(Brand)
 admin.site.register(BuyPlace)
 admin.site.register(SpendDetail)
-admin.site.register(Province)
 admin.site.register(DecorationCompany)
 admin.site.register(UserProfile)
 admin.site.register(Feedback)

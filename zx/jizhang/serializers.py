@@ -109,11 +109,6 @@ class BuyPlaceDataSerializer(serializers.ModelSerializer):
         # filds = ('brand')
 
 
-class ProvinceSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Province
-
-
 class CitySerializer(serializers.ModelSerializer):
     class Meta:
         model = City

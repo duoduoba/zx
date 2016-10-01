@@ -7,13 +7,13 @@ from django.dispatch import receiver
 from jizhang.log.logger import logger
 
 
-class Province(models.Model):
-    area_code = models.IntegerField(verbose_name='省份编码', unique=True)
-    name = models.CharField(verbose_name='省份名称', unique=True, max_length=30)
-    state = models.BooleanField(verbose_name='可用状态', default=True)
-
-    def __str__(self):
-        return self.name
+# class Province(models.Model):
+#     area_code = models.IntegerField(verbose_name='省份编码', unique=True)
+#     name = models.CharField(verbose_name='省份名称', unique=True, max_length=30)
+#     state = models.BooleanField(verbose_name='可用状态', default=True)
+#
+#     def __str__(self):
+#         return self.name
 
 
 class City(models.Model):
