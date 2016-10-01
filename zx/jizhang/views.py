@@ -371,7 +371,12 @@ class SpendDetailEditView(generics.RetrieveUpdateDestroyAPIView, GetOrCreateMixi
         return super(SpendDetailEditView, self).update(request, *args, **kwargs)
 
     def perform_update(self, serializer):
-        serializer.save(buy_place=self.place_obj)
+        if not hasattr(self, 'place_obj'):
+            logger.info('udpate spend detail')
+            serializer.save()
+        else:
+            logger.info('update the place obj : %s' % self.place_obj)
+            serializer.save(buy_place=self.place_obj)
 
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
