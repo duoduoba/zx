@@ -88,6 +88,7 @@ class Tag(models.Model):
 
 
 class BuyPlace(models.Model):
+    uid = models.CharField(max_length=30, unique=True, verbose_name='百度uid')
     place_area = models.CharField(max_length=20, null=True, blank=True, verbose_name='所在购买城市')
     place_name = models.CharField(max_length=50, verbose_name='购买地点')
     latitude = models.FloatField(default=0.0, null=True, blank=True, verbose_name='经度')

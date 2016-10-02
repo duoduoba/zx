@@ -291,11 +291,13 @@ class GetOrCreateMixin():
         # buy place data
         place_name = data.get('place_name', None)
         place_area = data.get('place_area', None)
+        uid = data.get('uid')
         if place_area is '':
             place_area = None
 
         logger.info(place_area)
         logger.info(place_name)
+
 
         if place_name:
             fields = {}
@@ -307,13 +309,14 @@ class GetOrCreateMixin():
                            'longitudeE6': data.get('longitudeE6', 0.0),
                            'address': data.get('address', ''),
                            'phone': data.get('phone', ''),
-                           'site': data.get('site', '')})
+                           'site': data.get('site', ''),
+                           'uid': uid})
 
             logger.info(fields)
             if place_name:
                 obj = None
                 try:
-                    obj = BuyPlace.objects.get(place_area=data.get('place_area', None), place_name=place_name)
+                    obj = BuyPlace.objects.get(uid=uid)
                 except:
                     pass
 
