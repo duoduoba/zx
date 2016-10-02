@@ -138,19 +138,15 @@ class RegisterView2(APIView):
             try:
                 logger.debug('check user name')
                 user = User.objects.get(username=username)
-                if user:
-                    logger.debug('delete user')
-                    user.delete()
-            except Exception as ex:
-                pass
-
+                logger.info('old user login again')
+            except:
+                logger.debug('new user enter')
+                password = self.random_str(6)
+                user = User.objects.create(username=username, password=password)
+                logger.info('password=%s' % password)
             # if user not exist, create token
-            logger.debug('new user enter register2')
-            password = self.random_str(6)
+
             logger.info('username=%s' % username)
-            logger.info('password=%s' % password)
-            user = User.objects.create(username=username, password=password)
-            logger.info('create user finish')
             token, created = Token.objects.get_or_create(user=user)
             logger.info(token)
         except Exception as ex:

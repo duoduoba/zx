@@ -135,6 +135,9 @@ def remove_old_image(old_path):
     logger.info(old_path)
     if os.path.isfile(old_path):
         os.remove(old_path)
+        logger.info('remove finish')
+    else:
+        logger.info('remove fail')
 
 
 @receiver(post_delete, sender=SpendDetail)
