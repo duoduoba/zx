@@ -324,6 +324,7 @@ class GetOrCreateMixin():
                     logger.info('create new buy-place data')
                     obj = BuyPlace.objects.create(**fields)
                 else:
+                    logger.info('update buy-place data')
                     obj.latitude = fields['latitude']
                     obj.longitude = fields['longitude']
                     obj.latitudeE6 = fields['latitudeE6']
@@ -378,7 +379,7 @@ class SpendDetailEditView(generics.RetrieveUpdateDestroyAPIView, GetOrCreateMixi
 
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
-        serializer = SpendDetailSerializer(instance=instance)
+        serializer = SpendDetailSerializer(instance=instance)   #return the data to client to verification
         self.perform_destroy(instance)
         return Response(serializer.data, status=status.HTTP_200_OK)
 

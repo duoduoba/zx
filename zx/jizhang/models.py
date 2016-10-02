@@ -2,7 +2,7 @@
 
 from django.db import models
 from django.contrib.auth.models import User
-from django.db.models.signals import post_delete
+from django.db.models.signals import post_delete, pre_save
 from django.dispatch import receiver
 from jizhang.log.logger import logger
 
@@ -127,6 +127,16 @@ class SpendDetail(models.Model):
     #     return str(self.price) + '_' + self.tag + '_' + self.brand
 
 
+def remove_old_image(old_path):
+    old_path = old_path.replace('/', '\\')
+    import os
+    from zx.settings import MEDIA_ROOT
+    old_path = MEDIA_ROOT + '\\' + old_path
+    logger.info(old_path)
+    if os.path.isfile(old_path):
+        os.remove(old_path)
+
+
 @receiver(post_delete, sender=SpendDetail)
 def photo_post_delete_handler(sender, **kwargs):
     detail = kwargs['instance']
@@ -135,13 +145,35 @@ def photo_post_delete_handler(sender, **kwargs):
         image_name = 'image' + str(index)
         logger.info(image_name)
         image_path = detail.__dict__[image_name]
-        image_path = image_path.replace('/', '\\')
-        import os
-        from zx.settings import MEDIA_ROOT
-        image_path = MEDIA_ROOT + '\\' + image_path
-        logger.info(image_path)
-        if os.path.isfile(image_path):
-            os.remove(image_path)
+        remove_old_image(image_path)
+
+
+@receiver(pre_save, sender=SpendDetail)
+def photo_put_delete_handler(sender, **kwargs):
+    detail = kwargs['instance']
+    logger.info(detail)
+    try:
+        obj = SpendDetail.objects.get(id=detail.id)
+    except:
+        pass
+    else:
+        for index in range(1, 5):
+            image_name = 'image' + str(index)
+            logger.info(image_name)
+            new_path = detail.__dict__[image_name]
+            image_field = getattr(obj, image_name)
+            logger.info("old path is %s" % image_field.name)
+            logger.info('new path is %s' % new_path)
+            if image_field:
+                old_path = image_field.name
+                delete_old = True
+                if new_path == old_path:
+                    delete_old = False
+                    logger.info('leave old image')
+
+                if delete_old:
+                    logger.info('delete old image')
+                    remove_old_image(old_path)
 
 
 #############################################################
