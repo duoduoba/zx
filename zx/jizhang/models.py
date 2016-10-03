@@ -165,8 +165,8 @@ def photo_put_delete_handler(sender, **kwargs):
             logger.info(image_name)
             new_path = detail.__dict__[image_name]
 
-            if image_field:
-                image_field = getattr(obj, image_name)
+            image_field = getattr(obj, image_name)
+            if image_field and image_field.name:
                 old_path = image_field.name
                 logger.info("old path is %s" % old_path)
                 logger.info('new path is %s' % new_path)
