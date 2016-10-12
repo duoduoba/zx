@@ -149,6 +149,13 @@ class RegisterView2(APIView):
             logger.info('username=%s' % username)
             token, created = Token.objects.get_or_create(user=user)
             logger.info(token)
+            try:
+                pro = UserProfile.objects.get(user=user)
+                logger.info('old profile exist, delete')
+                if pro:
+                    pro.delete()
+            except:
+                pass
         except Exception as ex:
             return Response('Invalid username', status=status.HTTP_400_BAD_REQUEST)
         return Response({'token': token.key, 'username': username, })
@@ -296,6 +303,8 @@ class GetOrCreateMixin():
 
 
         if place_name:
+            if not uid:
+                uid = place_name
             fields = {}
             fields.update({'place_area': place_area,
                            'place_name': place_name,
@@ -337,7 +346,7 @@ class GetOrCreateMixin():
 
 class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
     serializer_class = SpendDetailSerializer
-    # permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
+    # permission_classes = (permissions.IsAuthenticatedOrReadOnly, )
     place_obj = None
 
     def create(self, request, *args, **kwargs):
