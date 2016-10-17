@@ -5,7 +5,7 @@ from logging.handlers import TimedRotatingFileHandler, RotatingFileHandler
 
 
 logger = logging.getLogger('zx')
-MAXLOGSIZE = 10 * 1024 * 1024 #Bytes
+MAXLOGSIZE = 5 * 1024 * 1024 #Bytes
 BACKUPCOUNT = 4
 
 level = logging.INFO
@@ -19,8 +19,8 @@ stream_handler.setLevel(logging.DEBUG)
 stream_handler.setFormatter(formatter)
 
 file_handler.setFormatter(formatter)
-file_handler.setLevel(logging.WARNING)
+file_handler.setLevel(logging.DEBUG)
 
 logger.addHandler(file_handler)
 logger.addHandler(stream_handler)
-logger.setLevel(logging.DEBUG)
+# logger.setLevel(logging.DEBUG)
