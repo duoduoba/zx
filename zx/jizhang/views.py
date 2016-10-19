@@ -11,7 +11,7 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from jizhang.serializers import *
 from jizhang.permissions import IsOwnerOrReadOnly
 from jizhang.log.logger import logger
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 # from django.contrib.auth import authenticate
 
 class LoginAndObtainExpiringAuthToken(ObtainAuthToken):
@@ -399,3 +399,27 @@ class FeedbackView(generics.ListCreateAPIView):
     def perform_create(self, serializer):
         logger.info(self.request.data)
         serializer.save(owner=self.request.user)
+
+
+class AppVersionView(generics.ListCreateAPIView):
+    serializer_class = AppVersionSerializer
+    queryset = AppVersion.objects.all()
+    # permission_classes = (permissions.IsAdminUser,)
+
+
+def check_version(request, version):
+    head = 'http://'
+    if request.is_secure():
+        head = 'https://'
+    res = {'is_latest': True, 'latest_url': None}
+    ver = float(version)
+    list = AppVersion.objects.all().order_by('-created')
+    if not list:
+        return JsonResponse(res)
+    latest_item = list[0]
+    db_version = latest_item.version
+    if ver == db_version:
+        return JsonResponse(res)
+    res['is_latest'] = False
+    res['latest_url'] = head + request.get_host() + latest_item.app.url
+    return JsonResponse(res)

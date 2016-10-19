@@ -69,6 +69,11 @@ urlpatterns = [
     url(r'^jz/create-buy-place-data/$', generate_buy_place_data, name='create-buy-place-data'),
     url(r'^jz/buy-place-data-list/$', BuyPlaceDataListView.as_view(), name='buy-place-data-list'),
     url(r'^jz/buy-places/hot/$', HotShopListView.as_view(), name='hot-buy-place-list'),
+
+    url(r'^app-versions/$', AppVersionView.as_view(), name='apps-list'),
+    url(r'^app-versions/(?P<version>\d+.\d+)/$', check_version, name='check-version'),
+    # url(r'^jz/buy-places/hot/$', HotShopListView.as_view(), name='hot-buy-place-list'),
+
     # =======================jizhang urls end============================================
     url(r'^qr/(?P<pk>\d+)/$', QRView.as_view(), name='qr-list'),
 

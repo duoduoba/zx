@@ -38,3 +38,33 @@
 2016-05-31 21:18:01,995 WARNING [FILE:views.py LINE:49] warn message
 2016-05-31 21:18:02,010 ERROR [FILE:views.py LINE:50] error message
 2016-05-31 21:18:02,010 CRITICAL [FILE:views.py LINE:51] critical message
+2016-10-17 23:12:14,077 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-10-17 23:12:14,095 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-10-17 23:12:14,107 INFO [FILE:models.py LINE:146] 0.0
+2016-10-17 23:12:14,107 INFO [FILE:models.py LINE:149] image1
+2016-10-17 23:12:14,108 INFO [FILE:models.py LINE:135] E:\work\zx\media\
+2016-10-17 23:12:14,108 INFO [FILE:models.py LINE:140] remove fail: file not exist
+2016-10-17 23:12:14,109 INFO [FILE:models.py LINE:149] image2
+2016-10-17 23:12:14,109 INFO [FILE:models.py LINE:135] E:\work\zx\media\
+2016-10-17 23:12:14,110 INFO [FILE:models.py LINE:140] remove fail: file not exist
+2016-10-17 23:12:14,110 INFO [FILE:models.py LINE:149] image3
+2016-10-17 23:12:14,110 INFO [FILE:models.py LINE:135] E:\work\zx\media\
+2016-10-17 23:12:14,111 INFO [FILE:models.py LINE:140] remove fail: file not exist
+2016-10-17 23:12:14,112 INFO [FILE:models.py LINE:149] image4
+2016-10-17 23:12:14,112 INFO [FILE:models.py LINE:135] E:\work\zx\media\
+2016-10-17 23:12:14,113 INFO [FILE:models.py LINE:140] remove fail: file not exist
+2016-10-17 23:13:42,287 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-10-17 23:13:42,290 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-10-17 23:13:42,299 INFO [FILE:models.py LINE:146] 0.0
+2016-10-17 23:13:42,299 INFO [FILE:models.py LINE:149] image1
+2016-10-17 23:13:42,300 INFO [FILE:models.py LINE:135] E:\work\zx\media\
+2016-10-17 23:13:42,300 INFO [FILE:models.py LINE:140] remove fail: file not exist
+2016-10-17 23:13:42,301 INFO [FILE:models.py LINE:149] image2
+2016-10-17 23:13:42,301 INFO [FILE:models.py LINE:135] E:\work\zx\media\
+2016-10-17 23:13:42,302 INFO [FILE:models.py LINE:140] remove fail: file not exist
+2016-10-17 23:13:42,302 INFO [FILE:models.py LINE:149] image3
+2016-10-17 23:13:42,302 INFO [FILE:models.py LINE:135] E:\work\zx\media\
+2016-10-17 23:13:42,303 INFO [FILE:models.py LINE:140] remove fail: file not exist
+2016-10-17 23:13:42,304 INFO [FILE:models.py LINE:149] image4
+2016-10-17 23:13:42,305 INFO [FILE:models.py LINE:135] E:\work\zx\media\
+2016-10-17 23:13:42,306 INFO [FILE:models.py LINE:140] remove fail: file not exist

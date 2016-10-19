@@ -255,3 +255,9 @@ class Feedback(models.Model):
 
     def __str__(self):
         return self.owner.username
+
+
+class AppVersion(models.Model):
+    version = models.FloatField(verbose_name='版本号', default=0.0)
+    app = models.FileField(upload_to='App', verbose_name='文件')
+    created = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
