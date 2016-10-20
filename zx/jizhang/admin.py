@@ -28,4 +28,3 @@ class AppAdmin(admin.ModelAdmin):
 	list_display = ('version', 'app')
 
 admin.site.register(AppVersion, AppAdmin)
-
