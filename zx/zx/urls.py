@@ -71,7 +71,8 @@ urlpatterns = [
     url(r'^jz/buy-places/hot/$', HotShopListView.as_view(), name='hot-buy-place-list'),
 
     url(r'^app-versions/$', AppVersionView.as_view(), name='apps-list'),
-    url(r'^app-versions/(?P<version>\d+.\d+)/$', check_version, name='check-version'),
+    url(r'^app-versions/latest/version-code/$', latest_version, name='apps-list'),
+    url(r'^app-versions/latest/download-url/$', download_url, name='check-version'),
     # url(r'^jz/buy-places/hot/$', HotShopListView.as_view(), name='hot-buy-place-list'),
 
     # =======================jizhang urls end============================================

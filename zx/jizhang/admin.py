@@ -23,3 +23,9 @@ admin.site.register(TagDataWithoutCity)
 admin.site.register(BrandDataWithCityTag)
 admin.site.register(BuyPlaceDataWithCity)
 
+
+class AppAdmin(admin.ModelAdmin):
+	list_display = ('version', 'app')
+
+admin.site.register(AppVersion, AppAdmin)
+

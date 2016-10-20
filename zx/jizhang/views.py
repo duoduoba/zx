@@ -407,19 +407,26 @@ class AppVersionView(generics.ListCreateAPIView):
     # permission_classes = (permissions.IsAdminUser,)
 
 
-def check_version(request, version):
-    head = 'http://'
-    if request.is_secure():
-        head = 'https://'
-    res = {'is_latest': True, 'latest_url': None}
-    ver = float(version)
-    list = AppVersion.objects.all().order_by('-created')
-    if not list:
+def latest_version(request):
+    if request.method == 'GET':
+        res = {'version_code': 0.0}
+        versions = AppVersion.objects.all().order_by('-created')
+        if not versions:
+            return JsonResponse(res)
+        latest = versions[0]
+        res['version_code'] = latest.version
         return JsonResponse(res)
-    latest_item = list[0]
-    db_version = latest_item.version
-    if ver == db_version:
+
+def download_url(request):
+    if request.method == 'GET':
+        head = 'http://'
+        if request.is_secure():
+            head = 'https://'
+        res = {'download_url': None}
+        # ver = float(version)
+        versions = AppVersion.objects.all().order_by('-created')
+        if not versions:
+            return JsonResponse(res)
+        latest_item = versions[0]
+        res['download_url'] = head + request.get_host() + latest_item.app.url
         return JsonResponse(res)
-    res['is_latest'] = False
-    res['latest_url'] = head + request.get_host() + latest_item.app.url
-    return JsonResponse(res)
