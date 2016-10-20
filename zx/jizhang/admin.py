@@ -22,4 +22,4 @@ admin.site.register(TagDataWithCity)
 admin.site.register(TagDataWithoutCity)
 admin.site.register(BrandDataWithCityTag)
 admin.site.register(BuyPlaceDataWithCity)
-
+admin.site.register(AppVersionView)
