@@ -1,0 +1,716 @@
+
+10-16 18:42:10.786 30908-30908/com.example.account I/51: The AccountLoadActivity---->onCreate
+
+10-16 18:42:11.914 30908-30908/com.example.account I/51: The AccountLoadActivity---->m_CheckFirst
+
+10-16 18:42:12.165 30908-30908/com.example.account I/51: ------AccountTotalActivity----onCreate -----
+
+10-16 18:42:12.227 30908-30908/com.example.account I/51: -----------ConverDateToString----sDate----2016-10-16
+
+10-16 18:42:12.245 30908-30908/com.example.account I/51: ------start m_InitSlidingMenuContent--------
+
+10-16 18:42:12.248 30908-30908/com.example.account I/51: ------login user name --------18625177794
+
+10-16 18:42:12.249 30908-30908/com.example.account I/51: ------after replace user name --------18625177794----result-186****7794
+
+10-16 18:42:12.253 30908-30908/com.example.account I/51: m_InitCurrentyCity---->南京市
+
+10-16 18:42:12.253 30908-30908/com.example.account I/51: m_InitCurrentyCity----already load city-
+
+10-16 18:42:12.254 30908-30976/com.example.account I/51: ------start get all account from DB--------
+
+10-16 18:42:12.254 30908-30908/com.example.account I/51: The AccountTotalActivity---->onStart
+
+10-16 18:42:12.255 30908-30908/com.example.account I/51: The AccountTotalActivity---->onResume
+
+10-16 18:42:12.283 30908-30908/com.example.account I/51: --AccountSyncService----onCreate--
+
+10-16 18:42:12.284 30908-30908/com.example.account I/51: --AccountSyncService----onBind--
+
+10-16 18:42:12.292 30908-30976/com.example.account I/51: ------mDetailListDataSource--------
+
+10-16 18:42:12.293 30908-30976/com.example.account I/51: ------mDetailListDataSource.size()--------2
+
+10-16 18:42:12.297 30908-30976/com.example.account I/51: ------mDetailListDataSource--index-0--Cost--1.0
+
+10-16 18:42:12.304 30908-30976/com.example.account I/51: ------mDetailListDataSource--index-1--Cost--7777.0
+
+10-16 18:42:12.522 30908-30908/com.example.account I/51: onServiceConnected----namerComponentInfo{com.example.account/com.example.account.AccountSyncService}
+
+10-16 18:42:12.559 30908-30908/com.example.account I/51: ------onCreateOptionsMenu--------
+
+10-16 18:42:12.559 30908-30908/com.example.account I/51: The AccountLoadActivity---->invisible plusItem
+
+10-16 18:42:12.561 30908-30908/com.example.account I/51: ------onCreateOptionsMenu----m_bConnected----true--bCanSync---true
+
+10-16 18:42:12.561 30908-30908/com.example.account I/51: --AccountSyncServiceBinder----startSync--
+
+10-16 18:42:12.561 30908-30908/com.example.account I/51: onProgress----progress--1
+
+10-16 18:42:12.570 30908-30908/com.example.account I/51: ------setRefreshActionButtonState---refreshing-----true
+
+10-16 18:42:12.575 30908-30908/com.example.account I/51: --SyncTask-----
+
+10-16 18:42:12.581 30908-30981/com.example.account I/51: ------start to sync up-1234--
+
+10-16 18:42:12.581 30908-30981/com.example.account I/51: ------start to sync up-4--
+
+10-16 18:42:12.588 30908-30908/com.example.account I/51: ------onPostExecute--------
+
+10-16 18:42:12.589 30908-30981/com.example.account I/51: ------start to sync AccountList ---2
+
+10-16 18:42:12.589 30908-30981/com.example.account I/51: ------start to sync mAccountSyncUpList ---0
+
+10-16 18:42:12.590 30908-30981/com.example.account I/51: ------CountDownLatch -nTotalCount-0
+
+10-16 18:42:12.590 30908-30981/com.example.account I/51: -----await finish---
+
+10-16 18:42:12.590 30908-30908/com.example.account I/51: -----------AccountTotalDetailListAdapter start--------
+
+10-16 18:42:12.591 30908-30908/com.example.account I/51: -----------AccountTotalDetailListAdapter end--------
+
+10-16 18:42:12.591 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.591 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.591 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.598 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.601 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.622 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.623 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.645 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.647 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.670 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.670 30908-30908/com.example.account I/51: -----------getView----position----0
+
+10-16 18:42:12.688 30908-30908/com.example.account I/51: -----------mTotalDetailList.get(position).CreateTime----1476590005363
+
+10-16 18:42:12.689 30908-30908/com.example.account I/51: -----------ConverDateToString----sDate----2016-10-16
+
+10-16 18:42:12.690 30908-30908/com.example.account I/51: --Cost---1.0
+
+10-16 18:42:12.723 30908-30908/com.example.account I/51: -----------getView----position----1
+
+10-16 18:42:12.734 30908-30908/com.example.account I/51: -----------mTotalDetailList.get(position).CreateTime----1476589476000
+
+10-16 18:42:12.735 30908-30908/com.example.account I/51: -----------ConverDateToString----sDate----2016-10-16
+
+10-16 18:42:12.736 30908-30908/com.example.account I/51: --Cost---7777.0
+
+10-16 18:42:12.789 30908-30908/com.example.account I/51: -AccountRestClient -- Init--start-
+
+10-16 18:42:12.789 30908-30908/com.example.account I/51: --already login in  - token -- Token 14e2627cf583113886cdd0e95069316e24a0af71
+
+10-16 18:42:12.789 30908-30908/com.example.account I/51: --AccountRestClient -- Init--end--
+
+10-16 18:42:12.789 30908-30908/com.example.account I/51: -setServerUrl -- -mServerUrl--http://172.16.202.183:8000/
+
+10-16 18:42:12.789 30908-30908/com.example.account I/51: -start to -get all account --
+
+10-16 18:42:12.790 30908-30908/com.example.account I/51: --get getAbsoluteUrl--http://172.16.202.183:8000/jz/details/
+
+10-16 18:42:12.790 30908-30908/com.example.account I/51: --get getAbsoluteUrl----http://172.16.202.183:8000/jz/details/--Token -- Token 14e2627cf583113886cdd0e95069316e24a0af71
+
+10-16 18:42:12.822 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.823 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.856 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.856 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.886 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.886 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.906 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.916 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.916 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.927 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.929 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.931 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.932 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.936 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.940 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.942 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.944 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.947 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.949 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.951 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.953 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.954 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.955 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.963 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.963 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.988 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:12.989 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.014 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.014 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.031 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.031 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.042 30908-30908/com.example.account I/51: The AccountLoadActivity---->onDestroy
+
+10-16 18:42:13.053 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.053 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.068 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.068 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.092 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.092 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.108 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.108 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.124 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.125 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.143 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.143 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.158 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.158 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.176 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.177 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.194 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.194 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.210 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.210 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.224 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.224 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.242 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.243 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.259 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.259 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.274 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.274 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.289 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.290 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.306 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.306 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.322 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.322 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.338 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.338 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.354 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.354 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.371 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.371 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.388 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.388 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.404 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.404 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.420 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.420 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.436 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.436 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.452 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.452 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.468 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.469 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.485 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.485 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.501 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.501 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.517 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.517 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.536 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.537 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.553 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.554 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.569 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.569 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.587 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.587 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.665 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:13.666 30908-30908/com.example.account I/51: -----------getCount--------2
+
+10-16 18:42:17.841 30908-30908/com.example.account I/51: ---deleteAccountItem--onFailure--responseString---null
+
+10-16 18:42:17.841 30908-30908/com.example.account I/51: -----syncDownLatch count ---0
+
+10-16 18:42:17.851 30908-30908/com.example.account I/51: onProgress----progress--3
+
+10-16 18:42:17.851 30908-30908/com.example.account I/51: onProgress----progress--2
+
+10-16 18:42:17.863 30908-30908/com.example.account I/51: ------setRefreshActionButtonState---refreshing-----false
+
+10-16 18:42:49.873 30908-30908/com.example.account I/51: ------onItemClick  position--------6
+
+10-16 18:42:49.873 30908-30908/com.example.account I/51: -------start to AccountSettingActivity-------
+
+10-16 18:42:49.873 30908-30908/com.example.account I/51: ------enter into AccountSettingActivity--------
+
+10-16 18:43:15.254 31664-31664/com.example.account I/51: The AccountLoadActivity---->onCreate
+
+10-16 18:43:16.290 31664-31664/com.example.account I/51: The AccountLoadActivity---->m_CheckFirst
+
+10-16 18:43:16.509 31664-31664/com.example.account I/51: ------AccountTotalActivity----onCreate -----
+
+10-16 18:43:16.692 31664-31664/com.example.account I/51: -----------ConverDateToString----sDate----2016-10-16
+
+10-16 18:43:16.715 31664-31664/com.example.account I/51: ------start m_InitSlidingMenuContent--------
+
+10-16 18:43:16.719 31664-31664/com.example.account I/51: ------login user name --------18625177794
+
+10-16 18:43:16.720 31664-31664/com.example.account I/51: ------after replace user name --------18625177794----result-186****7794
+
+10-16 18:43:16.725 31664-31664/com.example.account I/51: m_InitCurrentyCity---->南京市
+
+10-16 18:43:16.725 31664-31664/com.example.account I/51: m_InitCurrentyCity----already load city-
+
+10-16 18:43:16.730 31664-32003/com.example.account I/51: ------start get all account from DB--------
+
+10-16 18:43:16.730 31664-31664/com.example.account I/51: The AccountTotalActivity---->onStart
+
+10-16 18:43:16.731 31664-31664/com.example.account I/51: The AccountTotalActivity---->onResume
+
+10-16 18:43:16.754 31664-31664/com.example.account I/51: --AccountSyncService----onCreate--
+
+10-16 18:43:16.755 31664-31664/com.example.account I/51: --AccountSyncService----onBind--
+
+10-16 18:43:16.804 31664-32003/com.example.account I/51: ------mDetailListDataSource--------
+
+10-16 18:43:16.804 31664-32003/com.example.account I/51: ------mDetailListDataSource.size()--------2
+
+10-16 18:43:16.807 31664-32003/com.example.account I/51: ------mDetailListDataSource--index-0--Cost--1.0
+
+10-16 18:43:16.807 31664-32003/com.example.account I/51: ------mDetailListDataSource--index-1--Cost--7777.0
+
+10-16 18:43:17.068 31664-31664/com.example.account I/51: onServiceConnected----namerComponentInfo{com.example.account/com.example.account.AccountSyncService}
+
+10-16 18:43:17.119 31664-31664/com.example.account I/51: ------onCreateOptionsMenu--------
+
+10-16 18:43:17.120 31664-31664/com.example.account I/51: The AccountLoadActivity---->invisible plusItem
+
+10-16 18:43:17.123 31664-31664/com.example.account I/51: ------onCreateOptionsMenu----m_bConnected----true--bCanSync---true
+
+10-16 18:43:17.123 31664-31664/com.example.account I/51: --AccountSyncServiceBinder----startSync--
+
+10-16 18:43:17.123 31664-31664/com.example.account I/51: onProgress----progress--1
+
+10-16 18:43:17.131 31664-31664/com.example.account I/51: ------setRefreshActionButtonState---refreshing-----true
+
+10-16 18:43:17.139 31664-31664/com.example.account I/51: --SyncTask-----
+
+10-16 18:43:17.152 31664-32016/com.example.account I/51: ------start to sync up-1234--
+
+10-16 18:43:17.152 31664-32016/com.example.account I/51: ------start to sync up-4--
+
+10-16 18:43:17.168 31664-32016/com.example.account I/51: ------start to sync AccountList ---2
+
+10-16 18:43:17.184 31664-32016/com.example.account I/51: ------start to sync mAccountSyncUpList ---0
+
+10-16 18:43:17.184 31664-32016/com.example.account I/51: ------CountDownLatch -nTotalCount-0
+
+10-16 18:43:17.184 31664-32016/com.example.account I/51: -----await finish---
+
+10-16 18:43:17.185 31664-31664/com.example.account I/51: ------onPostExecute--------
+
+10-16 18:43:17.186 31664-31664/com.example.account I/51: -----------AccountTotalDetailListAdapter start--------
+
+10-16 18:43:17.186 31664-31664/com.example.account I/51: -----------AccountTotalDetailListAdapter end--------
+
+10-16 18:43:17.187 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.187 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.188 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.200 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.213 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.237 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.242 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.289 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.294 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.322 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.322 31664-31664/com.example.account I/51: -----------getView----position----0
+
+10-16 18:43:17.342 31664-31664/com.example.account I/51: -----------mTotalDetailList.get(position).CreateTime----1476590005363
+
+10-16 18:43:17.343 31664-31664/com.example.account I/51: -----------ConverDateToString----sDate----2016-10-16
+
+10-16 18:43:17.343 31664-31664/com.example.account I/51: --Cost---1.0
+
+10-16 18:43:17.366 31664-31664/com.example.account I/51: -----------getView----position----1
+
+10-16 18:43:17.378 31664-31664/com.example.account I/51: -----------mTotalDetailList.get(position).CreateTime----1476589476000
+
+10-16 18:43:17.379 31664-31664/com.example.account I/51: -----------ConverDateToString----sDate----2016-10-16
+
+10-16 18:43:17.380 31664-31664/com.example.account I/51: --Cost---7777.0
+
+10-16 18:43:17.467 31664-31664/com.example.account I/51: -AccountRestClient -- Init--start-
+
+10-16 18:43:17.467 31664-31664/com.example.account I/51: --already login in  - token -- Token 14e2627cf583113886cdd0e95069316e24a0af71
+
+10-16 18:43:17.467 31664-31664/com.example.account I/51: --AccountRestClient -- Init--end--
+
+10-16 18:43:17.467 31664-31664/com.example.account I/51: -setServerUrl -- -mServerUrl--http://172.16.202.183:8000/
+
+10-16 18:43:17.468 31664-31664/com.example.account I/51: -start to -get all account --
+
+10-16 18:43:17.468 31664-31664/com.example.account I/51: --get getAbsoluteUrl--http://172.16.202.183:8000/jz/details/
+
+10-16 18:43:17.468 31664-31664/com.example.account I/51: --get getAbsoluteUrl----http://172.16.202.183:8000/jz/details/--Token -- Token 14e2627cf583113886cdd0e95069316e24a0af71
+
+10-16 18:43:17.568 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.571 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.603 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.603 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.629 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.631 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.634 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.636 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.637 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.642 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.644 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.648 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.650 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.652 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.654 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.656 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.661 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.663 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.665 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.682 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.682 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.717 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.718 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.749 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.750 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.780 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.780 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.801 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.802 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.821 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.822 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.841 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.842 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.859 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.860 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.880 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.880 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.903 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.903 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.921 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.921 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.939 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.939 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.957 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.958 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.979 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:17.980 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.005 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.005 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.022 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.022 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.041 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.041 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.059 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.060 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.081 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.081 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.106 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.107 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.126 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.126 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.146 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.147 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.164 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.164 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.181 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.181 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.198 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.198 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.218 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.218 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.241 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.241 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.267 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.267 31664-31664/com.example.account I/51: -----------getCount--------2
+
+10-16 18:43:18.285 31664-31664/com.example.account I/51: The AccountLoadActivity---->onDestroy
+
+10-16 18:43:22.515 31664-31664/com.example.account I/51: ---deleteAccountItem--onFailure--responseString---null
+
+10-16 18:43:22.515 31664-31664/com.example.account I/51: -----syncDownLatch count ---0
+
+10-16 18:43:22.515 31664-31664/com.example.account I/51: onProgress----progress--3
+
+10-16 18:43:22.516 31664-31664/com.example.account I/51: onProgress----progress--2
+
+10-16 18:43:22.521 31664-31664/com.example.account I/51: ------setRefreshActionButtonState---refreshing-----false
+
+10-16 18:43:28.352 31664-31664/com.example.account I/51: ------onItemClick  position--------6
+
+10-16 18:43:28.352 31664-31664/com.example.account I/51: -------start to AccountSettingActivity-------
+
+10-16 18:43:28.353 31664-31664/com.example.account I/51: ------enter into AccountSettingActivity--------
+
+10-16 18:44:12.605 31664-31664/com.example.account I/51: -----account_setting_url-------http://192.168.1.105:8000/
+
+10-16 18:44:12.606 31664-31664/com.example.account I/51: -setServerUrl -- -mServerUrl--http://192.168.1.105:8000/
+
+10-16 18:44:14.382 31664-31664/com.example.account I/51: The AccountTotalActivity---->onReatart
+
+10-16 18:44:14.383 31664-31664/com.example.account I/51: The AccountTotalActivity---->onStart
+
+10-16 18:44:14.383 31664-31664/com.example.account I/51: The AccountTotalActivity---->onResume
+
+10-16 18:44:20.306 31664-31664/com.example.account I/51: ------onOptionsItemSelected--------
+
+10-16 18:44:20.307 31664-31664/com.example.account I/51: -------start to sync-------
+
+10-16 18:44:20.308 31664-31664/com.example.account I/51: --AccountSyncServiceBinder----startSync--
+
+10-16 18:44:20.308 31664-31664/com.example.account I/51: onProgress----progress--1
+
+10-16 18:44:20.316 31664-31664/com.example.account I/51: ------setRefreshActionButtonState---refreshing-----true
+
+10-16 18:44:20.328 31664-31664/com.example.account I/51: --SyncTask-----
+
+10-16 18:44:20.328 31664-305/com.example.account I/51: ------start to sync up-1234--
+
+10-16 18:44:20.328 31664-305/com.example.account I/51: ------start to sync up-4--
+
+10-16 18:44:20.332 31664-305/com.example.account I/51: ------start to sync AccountList ---2
+
+10-16 18:44:20.332 31664-305/com.example.account I/51: ------start to sync mAccountSyncUpList ---0
+
+10-16 18:44:20.332 31664-305/com.example.account I/51: ------CountDownLatch -nTotalCount-0
+
+10-16 18:44:20.332 31664-305/com.example.account I/51: -----await finish---
+
+10-16 18:44:20.369 31664-31664/com.example.account I/51: -start to -get all account --
+
+10-16 18:44:20.370 31664-31664/com.example.account I/51: --get getAbsoluteUrl--http://192.168.1.105:8000/jz/details/
+
+10-16 18:44:20.370 31664-31664/com.example.account I/51: --get getAbsoluteUrl----http://192.168.1.105:8000/jz/details/--Token -- Token 14e2627cf583113886cdd0e95069316e24a0af71
+
+10-16 18:44:20.756 31664-31664/com.example.account I/51: ---deleteAccountItem--onFailure--responseString---{"detail":"Invalid token."}
+
+10-16 18:44:20.757 31664-31664/com.example.account I/51: -----syncDownLatch count ---0
+
+10-16 18:44:20.767 31664-31664/com.example.account I/51: onProgress----progress--3
+
+10-16 18:44:20.767 31664-31664/com.example.account I/51: onProgress----progress--2
+
+10-16 18:44:20.779 31664-31664/com.example.account I/51: ------setRefreshActionButtonState---refreshing-----false
+
+10-16 18:46:14.044 31664-31664/com.example.account I/51: ------onOptionsItemSelected--------
+
+10-16 18:46:14.044 31664-31664/com.example.account I/51: -------start to sync-------
+
+10-16 18:46:14.046 31664-31664/com.example.account I/51: --AccountSyncServiceBinder----startSync--
+
+10-16 18:46:14.046 31664-31664/com.example.account I/51: onProgress----progress--1
+
+10-16 18:46:14.055 31664-31664/com.example.account I/51: ------setRefreshActionButtonState---refreshing-----true
+
+10-16 18:46:14.067 31664-31664/com.example.account I/51: --SyncTask-----
+
+10-16 18:46:14.068 31664-310/com.example.account I/51: ------start to sync up-1234--
+
+10-16 18:46:14.068 31664-310/com.example.account I/51: ------start to sync up-4--
+
+10-16 18:46:14.072 31664-310/com.example.account I/51: ------start to sync AccountList ---2
+
+10-16 18:46:14.072 31664-310/com.example.account I/51: ------start to sync mAccountSyncUpList ---0
+
+10-16 18:46:14.072 31664-310/com.example.account I/51: ------CountDownLatch -nTotalCount-0
+
+10-16 18:46:14.072 31664-310/com.example.account I/51: -----await finish---
+
+10-16 18:46:14.126 31664-31664/com.example.account I/51: -start to -get all account --
+
+10-16 18:46:14.126 31664-31664/com.example.account I/51: --get getAbsoluteUrl--http://192.168.1.105:8000/jz/details/
+
+10-16 18:46:14.126 31664-31664/com.example.account I/51: --get getAbsoluteUrl----http://192.168.1.105:8000/jz/details/--Token -- Token 14e2627cf583113886cdd0e95069316e24a0af71
+
+10-16 18:46:14.279 31664-31664/com.example.account I/51: ---deleteAccountItem--onFailure--responseString---{"detail":"Invalid token."}
+
+10-16 18:46:14.279 31664-31664/com.example.account I/51: -----syncDownLatch count ---0
+
+10-16 18:46:14.279 31664-31664/com.example.account I/51: onProgress----progress--3
+
+10-16 18:46:14.279 31664-31664/com.example.account I/51: onProgress----progress--2
+
+10-16 18:46:14.287 31664-31664/com.example.account I/51: ------setRefreshActionButtonState---refreshing-----false
+
+10-16 18:46:18.650 31664-31664/com.example.account I/51: -----------getCount--------2

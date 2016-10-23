@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('version', models.FloatField(default=0.0, verbose_name='版本号')),
-                ('app', models.FileField(upload_to='App', verbose_name='文件')),
+                ('download_url', models.FileField(upload_to='App', verbose_name='文件')),
                 ('created', models.DateTimeField(auto_now_add=True, verbose_name='发布时间')),
             ],
         ),

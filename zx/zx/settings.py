@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'rest_framework',
     'rest_framework.authtoken',
     'qrcode_model',
+    'ckeditor'
     # 'anymail',
 )
 
@@ -142,9 +143,19 @@ ANYMAIL = {
 
 EMAIL_BACKEND = 'anymail.backends.mailgun.MailgunBackend'  # or sendgrid.SendGridBackend, or...
 DEFAULT_FROM_EMAIL = "zx@zx.com"  # if you don't already have this in settings
+CKEDITOR_JQUERY_URL = 'http://libs.baidu.com/jquery/2.0.0/jquery.min.js'
 
-
-
-
-
-
+CKEDITOR_CONFIGS = {
+    'awesome_ckeditor': {
+        'toolbar': 'Basic',
+    },
+    'default': {
+        'toolbar': 'Custom',
+        'toolbar_Custom':[
+            ['Bold', 'Italic', 'Underline'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['Link', 'Unlink'],
+            ['RemoveFormat', 'Source']
+        ]
+    },
+}

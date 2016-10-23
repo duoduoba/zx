@@ -68,3 +68,4 @@
 2016-10-17 23:13:42,304 INFO [FILE:models.py LINE:149] image4
 2016-10-17 23:13:42,305 INFO [FILE:models.py LINE:135] E:\work\zx\media\
 2016-10-17 23:13:42,306 INFO [FILE:models.py LINE:140] remove fail: file not exist
+2016-10-23 23:39:23,546 ERROR [FILE:views.py LINE:415] No App uploaded from Admin

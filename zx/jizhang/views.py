@@ -409,24 +409,24 @@ class AppVersionView(generics.ListCreateAPIView):
 
 def latest_version(request):
     if request.method == 'GET':
-        res = {'version_code': 0.0}
+        # res = {'version_code': 0.0}
         versions = AppVersion.objects.all().order_by('-created')
         if not versions:
-            return JsonResponse(res)
+            logger.error('No App uploaded from Admin')
+            return JsonResponse({'Error': 'No App file exist'})
         latest = versions[0]
-        res['version_code'] = latest.version
+        serializer = AppVersionSerializer(instance=latest)
+        res = serializer.data
+        # res['version_code'] = latest.version
+        url = download_url(request, latest)
+        res.update(url)
         return JsonResponse(res)
 
-def download_url(request):
+def download_url(request, latest_item):
     if request.method == 'GET':
         head = 'http://'
         if request.is_secure():
             head = 'https://'
         res = {'download_url': None}
-        # ver = float(version)
-        versions = AppVersion.objects.all().order_by('-created')
-        if not versions:
-            return JsonResponse(res)
-        latest_item = versions[0]
-        res['download_url'] = head + request.get_host() + latest_item.app.url
-        return JsonResponse(res)
+        res['download_url'] = head + request.get_host() + latest_item.download_url.url
+        return res

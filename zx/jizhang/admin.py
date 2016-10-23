@@ -25,6 +25,7 @@ admin.site.register(BuyPlaceDataWithCity)
 
 
 class AppAdmin(admin.ModelAdmin):
-	list_display = ('version', 'app')
+	list_display = ('version_code', 'version_name', 'download_url', 'created')
 
 admin.site.register(AppVersion, AppAdmin)
+admin.site.register(Article)

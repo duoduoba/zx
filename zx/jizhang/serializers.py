@@ -122,5 +122,8 @@ class FeedbackSerializer(serializers.ModelSerializer):
 
 
 class AppVersionSerializer(serializers.ModelSerializer):
+    created = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", read_only=True)
+    cover_start_date = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", read_only=True)
+    cover_end_date = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", read_only=True)
     class Meta:
         model = AppVersion

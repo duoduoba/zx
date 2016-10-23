@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_delete, pre_save
 from django.dispatch import receiver
 from jizhang.log.logger import logger
+from ckeditor.fields import RichTextField
 
 
 # class Province(models.Model):
@@ -258,6 +259,19 @@ class Feedback(models.Model):
 
 
 class AppVersion(models.Model):
-    version = models.FloatField(verbose_name='版本号', default=0.0)
-    app = models.FileField(upload_to='App', verbose_name='文件')
+    version_code = models.PositiveIntegerField(verbose_name='版本号', default=1)
+    version_name = models.CharField(verbose_name='版本名', max_length=10)
+    download_url = models.FileField(upload_to='App', verbose_name='文件链接')
+    cover_update = models.CharField(max_length=20, null=True, blank=True)
+    cover_start_date = models.DateTimeField(null=True, blank=True, verbose_name='封面启用时间')
+    cover_end_date = models.DateTimeField(null=True, blank=True, verbose_name='封面结束时间')
+    cover_url = models.FileField(upload_to='Cover', verbose_name='封面链接')
     created = models.DateTimeField(auto_now_add=True, verbose_name='发布时间')
+
+
+class Article(models.Model):
+    title = models.CharField(max_length=50, default='title')
+    content = RichTextField()
+
+    def __str__(self):
+        return self.title
