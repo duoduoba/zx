@@ -261,6 +261,7 @@ class Feedback(models.Model):
 class AppVersion(models.Model):
     version_code = models.PositiveIntegerField(verbose_name='版本号', default=1)
     version_name = models.CharField(verbose_name='版本名', max_length=10)
+    update_log = models.TextField(verbose_name='更新日志', blank=True, null=True)
     download_url = models.FileField(upload_to='App', verbose_name='文件链接')
     cover_update = models.CharField(max_length=20, null=True, blank=True)
     cover_start_date = models.DateTimeField(null=True, blank=True, verbose_name='封面启用时间')
