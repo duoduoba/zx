@@ -105,7 +105,7 @@ class BuyPlace(models.Model):
 
 
 class SpendDetail(models.Model):
-    owner = models.ForeignKey(User, to_field='username', verbose_name='用户名')
+    owner = models.ForeignKey(User, to_field='username', related_name='spend_detail_set', verbose_name='用户名')
     price = models.FloatField(verbose_name='价格')
     unit = models.ForeignKey(Currency, to_field='name', null=True, blank=True, verbose_name='单位')
 

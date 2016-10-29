@@ -1,6 +1,6 @@
 # coding=utf8
 import datetime
-
+import time
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -350,7 +350,16 @@ class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
     place_obj = None
 
     def create(self, request, *args, **kwargs):
+        self.start = time.time()
+        print('create start..................')
         self.pre_get_or_create(request)
+        local_id = request.data.get('local_id')
+        user = request.user
+        spend_detail_set = user.spend_detail_set
+        local_id_db = spend_detail_set.filter(local_id=local_id)
+        if local_id_db:
+            print('delete old local_id %s' % local_id)
+            local_id_db.delete()
         return super(SpendDetailListView, self).create(request, *args, **kwargs)
 
     def perform_create(self, serializer):
@@ -358,6 +367,7 @@ class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
             serializer.save(owner=self.request.user)
         else:
             serializer.save(owner=self.request.user, buy_place=self.place_obj)
+        print('perform_create end................. use time= %d' % (time.time() - self.start))
 
     def get_queryset(self):
         # self.queryset = SpendDetail.objects.filter(owner=self.request.user)
@@ -421,6 +431,7 @@ def latest_version(request):
         url = download_url(request, latest)
         res.update(url)
         return JsonResponse(res)
+
 
 def download_url(request, latest_item):
     if request.method == 'GET':
