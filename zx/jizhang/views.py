@@ -350,15 +350,15 @@ class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
     place_obj = None
 
     def create(self, request, *args, **kwargs):
-        self.start = time.time()
-        print('create start..................')
+        logger.info('create new item time is %f , local id is %s' % (time.clock(), request.data.get('local_id')))
         self.pre_get_or_create(request)
         local_id = request.data.get('local_id')
+        self.local_id = local_id
         user = request.user
         spend_detail_set = user.spend_detail_set
         local_id_db = spend_detail_set.filter(local_id=local_id)
         if local_id_db:
-            print('delete old local_id %s' % local_id)
+            logger.warning('delete old local_id %s' % local_id)
             local_id_db.delete()
         return super(SpendDetailListView, self).create(request, *args, **kwargs)
 
@@ -367,7 +367,7 @@ class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
             serializer.save(owner=self.request.user)
         else:
             serializer.save(owner=self.request.user, buy_place=self.place_obj)
-        print('perform_create end................. use time= %d' % (time.time() - self.start))
+        logger.info('perform_create end time is %f, local id = %s' % (time.clock(), self.local_id))
 
     def get_queryset(self):
         # self.queryset = SpendDetail.objects.filter(owner=self.request.user)
@@ -420,6 +420,7 @@ class AppVersionView(generics.ListCreateAPIView):
 def latest_version(request):
     if request.method == 'GET':
         # res = {'version_code': 0.0}
+        logger.info('I am logger infor')
         versions = AppVersion.objects.all().order_by('-created')
         if not versions:
             logger.error('No App uploaded from Admin')

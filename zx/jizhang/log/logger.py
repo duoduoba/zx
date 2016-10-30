@@ -15,12 +15,12 @@ formatter = logging.Formatter('%(asctime)s %(levelname)s [FILE:%(filename)s LINE
 file_handler = RotatingFileHandler(filename, mode='a', backupCount=BACKUPCOUNT, maxBytes=MAXLOGSIZE)
 stream_handler = logging.StreamHandler()
 
-stream_handler.setLevel(logging.DEBUG)
+stream_handler.setLevel(logging.INFO)
 stream_handler.setFormatter(formatter)
 
 file_handler.setFormatter(formatter)
-file_handler.setLevel(logging.DEBUG)
+file_handler.setLevel(logging.INFO)
 
 logger.addHandler(file_handler)
 logger.addHandler(stream_handler)
-# logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)

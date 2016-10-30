@@ -95,3 +95,1397 @@
 2016-10-29 22:59:49,530 ERROR [FILE:views.py LINE:425] No App uploaded from Admin
 2016-10-29 23:02:42,685 ERROR [FILE:views.py LINE:425] No App uploaded from Admin
 2016-10-29 23:03:24,753 ERROR [FILE:views.py LINE:425] No App uploaded from Admin
+2016-10-30 10:13:45,570 ERROR [FILE:views.py LINE:425] No App uploaded from Admin
+2016-10-30 10:57:32,244 ERROR [FILE:views.py LINE:425] No App uploaded from Admin
+2016-10-30 12:28:32,301 ERROR [FILE:views.py LINE:425] No App uploaded from Admin
+2016-10-30 12:29:03,942 INFO [FILE:views.py LINE:423] I am logger infor
+2016-10-30 12:29:03,947 ERROR [FILE:views.py LINE:426] No App uploaded from Admin
+2016-10-30 12:30:06,817 INFO [FILE:views.py LINE:423] I am logger infor
+2016-10-30 12:30:06,822 ERROR [FILE:views.py LINE:426] No App uploaded from Admin
+2016-10-30 12:37:27,459 INFO [FILE:models.py LINE:147] 6.0
+2016-10-30 12:37:27,460 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:37:27,460 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160610_133817.jpg
+2016-10-30 12:37:27,493 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,493 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:37:27,493 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160610_133918.jpg
+2016-10-30 12:37:27,498 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,498 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:37:27,499 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160610_133810.jpg
+2016-10-30 12:37:27,503 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,503 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:37:27,503 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160610_133756.jpg
+2016-10-30 12:37:27,507 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,507 INFO [FILE:models.py LINE:147] 10.0
+2016-10-30 12:37:27,508 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:37:27,508 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160809_182743.jpg
+2016-10-30 12:37:27,514 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,515 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:37:27,515 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160809_131519.jpg
+2016-10-30 12:37:27,519 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,519 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:37:27,520 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160809_131527.jpg
+2016-10-30 12:37:27,523 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,524 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:37:27,524 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160809_131532.jpg
+2016-10-30 12:37:27,527 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,528 INFO [FILE:models.py LINE:147] 9.0
+2016-10-30 12:37:27,528 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:37:27,528 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214229_0dTVzcj.jpg
+2016-10-30 12:37:27,532 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,533 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:37:27,533 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214400_mcqcrFm.jpg
+2016-10-30 12:37:27,537 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,537 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:37:27,537 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214354_AEBszAP.jpg
+2016-10-30 12:37:27,541 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,541 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:37:27,542 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214440.jpg
+2016-10-30 12:37:27,545 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,545 INFO [FILE:models.py LINE:147] 7.0
+2016-10-30 12:37:27,546 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:37:27,546 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161025_103520_syO6LeU.jpg
+2016-10-30 12:37:27,549 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,550 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:37:27,550 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161015_172608.jpg
+2016-10-30 12:37:27,554 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,555 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:37:27,555 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161015_172534.jpg
+2016-10-30 12:37:27,559 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,559 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:37:27,559 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161004_085402.jpg
+2016-10-30 12:37:27,563 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,563 INFO [FILE:models.py LINE:147] 3.0
+2016-10-30 12:37:27,563 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:37:27,564 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160825_200821.jpg
+2016-10-30 12:37:27,567 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,567 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:37:27,568 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214400.jpg
+2016-10-30 12:37:27,571 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,571 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:37:27,572 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214354.jpg
+2016-10-30 12:37:27,576 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,576 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:37:27,577 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214229.jpg
+2016-10-30 12:37:27,581 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,581 INFO [FILE:models.py LINE:147] 4.0
+2016-10-30 12:37:27,581 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:37:27,582 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1474189924941.jpg
+2016-10-30 12:37:27,585 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,586 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:37:27,586 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-09-19-16-34-16.jpeg
+2016-10-30 12:37:27,587 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,587 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:37:27,587 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160923_140827_XzGVnX5.jpg
+2016-10-30 12:37:27,591 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,591 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:37:27,592 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160923_150748.jpg
+2016-10-30 12:37:27,596 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,596 INFO [FILE:models.py LINE:147] 2.0
+2016-10-30 12:37:27,596 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:37:27,597 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-02-41.jpeg
+2016-10-30 12:37:27,598 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,598 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:37:27,598 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30_iVMdY57.jpeg
+2016-10-30 12:37:27,599 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,600 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:37:27,600 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160923_140827.jpg
+2016-10-30 12:37:27,603 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,604 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:37:27,604 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160923_145454.jpg
+2016-10-30 12:37:27,608 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,608 INFO [FILE:models.py LINE:147] 8.0
+2016-10-30 12:37:27,608 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:37:27,608 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-22-45-39.jpeg
+2016-10-30 12:37:27,609 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,610 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:37:27,610 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161025_103520.jpg
+2016-10-30 12:37:27,615 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,616 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:37:27,616 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1476959697128.jpg
+2016-10-30 12:37:27,621 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,621 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:37:27,621 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-21-40-49.jpeg
+2016-10-30 12:37:27,622 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,623 INFO [FILE:models.py LINE:147] 5.0
+2016-10-30 12:37:27,623 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:37:27,623 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMAG0025.jpg
+2016-10-30 12:37:27,628 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,628 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:37:27,629 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\44746274e2fbf5c1.jpg
+2016-10-30 12:37:27,632 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,633 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:37:27,633 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMAG0265.jpg
+2016-10-30 12:37:27,638 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,638 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:37:27,638 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214412.jpg
+2016-10-30 12:37:27,644 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,644 INFO [FILE:models.py LINE:147] 1.0
+2016-10-30 12:37:27,645 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:37:27,645 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-04-21.jpeg
+2016-10-30 12:37:27,649 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,650 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:37:27,650 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 12:37:27,652 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,654 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:37:27,655 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 12:37:27,657 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:37:27,657 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:37:27,657 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30.jpeg
+2016-10-30 12:37:27,659 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:38:05,246 INFO [FILE:views.py LINE:423] I am logger infor
+2016-10-30 12:38:05,256 ERROR [FILE:views.py LINE:426] No App uploaded from Admin
+2016-10-30 12:40:55,127 INFO [FILE:views.py LINE:423] I am logger infor
+2016-10-30 12:40:55,135 ERROR [FILE:views.py LINE:426] No App uploaded from Admin
+2016-10-30 12:40:57,253 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:40:57,254 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:40:57,254 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:40:57,403 INFO [FILE:models.py LINE:158] 0.0
+2016-10-30 12:40:57,595 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:40:57,595 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:40:57,596 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:40:57,612 INFO [FILE:models.py LINE:158] 2.0
+2016-10-30 12:40:57,992 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:40:57,993 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:40:57,993 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:40:58,020 INFO [FILE:models.py LINE:158] 1.0
+2016-10-30 12:41:12,699 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:41:12,700 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:41:12,700 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:41:12,711 INFO [FILE:models.py LINE:158] 3.0
+2016-10-30 12:41:15,430 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:41:15,431 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:41:15,431 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:41:15,438 INFO [FILE:models.py LINE:147] 3.0
+2016-10-30 12:41:15,439 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:41:15,439 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161015_172534.jpg
+2016-10-30 12:41:15,444 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:15,444 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:41:15,445 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161015_172608.jpg
+2016-10-30 12:41:15,450 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:15,450 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:41:15,451 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-16-18-56-12.jpeg
+2016-10-30 12:41:15,452 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:15,452 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:41:15,453 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 12:41:15,453 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 12:41:15,468 INFO [FILE:models.py LINE:158] 3.0
+2016-10-30 12:41:21,160 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:41:21,161 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:41:21,161 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:41:21,178 INFO [FILE:models.py LINE:158] 4.0
+2016-10-30 12:41:25,415 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:41:25,416 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:41:25,416 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:41:25,426 INFO [FILE:models.py LINE:147] 4.0
+2016-10-30 12:41:25,426 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:41:25,427 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1475808749712.jpg
+2016-10-30 12:41:25,434 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:25,435 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:41:25,435 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1475808810871.jpg
+2016-10-30 12:41:25,441 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:25,442 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:41:25,442 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161007_153214.jpg
+2016-10-30 12:41:25,448 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:25,449 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:41:25,449 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161007_100320.jpg
+2016-10-30 12:41:25,455 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:25,470 INFO [FILE:models.py LINE:158] 4.0
+2016-10-30 12:41:34,446 INFO [FILE:models.py LINE:147] 4.0
+2016-10-30 12:41:34,447 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:41:34,447 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1475808749712.jpg
+2016-10-30 12:41:34,451 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,452 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:41:34,452 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1475808810871.jpg
+2016-10-30 12:41:34,456 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,457 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:41:34,457 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161007_153214.jpg
+2016-10-30 12:41:34,462 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,463 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:41:34,463 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161007_100320.jpg
+2016-10-30 12:41:34,469 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,469 INFO [FILE:models.py LINE:147] 3.0
+2016-10-30 12:41:34,469 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:41:34,470 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161015_172534.jpg
+2016-10-30 12:41:34,474 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,475 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:41:34,475 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161015_172608.jpg
+2016-10-30 12:41:34,479 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,480 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:41:34,480 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-16-18-56-12.jpeg
+2016-10-30 12:41:34,481 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,481 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:41:34,482 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 12:41:34,483 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 12:41:34,483 INFO [FILE:models.py LINE:147] 1.0
+2016-10-30 12:41:34,483 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:41:34,483 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-02-41.jpeg
+2016-10-30 12:41:34,484 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,485 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:41:34,485 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-04-21_yhBrefa.jpeg
+2016-10-30 12:41:34,486 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,486 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:41:34,486 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19_fab7xrQ.jpeg
+2016-10-30 12:41:34,487 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,488 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:41:34,488 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29_PEqXqTx.jpeg
+2016-10-30 12:41:34,489 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,489 INFO [FILE:models.py LINE:147] 2.0
+2016-10-30 12:41:34,489 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:41:34,490 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\-109cc93d330ae685.jpg
+2016-10-30 12:41:34,493 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,493 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:41:34,494 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-21-34-27.jpeg
+2016-10-30 12:41:34,496 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,496 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:41:34,496 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-21-40-49.jpeg
+2016-10-30 12:41:34,497 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,498 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:41:34,498 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-22-22-29.jpeg
+2016-10-30 12:41:34,498 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,499 INFO [FILE:models.py LINE:147] 0.0
+2016-10-30 12:41:34,499 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:41:34,499 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 12:41:34,500 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,500 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:41:34,501 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 12:41:34,502 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,502 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:41:34,502 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-04-21.jpeg
+2016-10-30 12:41:34,503 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:41:34,504 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:41:34,504 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 12:41:34,504 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 12:41:43,027 INFO [FILE:views.py LINE:423] I am logger infor
+2016-10-30 12:41:43,034 ERROR [FILE:views.py LINE:426] No App uploaded from Admin
+2016-10-30 12:44:22,414 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:44:22,415 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:44:22,416 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:44:22,440 INFO [FILE:models.py LINE:158] 9.0
+2016-10-30 12:44:24,252 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:44:24,253 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:44:24,253 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:44:24,271 INFO [FILE:models.py LINE:158] 1.0
+2016-10-30 12:44:24,451 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:44:24,451 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:44:24,452 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:44:24,471 INFO [FILE:models.py LINE:158] 6.0
+2016-10-30 12:44:25,277 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:44:25,278 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:44:25,278 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:44:25,298 INFO [FILE:models.py LINE:158] 0.0
+2016-10-30 12:44:25,551 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:44:25,552 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:44:25,553 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:44:25,584 INFO [FILE:models.py LINE:158] 8.0
+2016-10-30 12:44:26,204 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:44:26,205 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:44:26,206 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:44:26,231 INFO [FILE:models.py LINE:158] 5.0
+2016-10-30 12:44:27,862 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:44:27,863 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:44:27,864 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:44:27,884 INFO [FILE:models.py LINE:158] 4.0
+2016-10-30 12:44:36,679 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:44:36,680 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:44:36,680 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:44:36,701 INFO [FILE:models.py LINE:158] 3.0
+2016-10-30 12:44:36,882 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:44:36,882 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:44:36,883 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:44:36,906 INFO [FILE:models.py LINE:158] 7.0
+2016-10-30 12:48:08,874 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:48:08,875 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:48:08,876 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:48:08,888 INFO [FILE:models.py LINE:158] 13.0
+2016-10-30 12:48:11,785 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:48:11,786 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:48:11,786 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:48:11,799 INFO [FILE:models.py LINE:158] 11.0
+2016-10-30 12:48:41,502 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:48:41,502 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:48:41,503 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:48:41,524 INFO [FILE:models.py LINE:158] 12.0
+2016-10-30 12:48:42,649 INFO [FILE:models.py LINE:147] 11.0
+2016-10-30 12:48:42,650 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:48:42,650 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-02-41_bOnxvCg.jpeg
+2016-10-30 12:48:42,652 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,653 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:48:42,653 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30_kaM16IQ.jpeg
+2016-10-30 12:48:42,655 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,655 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:48:42,656 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48_JVz4Zo4.jpeg
+2016-10-30 12:48:42,659 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,660 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:48:42,661 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 12:48:42,661 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 12:48:42,662 INFO [FILE:models.py LINE:147] 13.0
+2016-10-30 12:48:42,662 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:48:42,662 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-09-22-03-01.jpeg
+2016-10-30 12:48:42,663 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,664 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:48:42,664 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-09-21-35-24.jpeg
+2016-10-30 12:48:42,665 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,665 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:48:42,666 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-09-21-17-05.jpeg
+2016-10-30 12:48:42,667 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,667 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:48:42,667 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 12:48:42,668 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 12:48:42,668 INFO [FILE:models.py LINE:147] 7.0
+2016-10-30 12:48:42,668 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:48:42,669 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\-109cc93d330ae685_oyXyBs6.jpg
+2016-10-30 12:48:42,674 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,675 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:48:42,675 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-21-34-27_wwa4Nge.jpeg
+2016-10-30 12:48:42,677 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,678 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:48:42,678 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-21-40-49.jpeg
+2016-10-30 12:48:42,680 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,680 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:48:42,680 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1476959697128.jpg
+2016-10-30 12:48:42,686 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,687 INFO [FILE:models.py LINE:147] 3.0
+2016-10-30 12:48:42,687 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:48:42,688 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161003_130333.jpg
+2016-10-30 12:48:42,695 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,696 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:48:42,697 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161003_130401.jpg
+2016-10-30 12:48:42,704 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,705 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:48:42,706 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\mmexport1475579416019.jpg
+2016-10-30 12:48:42,711 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,711 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:48:42,712 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161004_085402.jpg
+2016-10-30 12:48:42,718 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,719 INFO [FILE:models.py LINE:147] 4.0
+2016-10-30 12:48:42,719 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:48:42,720 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161010_151326.jpg
+2016-10-30 12:48:42,724 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,724 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:48:42,725 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-22-22-29_nF2WTpe.jpeg
+2016-10-30 12:48:42,726 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,726 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:48:42,726 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\-109cc93d330ae685_NerNYr7.jpg
+2016-10-30 12:48:42,731 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,731 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:48:42,731 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-21-34-27.jpeg
+2016-10-30 12:48:42,733 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,733 INFO [FILE:models.py LINE:147] 5.0
+2016-10-30 12:48:42,734 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:48:42,734 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30_qrflBfN.jpeg
+2016-10-30 12:48:42,736 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,736 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:48:42,737 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29_DwPrYTh.jpeg
+2016-10-30 12:48:42,738 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,739 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:48:42,739 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19_VWsLQoo.jpeg
+2016-10-30 12:48:42,740 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,742 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:48:42,743 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-02-41_U5ZUdhl.jpeg
+2016-10-30 12:48:42,744 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,745 INFO [FILE:models.py LINE:147] 8.0
+2016-10-30 12:48:42,745 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:48:42,746 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48_IFVpWpm.jpeg
+2016-10-30 12:48:42,747 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,748 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:48:42,748 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19_7ODbXKY.jpeg
+2016-10-30 12:48:42,750 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,750 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:48:42,751 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30_m2NhpjS.jpeg
+2016-10-30 12:48:42,753 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,753 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:48:42,754 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29_z2YWtwW.jpeg
+2016-10-30 12:48:42,755 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,756 INFO [FILE:models.py LINE:147] 0.0
+2016-10-30 12:48:42,756 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:48:42,757 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30_LlY1Xcv.jpeg
+2016-10-30 12:48:42,758 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,759 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:48:42,760 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-04-21_rTejEMo.jpeg
+2016-10-30 12:48:42,762 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,762 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:48:42,763 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19_FCc86Vm.jpeg
+2016-10-30 12:48:42,765 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,765 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:48:42,766 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48_lg6iWU2.jpeg
+2016-10-30 12:48:42,768 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,769 INFO [FILE:models.py LINE:147] 6.0
+2016-10-30 12:48:42,769 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:48:42,770 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-04-21_AzltWxQ.jpeg
+2016-10-30 12:48:42,772 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,772 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:48:42,773 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-02-41_VrfsPzj.jpeg
+2016-10-30 12:48:42,775 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,776 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:48:42,776 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30.jpeg
+2016-10-30 12:48:42,778 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,779 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:48:42,779 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48.jpeg
+2016-10-30 12:48:42,782 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,783 INFO [FILE:models.py LINE:147] 1.0
+2016-10-30 12:48:42,783 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:48:42,784 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-04-21.jpeg
+2016-10-30 12:48:42,785 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,786 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:48:42,787 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 12:48:42,789 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,789 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:48:42,790 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 12:48:42,792 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,793 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:48:42,793 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-02-41.jpeg
+2016-10-30 12:48:42,795 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,796 INFO [FILE:models.py LINE:147] 9.0
+2016-10-30 12:48:42,797 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:48:42,797 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-15-19-08-37.jpeg
+2016-10-30 12:48:42,799 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,800 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:48:42,800 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\-109cc93d330ae685.jpg
+2016-10-30 12:48:42,807 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,808 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:48:42,808 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-22-22-29.jpeg
+2016-10-30 12:48:42,810 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:42,811 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:48:42,812 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-22-22-58.jpeg
+2016-10-30 12:48:42,814 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:48,642 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:48:48,643 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:48:48,643 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:48:48,667 INFO [FILE:models.py LINE:158] 18.0
+2016-10-30 12:48:53,120 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:48:53,120 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:48:53,121 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:48:53,141 INFO [FILE:models.py LINE:158] 14.0
+2016-10-30 12:48:55,244 INFO [FILE:models.py LINE:147] 12.0
+2016-10-30 12:48:55,244 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:48:55,244 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-09-22-03-01_oHxo9dw.jpeg
+2016-10-30 12:48:55,245 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:55,246 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:48:55,246 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161015_172608.jpg
+2016-10-30 12:48:55,251 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:55,251 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:48:55,252 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161015_172534.jpg
+2016-10-30 12:48:55,256 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:48:55,257 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:48:55,258 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-09-21-17-05_isVNG2Y.jpeg
+2016-10-30 12:48:55,260 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:49:09,810 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:49:09,810 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:49:09,811 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:49:09,825 INFO [FILE:models.py LINE:158] 20.0
+2016-10-30 12:49:09,893 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:49:09,893 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:49:09,894 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:49:09,904 INFO [FILE:models.py LINE:158] 19.0
+2016-10-30 12:49:10,910 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:49:10,911 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:49:10,911 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:49:10,931 INFO [FILE:models.py LINE:158] 17.0
+2016-10-30 12:49:11,031 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:49:11,033 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:49:11,033 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:49:11,064 INFO [FILE:models.py LINE:158] 14.0
+2016-10-30 12:49:11,178 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:49:11,178 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:49:11,179 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:49:11,190 INFO [FILE:models.py LINE:158] 16.0
+2016-10-30 12:58:40,209 INFO [FILE:views.py LINE:353] create new item moment is: 0.31276504540185474 , local id is 63
+2016-10-30 12:58:40,221 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:58:40,222 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:58:40,222 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:58:40,236 INFO [FILE:models.py LINE:158] 0.0
+2016-10-30 12:58:40,268 INFO [FILE:views.py LINE:370] perform_create end, use time= 0 second, local id = 63
+2016-10-30 12:58:42,987 INFO [FILE:views.py LINE:353] create new item moment is: 0.3644947836166924 , local id is 62
+2016-10-30 12:58:42,989 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:58:42,989 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:58:42,990 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:58:43,090 INFO [FILE:views.py LINE:353] create new item moment is: 6.037480680061824e-07 , local id is 64
+2016-10-30 12:58:43,091 INFO [FILE:views.py LINE:301] None
+2016-10-30 12:58:43,091 INFO [FILE:views.py LINE:302] 
+2016-10-30 12:58:43,092 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 12:58:43,137 INFO [FILE:models.py LINE:158] 1.0
+2016-10-30 12:58:43,134 INFO [FILE:models.py LINE:158] 0.0
+2016-10-30 12:58:43,181 INFO [FILE:views.py LINE:370] perform_create end, use time= 3 second, local id = 62
+2016-10-30 12:58:43,196 INFO [FILE:views.py LINE:370] perform_create end, use time= 3 second, local id = 64
+2016-10-30 12:59:58,997 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-10-30 12:59:59,003 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-10-30 12:59:59,024 INFO [FILE:models.py LINE:147] 0.0
+2016-10-30 12:59:59,033 INFO [FILE:models.py LINE:150] image1
+2016-10-30 12:59:59,034 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-02-41.jpeg
+2016-10-30 12:59:59,047 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:59:59,048 INFO [FILE:models.py LINE:150] image2
+2016-10-30 12:59:59,049 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30_sIOuvmR.jpeg
+2016-10-30 12:59:59,060 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:59:59,061 INFO [FILE:models.py LINE:150] image3
+2016-10-30 12:59:59,062 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-04-21.jpeg
+2016-10-30 12:59:59,063 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 12:59:59,064 INFO [FILE:models.py LINE:150] image4
+2016-10-30 12:59:59,064 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 12:59:59,064 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 13:00:24,177 INFO [FILE:models.py LINE:147] 1.0
+2016-10-30 13:00:24,177 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:00:24,177 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30.jpeg
+2016-10-30 13:00:24,178 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,179 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:00:24,179 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-02-41_ES8jVkM.jpeg
+2016-10-30 13:00:24,180 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,180 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:00:24,181 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 13:00:24,181 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 13:00:24,181 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:00:24,181 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 13:00:24,182 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 13:00:24,182 INFO [FILE:models.py LINE:147] 0.0
+2016-10-30 13:00:24,182 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:00:24,182 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 13:00:24,183 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 13:00:24,183 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:00:24,183 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 13:00:24,183 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 13:00:24,184 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:00:24,184 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 13:00:24,184 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 13:00:24,184 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:00:24,185 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 13:00:24,185 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 13:00:24,185 INFO [FILE:models.py LINE:147] 16.0
+2016-10-30 13:00:24,185 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:00:24,186 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160916_154054.jpg
+2016-10-30 13:00:24,190 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,191 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:00:24,191 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160914_160806_E2JniW9.jpg
+2016-10-30 13:00:24,195 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,196 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:00:24,196 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160914_160808_PY58btt.jpg
+2016-10-30 13:00:24,200 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,201 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:00:24,201 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160916_154121.jpg
+2016-10-30 13:00:24,205 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,206 INFO [FILE:models.py LINE:147] 14.0
+2016-10-30 13:00:24,206 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:00:24,206 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161007_153214.jpg
+2016-10-30 13:00:24,210 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,210 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:00:24,210 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1475808749712.jpg
+2016-10-30 13:00:24,215 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,215 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:00:24,215 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1475808810871.jpg
+2016-10-30 13:00:24,220 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,220 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:00:24,222 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161007_100320.jpg
+2016-10-30 13:00:24,225 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,225 INFO [FILE:models.py LINE:147] 17.0
+2016-10-30 13:00:24,225 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:00:24,226 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160914_160806_hiEQZI1.jpg
+2016-10-30 13:00:24,230 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,230 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:00:24,230 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160914_160808.jpg
+2016-10-30 13:00:24,234 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,234 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:00:24,235 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160914_160803.jpg
+2016-10-30 13:00:24,239 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,239 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:00:24,240 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160914_160758.jpg
+2016-10-30 13:00:24,245 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,245 INFO [FILE:models.py LINE:147] 19.0
+2016-10-30 13:00:24,245 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:00:24,246 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214412.jpg
+2016-10-30 13:00:24,249 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,250 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:00:24,250 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214442_spw9k0u.jpg
+2016-10-30 13:00:24,253 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,254 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:00:24,254 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214444_BVqOKRp.jpg
+2016-10-30 13:00:24,258 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,258 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:00:24,258 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214428_41Oc4XV.jpg
+2016-10-30 13:00:24,263 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,263 INFO [FILE:models.py LINE:147] 20.0
+2016-10-30 13:00:24,263 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:00:24,263 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214442.jpg
+2016-10-30 13:00:24,269 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,269 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:00:24,269 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214444.jpg
+2016-10-30 13:00:24,273 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,273 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:00:24,273 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214447.jpg
+2016-10-30 13:00:24,277 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,277 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:00:24,277 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160826_214428.jpg
+2016-10-30 13:00:24,282 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,282 INFO [FILE:models.py LINE:147] 14.0
+2016-10-30 13:00:24,282 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:00:24,283 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160923_150748.jpg
+2016-10-30 13:00:24,286 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,286 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:00:24,287 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\mmexport1475222688997.jpg
+2016-10-30 13:00:24,290 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,291 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:00:24,291 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161002_172814.jpg
+2016-10-30 13:00:24,294 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,295 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:00:24,295 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161002_172637.jpg
+2016-10-30 13:00:24,298 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,299 INFO [FILE:models.py LINE:147] 18.0
+2016-10-30 13:00:24,299 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:00:24,300 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_0118.JPG
+2016-10-30 13:00:24,304 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,304 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:00:24,304 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\44746274e2fbf5c1.jpg
+2016-10-30 13:00:24,308 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,308 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:00:24,308 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160914_160111.jpg
+2016-10-30 13:00:24,312 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:00:24,313 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:00:24,313 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20160914_160806.jpg
+2016-10-30 13:00:24,318 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:03:18,973 INFO [FILE:views.py LINE:353] create new item moment is 1.8112442040185472e-06 , local id is 74
+2016-10-30 13:03:18,974 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:03:18,975 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:03:18,975 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:03:19,069 INFO [FILE:models.py LINE:158] 9.0
+2016-10-30 13:03:19,114 INFO [FILE:views.py LINE:370] perform_create end, use 16.699297237248842 second, local id = 74
+2016-10-30 13:03:32,421 INFO [FILE:views.py LINE:353] create new item moment is 0.42796681800618236 , local id is 66
+2016-10-30 13:03:32,422 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:03:32,423 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:03:32,423 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:03:32,445 INFO [FILE:models.py LINE:158] 2.0
+2016-10-30 13:03:32,526 INFO [FILE:views.py LINE:370] perform_create end, use 30.11182742465224 second, local id = 66
+2016-10-30 13:03:33,196 INFO [FILE:views.py LINE:353] create new item moment is 0.3699128187789799 , local id is 67
+2016-10-30 13:03:33,197 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:03:33,197 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:03:33,197 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:03:33,207 INFO [FILE:models.py LINE:158] 3.0
+2016-10-30 13:03:33,243 INFO [FILE:views.py LINE:370] perform_create end, use 30.828332689335394 second, local id = 67
+2016-10-30 13:03:37,424 INFO [FILE:views.py LINE:353] create new item moment is 0.4876853506568779 , local id is 65
+2016-10-30 13:03:37,425 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:03:37,426 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:03:37,426 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:03:37,439 INFO [FILE:models.py LINE:158] 1.0
+2016-10-30 13:03:37,481 INFO [FILE:views.py LINE:370] perform_create end, use 35.06671295401855 second, local id = 65
+2016-10-30 13:03:46,917 INFO [FILE:views.py LINE:353] create new item moment is 0.0483789364374034 , local id is 68
+2016-10-30 13:03:46,919 INFO [FILE:views.py LINE:353] create new item moment is 0.006286828632148377 , local id is 73
+2016-10-30 13:03:46,920 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:03:46,923 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:03:46,924 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:03:46,926 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:03:46,926 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:03:46,930 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:03:46,959 INFO [FILE:models.py LINE:158] 4.0
+2016-10-30 13:03:46,974 INFO [FILE:models.py LINE:158] 10.0
+2016-10-30 13:03:47,039 INFO [FILE:views.py LINE:370] perform_create end, use 44.624772386978364 second, local id = 68
+2016-10-30 13:03:47,053 INFO [FILE:views.py LINE:370] perform_create end, use 44.63891216673107 second, local id = 73
+2016-10-30 13:03:51,458 INFO [FILE:views.py LINE:353] create new item moment is 0.011613094088098918 , local id is 72
+2016-10-30 13:03:51,459 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:03:51,459 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:03:51,460 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:03:51,480 INFO [FILE:models.py LINE:158] 8.0
+2016-10-30 13:03:51,548 INFO [FILE:views.py LINE:370] perform_create end, use 49.13396867755023 second, local id = 72
+2016-10-30 13:04:04,456 INFO [FILE:views.py LINE:353] create new item moment is 0.03848229810664606 , local id is 69
+2016-10-30 13:04:04,457 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:04:04,458 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:04:04,458 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:04:04,479 INFO [FILE:models.py LINE:158] 5.0
+2016-10-30 13:04:04,576 INFO [FILE:views.py LINE:370] perform_create end, use 62.16127378767388 second, local id = 69
+2016-10-30 13:04:07,184 INFO [FILE:views.py LINE:353] create new item moment is 0.04181559119010819 , local id is 71
+2016-10-30 13:04:07,185 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:04:07,186 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:04:07,186 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:04:07,205 INFO [FILE:models.py LINE:158] 7.0
+2016-10-30 13:04:07,275 INFO [FILE:views.py LINE:370] perform_create end, use 64.86152072063369 second, local id = 71
+2016-10-30 13:04:15,015 INFO [FILE:views.py LINE:353] create new item moment is 0.04532517870942813 , local id is 70
+2016-10-30 13:04:15,015 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:04:15,015 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:04:15,015 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:04:15,086 INFO [FILE:models.py LINE:158] 6.0
+2016-10-30 13:04:15,137 INFO [FILE:views.py LINE:370] perform_create end, use 72.72265081626739 second, local id = 70
+2016-10-30 13:04:42,716 INFO [FILE:views.py LINE:353] create new item moment is 99.17982877704792 , local id is 74
+2016-10-30 13:04:42,716 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:04:42,716 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:04:42,716 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:04:42,719 WARNING [FILE:views.py LINE:361] delete old local_id 74
+2016-10-30 13:04:42,728 INFO [FILE:models.py LINE:147] 9.0
+2016-10-30 13:04:42,729 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:04:42,730 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 13:04:42,732 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:04:42,733 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:04:42,734 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30.jpeg
+2016-10-30 13:04:42,736 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:04:42,737 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:04:42,738 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48.jpeg
+2016-10-30 13:04:42,742 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:04:42,742 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:04:42,743 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-02-41.jpeg
+2016-10-30 13:04:42,746 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:04:42,775 INFO [FILE:models.py LINE:158] 9.0
+2016-10-30 13:04:42,815 INFO [FILE:views.py LINE:370] perform_create end, use 100.40082290861669 second, local id = 74
+2016-10-30 13:54:10,282 INFO [FILE:views.py LINE:423] I am logger infor
+2016-10-30 13:54:10,294 ERROR [FILE:views.py LINE:426] No App uploaded from Admin
+2016-10-30 13:55:04,432 INFO [FILE:views.py LINE:423] I am logger infor
+2016-10-30 13:55:04,442 ERROR [FILE:views.py LINE:426] No App uploaded from Admin
+2016-10-30 13:55:23,755 INFO [FILE:views.py LINE:423] I am logger infor
+2016-10-30 13:55:23,765 ERROR [FILE:views.py LINE:426] No App uploaded from Admin
+2016-10-30 13:55:40,145 INFO [FILE:models.py LINE:147] 9.0
+2016-10-30 13:55:40,145 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:55:40,145 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 13:55:40,147 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,147 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:55:40,147 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30.jpeg
+2016-10-30 13:55:40,148 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,149 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:55:40,149 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48.jpeg
+2016-10-30 13:55:40,150 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,150 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:55:40,150 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-02-41.jpeg
+2016-10-30 13:55:40,151 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,152 INFO [FILE:models.py LINE:147] 6.0
+2016-10-30 13:55:40,152 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:55:40,152 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1475825693424_RNmwKRa.jpg
+2016-10-30 13:55:40,156 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,157 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:55:40,157 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1475808749712_QyTWe8X.jpg
+2016-10-30 13:55:40,162 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,162 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:55:40,163 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1475808810871_OgNwpoq.jpg
+2016-10-30 13:55:40,167 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,167 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:55:40,167 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161007_153214.jpg
+2016-10-30 13:55:40,172 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,172 INFO [FILE:models.py LINE:147] 7.0
+2016-10-30 13:55:40,172 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:55:40,173 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161003_130333.jpg
+2016-10-30 13:55:40,176 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,177 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:55:40,177 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161004_085402_XrLaiJZ.jpg
+2016-10-30 13:55:40,181 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,182 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:55:40,182 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\mmexport1475579416019.jpg
+2016-10-30 13:55:40,186 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,186 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:55:40,186 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161003_130401.jpg
+2016-10-30 13:55:40,190 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,190 INFO [FILE:models.py LINE:147] 5.0
+2016-10-30 13:55:40,191 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:55:40,191 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1475825693424.jpg
+2016-10-30 13:55:40,196 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,196 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:55:40,196 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1475808749712.jpg
+2016-10-30 13:55:40,203 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,203 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:55:40,204 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1475808810871.jpg
+2016-10-30 13:55:40,208 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,208 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:55:40,209 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161004_085402.jpg
+2016-10-30 13:55:40,215 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,215 INFO [FILE:models.py LINE:147] 8.0
+2016-10-30 13:55:40,215 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:55:40,216 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161002_172637.jpg
+2016-10-30 13:55:40,220 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,221 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:55:40,221 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161002_172814.jpg
+2016-10-30 13:55:40,227 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,227 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:55:40,227 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161002_172908.jpg
+2016-10-30 13:55:40,233 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,234 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:55:40,234 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161002_172538.jpg
+2016-10-30 13:55:40,240 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,240 INFO [FILE:models.py LINE:147] 10.0
+2016-10-30 13:55:40,241 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:55:40,241 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-22-22-29_eWeLEbQ.jpeg
+2016-10-30 13:55:40,243 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,243 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:55:40,243 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-21-40-49.jpeg
+2016-10-30 13:55:40,244 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,245 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:55:40,245 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\-109cc93d330ae685_64HTquD.jpg
+2016-10-30 13:55:40,250 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,250 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:55:40,250 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161015_172608_yMXv2mw.jpg
+2016-10-30 13:55:40,256 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,256 INFO [FILE:models.py LINE:147] 4.0
+2016-10-30 13:55:40,257 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:55:40,257 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\-109cc93d330ae685.jpg
+2016-10-30 13:55:40,264 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,265 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:55:40,265 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-21-34-27.jpeg
+2016-10-30 13:55:40,266 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,267 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:55:40,267 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-21-40-49_JXF7Rrr.jpeg
+2016-10-30 13:55:40,268 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,268 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:55:40,269 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1476959697128.jpg
+2016-10-30 13:55:40,274 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,274 INFO [FILE:models.py LINE:147] 1.0
+2016-10-30 13:55:40,275 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:55:40,275 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-02-41_8XKr80y.jpeg
+2016-10-30 13:55:40,276 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,277 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:55:40,277 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161010_151326_DZTZ11v.jpg
+2016-10-30 13:55:40,284 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,284 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:55:40,284 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161025_103520_OjCHUGA.jpg
+2016-10-30 13:55:40,290 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,291 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:55:40,291 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-22-22-58_fmXOzZ9.jpeg
+2016-10-30 13:55:40,292 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,292 INFO [FILE:models.py LINE:147] 3.0
+2016-10-30 13:55:40,293 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:55:40,293 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-09-22-03-01.jpeg
+2016-10-30 13:55:40,294 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,294 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:55:40,295 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161015_172534.jpg
+2016-10-30 13:55:40,299 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,300 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:55:40,300 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161015_172608.jpg
+2016-10-30 13:55:40,307 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,307 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:55:40,307 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-09-21-35-24.jpeg
+2016-10-30 13:55:40,309 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,309 INFO [FILE:models.py LINE:147] 2.0
+2016-10-30 13:55:40,309 INFO [FILE:models.py LINE:150] image1
+2016-10-30 13:55:40,310 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161010_151326.jpg
+2016-10-30 13:55:40,313 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,314 INFO [FILE:models.py LINE:150] image2
+2016-10-30 13:55:40,314 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161025_103520.jpg
+2016-10-30 13:55:40,322 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,322 INFO [FILE:models.py LINE:150] image3
+2016-10-30 13:55:40,323 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-22-22-58.jpeg
+2016-10-30 13:55:40,325 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:55:40,325 INFO [FILE:models.py LINE:150] image4
+2016-10-30 13:55:40,326 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-22-22-29.jpeg
+2016-10-30 13:55:40,327 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 13:56:02,498 INFO [FILE:views.py LINE:423] I am logger infor
+2016-10-30 13:56:02,505 ERROR [FILE:views.py LINE:426] No App uploaded from Admin
+2016-10-30 13:58:43,603 INFO [FILE:views.py LINE:353] create new item moment is 3334.510482877705 , local id is 85
+2016-10-30 13:58:43,603 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:58:43,604 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:58:43,604 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:58:43,621 INFO [FILE:models.py LINE:158] 10.0
+2016-10-30 13:58:43,652 INFO [FILE:views.py LINE:370] perform_create end, use 3341.2379057187018 second, local id = 85
+2016-10-30 13:58:45,083 INFO [FILE:views.py LINE:353] create new item moment is 3334.555672816847 , local id is 83
+2016-10-30 13:58:45,083 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:58:45,084 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:58:45,084 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:58:45,099 INFO [FILE:models.py LINE:158] 8.0
+2016-10-30 13:58:45,137 INFO [FILE:views.py LINE:370] perform_create end, use 3342.723426632535 second, local id = 83
+2016-10-30 13:58:45,493 INFO [FILE:views.py LINE:353] create new item moment is 3334.4668089499614 , local id is 84
+2016-10-30 13:58:45,493 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:58:45,495 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:58:45,495 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:58:45,517 INFO [FILE:models.py LINE:158] 9.0
+2016-10-30 13:58:45,550 INFO [FILE:views.py LINE:370] perform_create end, use 3343.1354357853556 second, local id = 84
+2016-10-30 13:58:46,192 INFO [FILE:views.py LINE:353] create new item moment is 3334.824749444552 , local id is 76
+2016-10-30 13:58:46,193 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:58:46,194 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:58:46,194 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:58:46,218 INFO [FILE:models.py LINE:158] 1.0
+2016-10-30 13:58:46,304 INFO [FILE:views.py LINE:353] create new item moment is 3334.8179838437018 , local id is 78
+2016-10-30 13:58:46,305 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:58:46,306 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:58:46,307 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:58:46,331 INFO [FILE:models.py LINE:158] 3.0
+2016-10-30 13:58:46,368 INFO [FILE:views.py LINE:370] perform_create end, use 3343.9535379636786 second, local id = 76
+2016-10-30 13:58:46,408 INFO [FILE:views.py LINE:370] perform_create end, use 3343.993963726816 second, local id = 78
+2016-10-30 13:58:47,537 INFO [FILE:views.py LINE:353] create new item moment is 3334.8213726816075 , local id is 77
+2016-10-30 13:58:47,537 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:58:47,538 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:58:47,538 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:58:47,550 INFO [FILE:models.py LINE:158] 2.0
+2016-10-30 13:58:47,585 INFO [FILE:views.py LINE:370] perform_create end, use 3345.17091866306 second, local id = 77
+2016-10-30 13:58:57,064 INFO [FILE:views.py LINE:353] create new item moment is 3334.6409141953245 , local id is 82
+2016-10-30 13:58:57,065 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:58:57,065 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:58:57,066 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:58:57,090 INFO [FILE:models.py LINE:158] 7.0
+2016-10-30 13:58:57,125 INFO [FILE:views.py LINE:370] perform_create end, use 3354.711345633694 second, local id = 82
+2016-10-30 13:59:00,644 INFO [FILE:views.py LINE:353] create new item moment is 3334.8017418131762 , local id is 81
+2016-10-30 13:59:00,646 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:59:00,646 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:59:00,647 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:59:00,679 INFO [FILE:models.py LINE:158] 6.0
+2016-10-30 13:59:00,737 INFO [FILE:views.py LINE:370] perform_create end, use 3358.3224672768547 second, local id = 81
+2016-10-30 13:59:03,000 INFO [FILE:views.py LINE:353] create new item moment is 3334.7816551149535 , local id is 80
+2016-10-30 13:59:03,001 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:59:03,001 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:59:03,001 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:59:03,015 INFO [FILE:models.py LINE:158] 5.0
+2016-10-30 13:59:03,077 INFO [FILE:views.py LINE:370] perform_create end, use 3360.662900888717 second, local id = 80
+2016-10-30 13:59:03,463 INFO [FILE:views.py LINE:353] create new item moment is 3334.8065216866307 , local id is 79
+2016-10-30 13:59:03,464 INFO [FILE:views.py LINE:301] None
+2016-10-30 13:59:03,465 INFO [FILE:views.py LINE:302] 
+2016-10-30 13:59:03,465 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 13:59:03,482 INFO [FILE:models.py LINE:158] 4.0
+2016-10-30 13:59:03,559 INFO [FILE:views.py LINE:370] perform_create end, use 3361.1454767194746 second, local id = 79
+2016-10-30 14:01:22,603 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:01:22,603 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:01:22,604 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:01:22,608 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-10-30 14:01:22,612 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-10-30 14:01:22,624 INFO [FILE:views.py LINE:389] udpate spend detail
+2016-10-30 14:01:22,625 INFO [FILE:models.py LINE:158] 10.0
+2016-10-30 14:01:22,630 INFO [FILE:models.py LINE:166] image1
+2016-10-30 14:01:22,630 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-28-21-28-30.jpeg
+2016-10-30 14:01:22,631 INFO [FILE:models.py LINE:173] new path is Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 14:01:22,631 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:01:22,632 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30.jpeg
+2016-10-30 14:01:22,634 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:01:22,635 INFO [FILE:models.py LINE:166] image2
+2016-10-30 14:01:22,635 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 14:01:22,636 INFO [FILE:models.py LINE:173] new path is Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 14:01:22,637 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:01:22,637 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 14:01:22,641 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:01:22,642 INFO [FILE:models.py LINE:166] image3
+2016-10-30 14:01:22,643 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 14:01:22,644 INFO [FILE:models.py LINE:173] new path is Screenshot_2016-10-26-23-03-48.jpeg
+2016-10-30 14:01:22,645 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:01:22,645 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 14:01:22,647 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:01:22,648 INFO [FILE:models.py LINE:166] image4
+2016-10-30 14:01:22,648 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-26-23-03-48.jpeg
+2016-10-30 14:01:22,648 INFO [FILE:models.py LINE:173] new path is None
+2016-10-30 14:01:22,649 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:01:22,649 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48.jpeg
+2016-10-30 14:01:22,650 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:01:59,922 INFO [FILE:views.py LINE:423] I am logger infor
+2016-10-30 14:01:59,929 ERROR [FILE:views.py LINE:426] No App uploaded from Admin
+2016-10-30 14:02:51,071 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:02:51,072 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:02:51,073 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:02:51,078 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-10-30 14:02:51,083 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-10-30 14:02:51,092 INFO [FILE:views.py LINE:389] udpate spend detail
+2016-10-30 14:02:51,094 INFO [FILE:models.py LINE:158] 10.0
+2016-10-30 14:02:51,099 INFO [FILE:models.py LINE:166] image1
+2016-10-30 14:02:51,101 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 14:02:51,101 INFO [FILE:models.py LINE:173] new path is Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 14:02:51,102 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:02:51,102 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 14:02:51,104 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:02:51,107 INFO [FILE:models.py LINE:166] image2
+2016-10-30 14:02:51,107 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 14:02:51,107 INFO [FILE:models.py LINE:173] new path is Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 14:02:51,108 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:02:51,109 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 14:02:51,113 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:02:51,114 INFO [FILE:models.py LINE:166] image3
+2016-10-30 14:02:51,114 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-26-23-03-48.jpeg
+2016-10-30 14:02:51,115 INFO [FILE:models.py LINE:173] new path is None
+2016-10-30 14:02:51,115 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:02:51,116 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48.jpeg
+2016-10-30 14:02:51,118 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:02:51,119 INFO [FILE:models.py LINE:166] image4
+2016-10-30 14:03:27,702 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:03:27,703 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:03:27,704 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:03:27,708 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-10-30 14:03:27,711 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-10-30 14:03:27,718 INFO [FILE:views.py LINE:389] udpate spend detail
+2016-10-30 14:03:27,719 INFO [FILE:models.py LINE:158] 10.0
+2016-10-30 14:03:27,723 INFO [FILE:models.py LINE:166] image1
+2016-10-30 14:03:27,724 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 14:03:27,725 INFO [FILE:models.py LINE:173] new path is Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 14:03:27,725 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:03:27,726 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 14:03:27,727 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:03:27,728 INFO [FILE:models.py LINE:166] image2
+2016-10-30 14:03:27,728 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 14:03:27,729 INFO [FILE:models.py LINE:173] new path is None
+2016-10-30 14:03:27,729 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:03:27,730 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 14:03:27,731 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:03:27,732 INFO [FILE:models.py LINE:166] image3
+2016-10-30 14:03:27,733 INFO [FILE:models.py LINE:166] image4
+2016-10-30 14:03:34,280 INFO [FILE:views.py LINE:423] I am logger infor
+2016-10-30 14:03:34,292 ERROR [FILE:views.py LINE:426] No App uploaded from Admin
+2016-10-30 14:04:13,126 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:04:13,127 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:04:13,128 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:04:13,133 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-10-30 14:04:13,138 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-10-30 14:04:13,150 INFO [FILE:views.py LINE:389] udpate spend detail
+2016-10-30 14:04:13,151 INFO [FILE:models.py LINE:158] 9.0
+2016-10-30 14:04:13,155 INFO [FILE:models.py LINE:166] image1
+2016-10-30 14:04:13,156 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-29-23-06-29_TrPKmoV.jpeg
+2016-10-30 14:04:13,157 INFO [FILE:models.py LINE:173] new path is Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 14:04:13,157 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:04:13,158 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29_TrPKmoV.jpeg
+2016-10-30 14:04:13,160 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:04:13,161 INFO [FILE:models.py LINE:166] image2
+2016-10-30 14:04:13,161 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-28-23-21-19_HG6o6AU.jpeg
+2016-10-30 14:04:13,162 INFO [FILE:models.py LINE:173] new path is Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 14:04:13,162 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:04:13,163 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19_HG6o6AU.jpeg
+2016-10-30 14:04:13,166 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:04:13,167 INFO [FILE:models.py LINE:166] image3
+2016-10-30 14:04:13,168 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-28-21-28-30_570XnWr.jpeg
+2016-10-30 14:04:13,168 INFO [FILE:models.py LINE:173] new path is Screenshot_2016-10-26-23-03-48.jpeg
+2016-10-30 14:04:13,168 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:04:13,168 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30_570XnWr.jpeg
+2016-10-30 14:04:13,170 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:04:13,170 INFO [FILE:models.py LINE:166] image4
+2016-10-30 14:04:13,170 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-26-23-03-48_pf30vNv.jpeg
+2016-10-30 14:04:13,171 INFO [FILE:models.py LINE:173] new path is None
+2016-10-30 14:04:13,171 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:04:13,171 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48_pf30vNv.jpeg
+2016-10-30 14:04:13,173 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:05:55,119 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:05:55,119 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:05:55,120 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:05:55,125 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-10-30 14:05:55,131 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-10-30 14:05:55,141 INFO [FILE:views.py LINE:389] udpate spend detail
+2016-10-30 14:05:55,142 INFO [FILE:models.py LINE:158] 9.0
+2016-10-30 14:05:55,146 INFO [FILE:models.py LINE:166] image1
+2016-10-30 14:05:55,147 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-29-23-06-29_492Cqgf.jpeg
+2016-10-30 14:05:55,148 INFO [FILE:models.py LINE:173] new path is Screenshot_2016-10-26-23-03-48.jpeg
+2016-10-30 14:05:55,148 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:05:55,149 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29_492Cqgf.jpeg
+2016-10-30 14:05:55,151 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:05:55,152 INFO [FILE:models.py LINE:166] image2
+2016-10-30 14:05:55,152 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 14:05:55,153 INFO [FILE:models.py LINE:173] new path is None
+2016-10-30 14:05:55,153 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:05:55,154 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 14:05:55,156 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:05:55,157 INFO [FILE:models.py LINE:166] image3
+2016-10-30 14:05:55,157 INFO [FILE:models.py LINE:172] old path is detail/2016-10-30/Screenshot_2016-10-26-23-03-48.jpeg
+2016-10-30 14:05:55,158 INFO [FILE:models.py LINE:173] new path is None
+2016-10-30 14:05:55,158 INFO [FILE:models.py LINE:180] delete old image
+2016-10-30 14:05:55,159 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48.jpeg
+2016-10-30 14:05:55,161 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:05:55,162 INFO [FILE:models.py LINE:166] image4
+2016-10-30 14:06:25,567 INFO [FILE:models.py LINE:147] 5.0
+2016-10-30 14:06:25,568 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:06:25,568 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-22-45-39_8IzyOEH.jpeg
+2016-10-30 14:06:25,569 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,570 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:06:25,571 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161025_103520_8vWKjC2.jpg
+2016-10-30 14:06:25,576 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,576 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:06:25,577 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1476959697128_slwG89t.jpg
+2016-10-30 14:06:25,581 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,581 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:06:25,581 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-17-22-22-58.jpeg
+2016-10-30 14:06:25,583 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,584 INFO [FILE:models.py LINE:147] 6.0
+2016-10-30 14:06:25,585 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:06:25,585 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29_B4XlpVi.jpeg
+2016-10-30 14:06:25,586 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,587 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:06:25,587 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30_1Y1rLUM.jpeg
+2016-10-30 14:06:25,589 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,589 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:06:25,589 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-22-45-39_9N5jdb5.jpeg
+2016-10-30 14:06:25,590 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,591 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:06:25,591 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161025_103520.jpg
+2016-10-30 14:06:25,595 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,595 INFO [FILE:models.py LINE:147] 7.0
+2016-10-30 14:06:25,595 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:06:25,596 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29_BtjvU2e.jpeg
+2016-10-30 14:06:25,597 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,597 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:06:25,598 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30_68LEzV1.jpeg
+2016-10-30 14:06:25,599 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,600 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:06:25,600 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-22-45-39.jpeg
+2016-10-30 14:06:25,602 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,602 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:06:25,603 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1476959697128.jpg
+2016-10-30 14:06:25,608 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,609 INFO [FILE:models.py LINE:147] 2.0
+2016-10-30 14:06:25,609 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:06:25,610 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29_ClC2bmc.jpeg
+2016-10-30 14:06:25,611 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,612 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:06:25,612 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30_uZzkhiT.jpeg
+2016-10-30 14:06:25,614 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,615 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:06:25,615 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48_ZHMGcWw.jpeg
+2016-10-30 14:06:25,616 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,616 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:06:25,617 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-02-41.jpeg
+2016-10-30 14:06:25,618 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,618 INFO [FILE:models.py LINE:147] 3.0
+2016-10-30 14:06:25,618 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:06:25,619 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29_uVEsjg6.jpeg
+2016-10-30 14:06:25,621 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,621 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:06:25,621 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30_X0SRmCe.jpeg
+2016-10-30 14:06:25,624 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,625 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:06:25,626 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48_7kGMCE5.jpeg
+2016-10-30 14:06:25,628 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,628 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:06:25,628 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19_1ol9USA.jpeg
+2016-10-30 14:06:25,630 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,630 INFO [FILE:models.py LINE:147] 1.0
+2016-10-30 14:06:25,630 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:06:25,630 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29_oMqNi3C.jpeg
+2016-10-30 14:06:25,631 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,632 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:06:25,632 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19_xcrHMps.jpeg
+2016-10-30 14:06:25,633 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,633 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:06:25,633 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48_mJoquOD.jpeg
+2016-10-30 14:06:25,635 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,635 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:06:25,635 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30_b3tYHoI.jpeg
+2016-10-30 14:06:25,637 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,637 INFO [FILE:models.py LINE:147] 9.0
+2016-10-30 14:06:25,637 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:06:25,637 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48.jpeg
+2016-10-30 14:06:25,639 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,639 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:06:25,639 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:06:25,639 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:06:25,640 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:06:25,640 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:06:25,640 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:06:25,640 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:06:25,641 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:06:25,641 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:06:25,641 INFO [FILE:models.py LINE:147] 8.0
+2016-10-30 14:06:25,641 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:06:25,642 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29_rJi7Wte.jpeg
+2016-10-30 14:06:25,644 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,645 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:06:25,645 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19_enNAjwA.jpeg
+2016-10-30 14:06:25,647 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,647 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:06:25,647 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-21-28-30_ZqJadUK.jpeg
+2016-10-30 14:06:25,648 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,649 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:06:25,649 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-23-03-48_unI6Xvp.jpeg
+2016-10-30 14:06:25,650 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,650 INFO [FILE:models.py LINE:147] 10.0
+2016-10-30 14:06:25,651 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:06:25,651 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-29-23-06-29.jpeg
+2016-10-30 14:06:25,652 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:25,652 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:06:25,653 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:06:25,653 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:06:25,653 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:06:25,654 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:06:25,654 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:06:25,654 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:06:25,654 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:06:25,654 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:06:39,600 INFO [FILE:models.py LINE:147] 4.0
+2016-10-30 14:06:39,600 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:06:39,600 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-26-22-45-39_gKBiRB9.jpeg
+2016-10-30 14:06:39,601 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:39,602 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:06:39,602 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161025_103520_d1NKDIE.jpg
+2016-10-30 14:06:39,608 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:39,608 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:06:39,608 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\IMG_20161010_151326.jpg
+2016-10-30 14:06:39,612 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:06:39,612 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:06:39,613 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\microMsg.1476959697128_hbt7JYE.jpg
+2016-10-30 14:06:39,616 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:07:26,148 INFO [FILE:views.py LINE:353] create new item moment is 3863.6079223821484 , local id is 86
+2016-10-30 14:07:26,150 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:07:26,150 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:07:26,151 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:07:26,167 INFO [FILE:models.py LINE:158] 111111.0
+2016-10-30 14:07:26,187 INFO [FILE:views.py LINE:370] perform_create end, use 3863.7732171319553 second, local id = 86
+2016-10-30 14:07:34,807 INFO [FILE:models.py LINE:147] 111111.0
+2016-10-30 14:07:34,807 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:07:34,807 INFO [FILE:models.py LINE:136] E:\work\zx\media\detail\2016-10-30\Screenshot_2016-10-28-23-21-19.jpeg
+2016-10-30 14:07:34,808 INFO [FILE:models.py LINE:139] remove finish
+2016-10-30 14:07:34,809 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:07:34,809 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:07:34,809 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:07:34,810 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:07:34,810 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:07:34,810 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:07:34,811 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:07:34,811 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:07:34,811 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:22,269 INFO [FILE:views.py LINE:353] create new item moment is 3919.8482195469473 , local id is 92
+2016-10-30 14:08:22,286 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:08:22,293 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:08:22,305 INFO [FILE:views.py LINE:353] create new item moment is 3919.888997295209 , local id is 91
+2016-10-30 14:08:22,306 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:08:22,310 INFO [FILE:views.py LINE:353] create new item moment is 3919.894548758694 , local id is 89
+2016-10-30 14:08:22,313 INFO [FILE:views.py LINE:353] create new item moment is 3919.8981404559504 , local id is 90
+2016-10-30 14:08:22,315 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:08:22,322 INFO [FILE:views.py LINE:353] create new item moment is 3919.9070240050232 , local id is 88
+2016-10-30 14:08:22,324 INFO [FILE:views.py LINE:353] create new item moment is 3919.9092554578824 , local id is 87
+2016-10-30 14:08:22,325 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:08:22,336 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:08:22,335 INFO [FILE:models.py LINE:158] 0.0
+2016-10-30 14:08:22,337 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:08:22,338 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:08:22,338 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:08:22,339 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:08:22,340 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:08:22,342 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:08:22,345 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:08:22,346 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:08:22,347 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:08:22,347 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:08:22,351 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:08:22,352 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:08:22,360 INFO [FILE:models.py LINE:158] 0.0
+2016-10-30 14:08:22,363 INFO [FILE:views.py LINE:370] perform_create end, use 3919.948817861283 second, local id = 92
+2016-10-30 14:08:22,373 INFO [FILE:models.py LINE:158] 0.0
+2016-10-30 14:08:22,381 INFO [FILE:models.py LINE:158] 0.0
+2016-10-30 14:08:22,396 INFO [FILE:models.py LINE:158] 0.0
+2016-10-30 14:08:22,413 INFO [FILE:models.py LINE:158] 0.0
+2016-10-30 14:08:22,427 INFO [FILE:views.py LINE:370] perform_create end, use 3920.0134038108577 second, local id = 91
+2016-10-30 14:08:22,440 INFO [FILE:views.py LINE:370] perform_create end, use 3920.0261773087327 second, local id = 88
+2016-10-30 14:08:22,451 INFO [FILE:views.py LINE:370] perform_create end, use 3920.0371425811436 second, local id = 89
+2016-10-30 14:08:22,464 INFO [FILE:views.py LINE:370] perform_create end, use 3920.049983698802 second, local id = 90
+2016-10-30 14:08:22,475 INFO [FILE:views.py LINE:370] perform_create end, use 3920.061285862635 second, local id = 87
+2016-10-30 14:08:31,123 INFO [FILE:models.py LINE:147] 0.0
+2016-10-30 14:08:31,123 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:08:31,124 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,125 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,125 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:08:31,125 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,125 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,126 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:08:31,126 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,126 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,126 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:08:31,127 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,127 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,127 INFO [FILE:models.py LINE:147] 0.0
+2016-10-30 14:08:31,127 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:08:31,128 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,128 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,128 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:08:31,128 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,128 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,129 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:08:31,129 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,129 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,129 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:08:31,130 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,130 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,130 INFO [FILE:models.py LINE:147] 0.0
+2016-10-30 14:08:31,132 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:08:31,132 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,132 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,132 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:08:31,133 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,133 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,133 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:08:31,133 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,134 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,134 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:08:31,134 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,134 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,134 INFO [FILE:models.py LINE:147] 0.0
+2016-10-30 14:08:31,134 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:08:31,134 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,134 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,134 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:08:31,136 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,136 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,136 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:08:31,136 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,136 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,136 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:08:31,136 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,136 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,136 INFO [FILE:models.py LINE:147] 0.0
+2016-10-30 14:08:31,138 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:08:31,138 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,138 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,138 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:08:31,139 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,139 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,139 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:08:31,139 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,140 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,140 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:08:31,140 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,140 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,140 INFO [FILE:models.py LINE:147] 0.0
+2016-10-30 14:08:31,141 INFO [FILE:models.py LINE:150] image1
+2016-10-30 14:08:31,141 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,141 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,142 INFO [FILE:models.py LINE:150] image2
+2016-10-30 14:08:31,142 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,142 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,142 INFO [FILE:models.py LINE:150] image3
+2016-10-30 14:08:31,142 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,143 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:08:31,143 INFO [FILE:models.py LINE:150] image4
+2016-10-30 14:08:31,143 INFO [FILE:models.py LINE:136] E:\work\zx\media\
+2016-10-30 14:08:31,143 INFO [FILE:models.py LINE:141] remove fail: file not exist
+2016-10-30 14:28:11,534 INFO [FILE:views.py LINE:423] I am logger infor
+2016-10-30 14:28:11,565 ERROR [FILE:views.py LINE:426] No App uploaded from Admin
+2016-10-30 14:29:33,945 INFO [FILE:views.py LINE:353] create new item moment is 1.8112442040185472e-06 , local id is 93
+2016-10-30 14:29:33,946 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:29:33,947 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:29:33,948 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:29:33,964 INFO [FILE:models.py LINE:158] 0.0
+2016-10-30 14:29:33,983 INFO [FILE:views.py LINE:370] perform_create end, use 0.042808153013910354 second, local id = 93
+2016-10-30 14:29:55,794 INFO [FILE:views.py LINE:353] create new item moment is 1.2074961360123648e-06 , local id is 94
+2016-10-30 14:29:55,795 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:29:55,796 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:29:55,796 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:29:55,805 INFO [FILE:models.py LINE:158] 0.0
+2016-10-30 14:29:55,815 INFO [FILE:views.py LINE:370] perform_create end, use 0.023691074188562596 second, local id = 94
+2016-10-30 14:30:46,006 INFO [FILE:views.py LINE:353] create new item moment is 6.037480680061824e-07 , local id is 96
+2016-10-30 14:30:46,006 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:30:46,007 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:30:46,007 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:30:46,019 INFO [FILE:models.py LINE:158] 2.0
+2016-10-30 14:30:46,030 INFO [FILE:views.py LINE:370] perform_create end, use 0.027354013717156105 second, local id = 96
+2016-10-30 14:31:45,585 INFO [FILE:views.py LINE:353] create new item moment is 59.58067704308346 , local id is 97
+2016-10-30 14:31:45,586 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:31:45,587 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:31:45,588 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:31:45,605 INFO [FILE:models.py LINE:158] 2555.0
+2016-10-30 14:31:45,628 INFO [FILE:views.py LINE:370] perform_create end, use 59.62476755699382 second, local id = 97
+2016-10-30 14:33:30,228 INFO [FILE:views.py LINE:353] create new item moment is 6.037480680061824e-07 , local id is 98
+2016-10-30 14:33:30,229 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:33:30,229 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:33:30,230 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:33:30,239 INFO [FILE:models.py LINE:158] 558.0
+2016-10-30 14:33:30,253 INFO [FILE:views.py LINE:370] perform_create end time is 0.02627632341576507, local id = 98
+2016-10-30 14:33:55,826 INFO [FILE:views.py LINE:353] create new item moment is 1.8112442040185472e-06 , local id is 99
+2016-10-30 14:33:55,827 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:33:55,827 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:33:55,827 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:33:55,838 INFO [FILE:models.py LINE:158] 5.0
+2016-10-30 14:33:55,856 INFO [FILE:views.py LINE:370] perform_create end time is 0.032770, local id = 99
+2016-10-30 14:34:27,834 INFO [FILE:views.py LINE:353] create new item time is 0.000001 , local id is 100
+2016-10-30 14:34:27,836 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:34:27,836 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:34:27,837 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:34:27,847 INFO [FILE:models.py LINE:158] 88.0
+2016-10-30 14:34:27,856 INFO [FILE:views.py LINE:370] perform_create end time is 0.024740, local id = 100
+2016-10-30 14:35:28,271 INFO [FILE:views.py LINE:353] create new item time is 55.696344 , local id is 102
+2016-10-30 14:35:28,272 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:35:28,273 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:35:28,274 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:35:28,466 INFO [FILE:models.py LINE:158] 1.0
+2016-10-30 14:35:28,530 INFO [FILE:views.py LINE:370] perform_create end time is 60.698347, local id = 102
+2016-10-30 14:35:28,580 INFO [FILE:views.py LINE:353] create new item time is 55.798275 , local id is 101
+2016-10-30 14:35:28,581 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:35:28,581 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:35:28,581 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:35:28,591 INFO [FILE:models.py LINE:158] 55.0
+2016-10-30 14:35:28,621 INFO [FILE:views.py LINE:370] perform_create end time is 60.789378, local id = 101
+2016-10-30 14:35:35,954 INFO [FILE:views.py LINE:353] create new item time is 55.679325 , local id is 103
+2016-10-30 14:35:35,955 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:35:35,956 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:35:35,957 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:35:35,980 INFO [FILE:models.py LINE:158] 2.0
+2016-10-30 14:35:36,075 INFO [FILE:views.py LINE:370] perform_create end time is 68.244121, local id = 103
+2016-10-30 14:37:12,545 INFO [FILE:views.py LINE:353] create new item time is 154.548057 , local id is 104
+2016-10-30 14:37:12,546 INFO [FILE:views.py LINE:301] None
+2016-10-30 14:37:12,547 INFO [FILE:views.py LINE:302] 
+2016-10-30 14:37:12,547 INFO [FILE:views.py LINE:344] user did not submit buy place infor.
+2016-10-30 14:37:12,562 INFO [FILE:models.py LINE:158] 1.0
+2016-10-30 14:37:12,630 INFO [FILE:views.py LINE:370] perform_create end time is 164.798832, local id = 104
+2016-10-30 14:43:24,097 INFO [FILE:views.py LINE:410] <QueryDict: {'content': ['民意无情无义']}>
+2016-10-30 14:43:53,596 INFO [FILE:views.py LINE:410] <QueryDict: {'content': ['哈哈哈哈哈']}>
