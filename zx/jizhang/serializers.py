@@ -8,6 +8,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
     # city = serializers.ReadOnlyField(source='city.name')
     class Meta:
         model = UserProfile
+        fields = '__all__'
 
 
 class CategorySerializer(serializers.ModelSerializer):

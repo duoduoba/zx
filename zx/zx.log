@@ -1489,3 +1489,16 @@
 2016-10-30 14:37:12,630 INFO [FILE:views.py LINE:370] perform_create end time is 164.798832, local id = 104
 2016-10-30 14:43:24,097 INFO [FILE:views.py LINE:410] <QueryDict: {'content': ['民意无情无义']}>
 2016-10-30 14:43:53,596 INFO [FILE:views.py LINE:410] <QueryDict: {'content': ['哈哈哈哈哈']}>
+2016-10-30 16:01:04,028 INFO [FILE:views.py LINE:423] I am logger infor
+2016-10-30 16:01:04,114 ERROR [FILE:views.py LINE:426] No App uploaded from Admin
+2016-10-30 21:08:37,289 INFO [FILE:views.py LINE:130] enter register from mobile client
+2016-10-30 21:08:37,335 INFO [FILE:views.py LINE:141] old user login again
+2016-10-30 21:08:37,336 INFO [FILE:views.py LINE:149] username=18625177794_mobile
+2016-10-30 21:08:37,340 INFO [FILE:views.py LINE:151] 477cbb6ec27c13031cd1e7e8836d637e58563410
+2016-10-30 21:08:37,344 INFO [FILE:views.py LINE:154] old profile exist, delete
+2016-10-30 21:08:37,444 INFO [FILE:views.py LINE:177] create user profile data
+2016-10-30 21:08:37,445 INFO [FILE:views.py LINE:179] <QueryDict: {'house_area': ['70~80㎡'], 'budget': ['12万'], 'decoration_style': ['现代美式'], 'city': ['南京市']}>
+2016-10-30 21:08:55,953 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-10-30 21:08:55,957 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-10-30 21:10:36,092 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-10-30 21:10:36,098 INFO [FILE:permissions.py LINE:16] you are the owner, continue

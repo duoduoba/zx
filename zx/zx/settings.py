@@ -88,6 +88,7 @@ DATABASES = {
 }
 
 import platform
+IS_LINUX = platform.system() == 'Linux'
 if platform.system == 'Linux':
     DATABASES = {
     'default': {
@@ -142,7 +143,7 @@ ANYMAIL = {
 
 
 EMAIL_BACKEND = 'anymail.backends.mailgun.MailgunBackend'  # or sendgrid.SendGridBackend, or...
-DEFAULT_FROM_EMAIL = "zx@zx.com"  # if you don't already have this in settings
+DEFAULT_FROM_EMAIL = "1211057058@qq.com"  # if you don't already have this in settings
 CKEDITOR_JQUERY_URL = 'http://libs.baidu.com/jquery/2.0.0/jquery.min.js'
 
 CKEDITOR_CONFIGS = {

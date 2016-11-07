@@ -370,8 +370,8 @@ class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
         logger.info('perform_create end time is %f, local id = %s' % (time.clock(), self.local_id))
 
     def get_queryset(self):
-        # self.queryset = SpendDetail.objects.filter(owner=self.request.user)
-        self.queryset = SpendDetail.objects.all()
+        self.queryset = SpendDetail.objects.filter(owner=self.request.user)
+        # self.queryset = SpendDetail.objects.all()
         return super(SpendDetailListView, self).get_queryset()
 
 
@@ -401,6 +401,7 @@ class SpendDetailEditView(generics.RetrieveUpdateDestroyAPIView, GetOrCreateMixi
 
 class FeedbackView(generics.ListCreateAPIView):
     serializer_class = FeedbackSerializer
+    permission_classes = (permissions.IsAdminUser,)
 
     def get_queryset(self):
         self.queryset = Feedback.objects.filter(owner=self.request.user)

@@ -6,8 +6,8 @@ from django.db.models.signals import post_delete, pre_save
 from django.dispatch import receiver
 from jizhang.log.logger import logger
 from ckeditor.fields import RichTextField
-
-
+from zx.settings import IS_LINUX, MEDIA_ROOT
+import os
 # class Province(models.Model):
 #     area_code = models.IntegerField(verbose_name='省份编码', unique=True)
 #     name = models.CharField(verbose_name='省份名称', unique=True, max_length=30)
@@ -129,10 +129,14 @@ class SpendDetail(models.Model):
 
 
 def remove_old_image(old_path):
-    old_path = old_path.replace('/', '\\')
-    import os
-    from zx.settings import MEDIA_ROOT
-    old_path = MEDIA_ROOT + '\\' + old_path
+    if not IS_LINUX:
+        old_path = old_path.replace('/', '\\')
+
+    if not IS_LINUX:
+        old_path = MEDIA_ROOT + '\\' + old_path
+    else:
+        old_path = MEDIA_ROOT + '/' + old_path
+
     logger.info(old_path)
     if os.path.isfile(old_path):
         os.remove(old_path)
