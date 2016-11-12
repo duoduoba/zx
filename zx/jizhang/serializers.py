@@ -1,6 +1,7 @@
 # coding��utf-8
 from jizhang.models import *
 from rest_framework import serializers
+from drf_extra_fields.fields import Base64ImageField
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
@@ -66,6 +67,10 @@ class SpendDetailSerializer(serializers.ModelSerializer):
     modified = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", read_only=True)
     buy_place_name = serializers.ReadOnlyField(source='buy_place.place_name')
     # buy_place_area = serializers.ReadOnlyField(source='buy_place.place_area')
+    image1 = Base64ImageField(required=False)
+    image2 = Base64ImageField(required=False)
+    image3 = Base64ImageField(required=False)
+    image4 = Base64ImageField(required=False)
 
     class Meta:
         model = SpendDetail

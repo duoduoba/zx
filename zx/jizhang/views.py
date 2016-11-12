@@ -340,6 +340,7 @@ class GetOrCreateMixin():
                     obj.save()
 
                 self.place_obj = obj
+                logger.info(self.place_obj)
         else:
             logger.info('user did not submit buy place infor.')
 
@@ -357,12 +358,17 @@ class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
         user = request.user
         spend_detail_set = user.spend_detail_set
         local_id_db = spend_detail_set.filter(local_id=local_id)
+        # logger.info(local_id_db)
+        # logger.info(request.data)
         if local_id_db:
             logger.warning('delete old local_id %s' % local_id)
             local_id_db.delete()
+        # print('33333333333333333333333')
         return super(SpendDetailListView, self).create(request, *args, **kwargs)
 
     def perform_create(self, serializer):
+        # print('enter perform_create!!!!!!')
+        logger.info(self.place_obj)
         if not hasattr(self, 'place_obj'):
             serializer.save(owner=self.request.user)
         else:
