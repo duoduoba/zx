@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import platform
+IS_LINUX = platform.system() == 'Linux'
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -23,9 +25,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'jonxb%8@%-=6lq4ny&*c8l21rhgn-^h8^=n(z8+$5^o*vgmn2t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+if IS_LINUX:
+    DEBUG = False
+    ALLOWED_HOSTS = ['localhost','127.0.0.1']
+else:
+    DEBUG = True
+    ALLOWED_HOSTS = ['*', 'localhost']
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1','*']
+# DEBUG = True
+
+# ALLOWED_HOSTS = ['localhost','127.0.0.1','*']
 
 
 # Application definition
@@ -87,9 +96,8 @@ DATABASES = {
     }
 }
 
-import platform
-IS_LINUX = platform.system() == 'Linux'
-if platform.system == 'Linux':
+
+if IS_LINUX:
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
