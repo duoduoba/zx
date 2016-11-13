@@ -27,7 +27,7 @@ SECRET_KEY = 'jonxb%8@%-=6lq4ny&*c8l21rhgn-^h8^=n(z8+$5^o*vgmn2t'
 # SECURITY WARNING: don't run with debug turned on in production!
 if IS_LINUX:
     DEBUG = False
-    ALLOWED_HOSTS = ['localhost','127.0.0.1']
+    ALLOWED_HOSTS = ['localhost','127.0.0.1','139.196.166.79']
 else:
     DEBUG = True
     ALLOWED_HOSTS = ['*', 'localhost']
