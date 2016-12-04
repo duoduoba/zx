@@ -1963,3 +1963,107 @@
 2016-11-12 21:14:26,172 INFO [FILE:views.py LINE:371] 天猫商城
 2016-11-12 21:14:26,173 INFO [FILE:models.py LINE:162] 48.0
 2016-11-12 21:14:26,225 INFO [FILE:views.py LINE:376] perform_create end time is 79.385495, local id = 10
+2016-11-20 19:00:07,086 INFO [FILE:views.py LINE:417] <QueryDict: {'content': ['hhhhhhhhhhhhh']}>
+2016-11-20 21:06:40,659 INFO [FILE:views.py LINE:130] enter register from mobile client
+2016-11-20 21:06:40,766 INFO [FILE:views.py LINE:141] old user login again
+2016-11-20 21:06:40,767 INFO [FILE:views.py LINE:149] username=18625177794_mobile
+2016-11-20 21:06:40,769 INFO [FILE:views.py LINE:151] c6b85b234b696f1785e8cc2b449f77ba7e155b20
+2016-11-20 21:06:40,772 INFO [FILE:views.py LINE:154] old profile exist, delete
+2016-11-20 21:06:40,908 INFO [FILE:views.py LINE:177] create user profile data
+2016-11-20 21:06:40,911 INFO [FILE:views.py LINE:179] <QueryDict: {'decoration_style': ['现代美式'], 'budget': ['12万'], 'city': [''], 'house_area': ['80~90㎡']}>
+2016-11-20 21:18:39,353 INFO [FILE:views.py LINE:430] I am logger infor
+2016-11-20 21:18:39,462 ERROR [FILE:views.py LINE:433] No App uploaded from Admin
+2016-11-20 21:19:02,069 INFO [FILE:views.py LINE:354] create new item time is 0.000001 , local id is 4
+2016-11-20 21:19:02,070 INFO [FILE:views.py LINE:301] None
+2016-11-20 21:19:02,070 INFO [FILE:views.py LINE:302] 
+2016-11-20 21:19:02,070 INFO [FILE:views.py LINE:345] user did not submit buy place infor.
+2016-11-20 21:19:02,314 INFO [FILE:views.py LINE:371] None
+2016-11-20 21:19:02,316 INFO [FILE:models.py LINE:162] 1111.0
+2016-11-20 21:19:02,397 INFO [FILE:views.py LINE:376] perform_create end time is 0.440308, local id = 4
+2016-11-20 21:21:01,839 INFO [FILE:views.py LINE:430] I am logger infor
+2016-11-20 21:21:01,844 ERROR [FILE:views.py LINE:433] No App uploaded from Admin
+2016-11-20 21:21:15,943 INFO [FILE:views.py LINE:130] enter register from mobile client
+2016-11-20 21:21:15,951 INFO [FILE:views.py LINE:141] old user login again
+2016-11-20 21:21:15,952 INFO [FILE:views.py LINE:149] username=18625177794_mobile
+2016-11-20 21:21:15,955 INFO [FILE:views.py LINE:151] c6b85b234b696f1785e8cc2b449f77ba7e155b20
+2016-11-20 21:21:15,958 INFO [FILE:views.py LINE:154] old profile exist, delete
+2016-11-20 21:21:16,101 INFO [FILE:views.py LINE:177] create user profile data
+2016-11-20 21:21:16,101 INFO [FILE:views.py LINE:179] <QueryDict: {'decoration_style': ['现代简约'], 'budget': ['12万'], 'city': ['南京市'], 'house_area': ['80~90㎡']}>
+2016-12-03 21:55:13,312 INFO [FILE:models.py LINE:164] 1111.0
+2016-12-03 21:55:13,335 INFO [FILE:models.py LINE:172] image1
+2016-12-03 21:55:13,336 INFO [FILE:models.py LINE:178] old path is detail/2016-11-20/54855dfe-95c.jpg
+2016-12-03 21:55:13,336 INFO [FILE:models.py LINE:179] new path is detail/2016-11-20/54855dfe-95c.jpg
+2016-12-03 21:55:13,336 INFO [FILE:models.py LINE:183] leave old image
+2016-12-03 21:55:13,337 INFO [FILE:models.py LINE:172] image2
+2016-12-03 21:55:13,337 INFO [FILE:models.py LINE:178] old path is detail/2016-11-20/db084795-ce4.jpg
+2016-12-03 21:55:13,337 INFO [FILE:models.py LINE:179] new path is detail/2016-11-20/db084795-ce4.jpg
+2016-12-03 21:55:13,337 INFO [FILE:models.py LINE:183] leave old image
+2016-12-03 21:55:13,338 INFO [FILE:models.py LINE:172] image3
+2016-12-03 21:55:13,338 INFO [FILE:models.py LINE:172] image4
+2016-12-03 22:36:40,718 INFO [FILE:webviews.py LINE:27] 123456
+2016-12-03 22:36:40,733 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-03 22:37:16,681 INFO [FILE:webviews.py LINE:27] id=123456
+2016-12-03 22:37:16,692 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 17:35:07,121 INFO [FILE:webviews.py LINE:27] id=123456
+2016-12-04 17:35:07,170 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 17:36:22,581 INFO [FILE:webviews.py LINE:27] id=123456
+2016-12-04 17:36:22,591 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 17:36:24,081 INFO [FILE:webviews.py LINE:27] id=123456
+2016-12-04 17:36:24,089 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 17:38:01,441 INFO [FILE:webviews.py LINE:27] id=123456
+2016-12-04 17:38:01,454 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 17:38:02,598 INFO [FILE:webviews.py LINE:27] id=123456
+2016-12-04 17:38:02,606 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 17:40:42,957 INFO [FILE:webviews.py LINE:27] id=123456
+2016-12-04 17:40:42,978 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 17:42:33,196 INFO [FILE:webviews.py LINE:27] id=123456
+2016-12-04 17:42:33,206 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 17:43:25,867 INFO [FILE:webviews.py LINE:27] id=123456
+2016-12-04 17:43:25,878 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 17:43:40,064 INFO [FILE:webviews.py LINE:27] id=123456
+2016-12-04 17:43:40,074 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 17:45:04,444 INFO [FILE:webviews.py LINE:27] id=123456
+2016-12-04 17:45:04,451 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 17:46:19,465 INFO [FILE:webviews.py LINE:27] id=123456
+2016-12-04 17:46:19,475 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 17:47:57,379 INFO [FILE:webviews.py LINE:27] id=123456
+2016-12-04 17:47:57,390 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 18:19:12,089 INFO [FILE:views.py LINE:132] enter register from mobile client
+2016-12-04 18:19:12,113 INFO [FILE:views.py LINE:148] password=SUdnEa
+2016-12-04 18:19:12,113 INFO [FILE:views.py LINE:151] username=15956898956_mobile
+2016-12-04 18:19:12,132 INFO [FILE:views.py LINE:153] 2fbcd47a6d32a45b977ca96f35b88bf1f26f2a21
+2016-12-04 18:22:49,700 INFO [FILE:views.py LINE:180] create user profile data
+2016-12-04 18:22:49,701 INFO [FILE:views.py LINE:182] <QueryDict: {'budget': ['5245'], 'company': ['cc'], 'city': ['beijing']}>
+2016-12-04 18:24:14,506 INFO [FILE:views.py LINE:180] create user profile data
+2016-12-04 18:24:14,507 INFO [FILE:views.py LINE:182] <QueryDict: {'budget': ['5245'], 'company': ['cc'], 'city': ['beijing']}>
+2016-12-04 18:26:30,300 INFO [FILE:views.py LINE:180] create user profile data
+2016-12-04 18:26:30,301 INFO [FILE:views.py LINE:182] <QueryDict: {'city': ['beijing'], 'company': ['cc'], 'budget': ['5245']}>
+2016-12-04 18:26:59,944 INFO [FILE:views.py LINE:180] create user profile data
+2016-12-04 18:26:59,945 INFO [FILE:views.py LINE:182] <QueryDict: {'city': ['beijing'], 'company': ['cc'], 'budget': ['5245']}>
+2016-12-04 18:27:54,183 INFO [FILE:views.py LINE:180] create user profile data
+2016-12-04 18:27:54,184 INFO [FILE:views.py LINE:182] <QueryDict: {'city': ['beijing'], 'budget': ['5245'], 'company': ['cc']}>
+2016-12-04 18:31:03,002 INFO [FILE:webviews.py LINE:27] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-04 18:31:03,012 INFO [FILE:webviews.py LINE:31] []
+2016-12-04 18:32:08,824 INFO [FILE:webviews.py LINE:27] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-04 18:32:10,213 INFO [FILE:webviews.py LINE:27] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-04 18:32:11,161 INFO [FILE:webviews.py LINE:27] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-04 18:32:11,740 INFO [FILE:webviews.py LINE:27] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-04 18:34:59,020 INFO [FILE:webviews.py LINE:27] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-04 18:34:59,025 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 18:37:07,060 INFO [FILE:webviews.py LINE:27] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-04 18:37:07,072 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 18:37:24,977 INFO [FILE:webviews.py LINE:27] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-04 18:37:24,988 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 18:37:28,005 INFO [FILE:webviews.py LINE:27] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-04 18:37:28,015 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 18:40:30,718 INFO [FILE:webviews.py LINE:27] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-04 18:40:30,725 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 18:48:21,941 INFO [FILE:webviews.py LINE:27] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-04 18:48:21,948 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 18:48:38,182 INFO [FILE:webviews.py LINE:27] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-04 18:48:38,191 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 18:56:30,156 INFO [FILE:webviews.py LINE:27] id=123456
+2016-12-04 18:56:54,271 INFO [FILE:webviews.py LINE:27] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-04 18:56:54,279 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-04 18:56:58,572 INFO [FILE:webviews.py LINE:27] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-04 18:56:58,578 INFO [FILE:webviews.py LINE:31] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]

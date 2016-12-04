@@ -7,12 +7,13 @@ from rest_framework.views import APIView
 from rest_framework.authtoken.models import Token
 from rest_framework import generics, permissions
 from rest_framework.authtoken.views import ObtainAuthToken
-
+import uuid
 from jizhang.serializers import *
 from jizhang.permissions import IsOwnerOrReadOnly
 from jizhang.log.logger import logger
 from django.http import HttpResponse, JsonResponse
 # from django.contrib.auth import authenticate
+
 
 class LoginAndObtainExpiringAuthToken(ObtainAuthToken):
     '''
@@ -37,6 +38,7 @@ class LoginAndObtainExpiringAuthToken(ObtainAuthToken):
 
 class Login(APIView):
     permission_classes = (permissions.AllowAny,)
+
     def post(self, request, *args, **kwargs):
         try:
             data = request.data
@@ -171,7 +173,8 @@ class UserProfileListView(generics.ListCreateAPIView):
         return super(UserProfileListView, self).get_queryset()
 
     def perform_create(self, serializer):
-        serializer.save(user=self.request.user)
+        uid = uuid.uuid5(uuid.NAMESPACE_DNS, self.request.user.username + "." + str(self.request.user.id))
+        serializer.save(user=self.request.user, uuid=uid)
 
     def create(self, request, *args, **kwargs):
         logger.info('create user profile data')
@@ -282,6 +285,7 @@ class BuyPlaceDetailView(generics.RetrieveUpdateAPIView):
 class GetOrCreateMixin():
     def pre_get_or_create(self, request):
         data = request.data
+        #logger.info(data)
 
         tag = data.get('tag', None)
         if tag:
@@ -355,14 +359,14 @@ class SpendDetailListView(generics.ListCreateAPIView, GetOrCreateMixin):
         self.pre_get_or_create(request)
         local_id = request.data.get('local_id')
         self.local_id = local_id
-        user = request.user
-        spend_detail_set = user.spend_detail_set
-        local_id_db = spend_detail_set.filter(local_id=local_id)
+        # user = request.user
+        # spend_detail_set = user.spend_detail_set
+        # local_id_db = spend_detail_set.filter(local_id=local_id)
         # logger.info(local_id_db)
         # logger.info(request.data)
-        if local_id_db:
-            logger.warning('delete old local_id %s' % local_id)
-            local_id_db.delete()
+        # if local_id_db:
+        #     logger.warning('delete old local_id %s' % local_id)
+        #     local_id_db.delete()
         # print('33333333333333333333333')
         return super(SpendDetailListView, self).create(request, *args, **kwargs)
 
@@ -385,18 +389,30 @@ class SpendDetailEditView(generics.RetrieveUpdateDestroyAPIView, GetOrCreateMixi
     serializer_class = SpendDetailSerializer
     queryset = SpendDetail.objects.all()
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
-
+    image_dict = {}
     def update(self, request, *args, **kwargs):
+        data = request.data
+        # instance = self.get_object()
+        logger.info(data)
+        self.image_dict.clear()
+        for index in range(1, 5):
+            image_name = 'image' + str(index)
+            logger.info(image_name)
+            img_obj = data.get(image_name, '')
+            if len(img_obj) < 2:
+                logger.info('empty string')
+                self.image_dict.update({image_name: ''})
+
         self.pre_get_or_create(request)
         return super(SpendDetailEditView, self).update(request, *args, **kwargs)
 
     def perform_update(self, serializer):
         if not hasattr(self, 'place_obj'):
             logger.info('udpate spend detail')
-            serializer.save()
+            serializer.save(**self.image_dict)
         else:
             logger.info('update the place obj : %s' % self.place_obj)
-            serializer.save(buy_place=self.place_obj)
+            serializer.save(buy_place=self.place_obj, **self.image_dict)
 
     def destroy(self, request, *args, **kwargs):
         instance = self.get_object()
@@ -407,7 +423,7 @@ class SpendDetailEditView(generics.RetrieveUpdateDestroyAPIView, GetOrCreateMixi
 
 class FeedbackView(generics.ListCreateAPIView):
     serializer_class = FeedbackSerializer
-    permission_classes = (permissions.IsAdminUser,)
+    # permission_classes = (permissions.IsAdminUser,)
 
     def get_queryset(self):
         self.queryset = Feedback.objects.filter(owner=self.request.user)
@@ -449,3 +465,8 @@ def download_url(request, latest_item):
         res = {'download_url': None}
         res['download_url'] = head + request.get_host() + latest_item.download_url.url
         return res
+
+
+class ArticleView(generics.ListCreateAPIView):
+    serializer_class = ArticleSerializer
+    queryset = Article.objects.all()

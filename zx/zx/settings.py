@@ -27,14 +27,10 @@ SECRET_KEY = 'jonxb%8@%-=6lq4ny&*c8l21rhgn-^h8^=n(z8+$5^o*vgmn2t'
 # SECURITY WARNING: don't run with debug turned on in production!
 if IS_LINUX:
     DEBUG = False
-    ALLOWED_HOSTS = ['localhost','127.0.0.1','139.196.166.79']
+    ALLOWED_HOSTS = ['localhost','127.0.0.1', '139.196.166.79']
 else:
     DEBUG = True
     ALLOWED_HOSTS = ['*', 'localhost']
-
-# DEBUG = True
-
-# ALLOWED_HOSTS = ['localhost','127.0.0.1','*']
 
 
 # Application definition
@@ -50,9 +46,12 @@ INSTALLED_APPS = (
     'rest_framework',
     'rest_framework.authtoken',
     'qrcode_model',
-    'ckeditor'
+    'ckeditor',
+    'ckeditor_uploader'
     # 'anymail',
 )
+
+# INSTALLED_APPS += ('DjangoUeditor',)
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -96,14 +95,13 @@ DATABASES = {
     }
 }
 
-
 if IS_LINUX:
     DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'jizhang_db',
         'USER': 'jizhang',
-        'PASSWORD': 'abc123!@#',
+        'PASSWORD': 'wuyc118',
         'HOST': 'localhost',                      # Empty for localhost through domain sockets or           '127.0.0.1' for localhost through TCP.
         'PORT': '',                      # Set to empty string for default.
     }
@@ -153,6 +151,8 @@ ANYMAIL = {
 EMAIL_BACKEND = 'anymail.backends.mailgun.MailgunBackend'  # or sendgrid.SendGridBackend, or...
 DEFAULT_FROM_EMAIL = "1211057058@qq.com"  # if you don't already have this in settings
 CKEDITOR_JQUERY_URL = 'http://libs.baidu.com/jquery/2.0.0/jquery.min.js'
+CKEDITOR_UPLOAD_PATH = 'ckeditor/uploads'
+# CKEDITOR_RESTRICT_BY_USER=True
 
 CKEDITOR_CONFIGS = {
     'awesome_ckeditor': {
@@ -161,10 +161,13 @@ CKEDITOR_CONFIGS = {
     'default': {
         'toolbar': 'Custom',
         'toolbar_Custom':[
+            # ['zh-cn'],
             ['Bold', 'Italic', 'Underline'],
             ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
             ['Link', 'Unlink'],
-            ['RemoveFormat', 'Source']
+            ['TextColor', 'BGColor'],
+            # ['Source', 'Image']
+            ['Image', 'Flash', 'Table', 'HorizontalRule'],
         ]
     },
 }

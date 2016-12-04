@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>51装修记账-我的装修账单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+	<link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<div class="container">
+		<div class="row">
+		<h2 align="center">我的装修支出明细<small> </small></h2>
+		<p class="lead" align="center">51装修记账App</p>
+		<p class="lead" align="center">{{up.city}},面积{{up.house_area}},预算{{up.budget}},装修公司{{up.company}}</p>
+		<table class="table  table-striped">
+			
+			<thead>
+			    <tr>
+			      <th>支出</th>
+			      <th>购入</th>
+			      <th>品牌</th>
+			      <th>地点</th>
+			      <th>时间</th>
+			    </tr>
+			 </thead>
+
+			<tbody>
+	
+				{% for item in details_list %}
+				
+				    <tr class="warning">
+						<td>{{item.price}}</td>
+						<td>{{ item.tag}}</td>
+						<td>{{ item.brand}}</td>
+						<td>{{ item.buy_place}}</td>
+						<td>{{ item.created|date:'Y-m-d'}}</td>
+					</tr>
+
+					<tr>
+						<td colspan="5">
+							{% if item.image1 %}<a href="{{item.image1.url}}"><img class="img-thumbnail" class="img-responsive" src=" {{ item.image1.url}} " width="20%"></a>{%endif%}
+							{% if item.image2 %}<img class="img-thumbnail" class="img-responsive" src=" {{ item.image2.url}} " width="20%">  {%endif%}
+							{% if item.image3 %}<img class="img-thumbnail" class="img-responsive" src=" {{ item.image3.url}} " width="20%">   {%endif%}
+							{% if item.image4 %}<img class="img-thumbnail" class="img-responsive" src=" {{ item.image4.url}} " width="20%">   {%endif%}
+							<p>{{ item.note }}</p>
+						</td>
+						
+					</tr>
+					
+				{% endfor %}
+			</tbody>
+		</table>
+		</div>
+	</div>
+</body>
+</html>

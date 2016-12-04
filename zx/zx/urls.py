@@ -16,11 +16,11 @@ from rest_framework.authtoken import views as authtoken_views
 urlpatterns = [
     # url(r'^/', RootView),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^api-token-auth/',  authtoken_views.obtain_auth_token),
+    url(r'^api-token-auth/', authtoken_views.obtain_auth_token),
     #for username&password
     url(r'^auth/', Login.as_view()),
     url(r'^register/', RegisterView.as_view()),
-
+    url(r'^ckeditor/', include('ckeditor_uploader.urls')),
     #
     url(r'^register2/', RegisterView2.as_view()),
     # =======================jizhang urls start==========================================
@@ -79,12 +79,16 @@ urlpatterns = [
     url(r'^qr/(?P<pk>\d+)/$', QRView.as_view(), name='qr-list'),
 
     # =========================Web View================================
+    url(r'^web/share/$', WebSpendList.as_view(), name='share'),
     url(r'^web/tags/$', get_tags, name='tags'),
     url(r'^web/accounts/LoginView/$', login),
     url(r'^web/accounts/LoginView/index.html/$', login_after),
     url(r'^web/accounts/logout/$', logout),
     url(r'^web/accounts/register/$', register),
     url(r'^web/$', test),
+    # ==============================ARTICLE================================
+    url(r'^articles/$', ArticleView.as_view()),
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

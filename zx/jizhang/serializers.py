@@ -133,3 +133,8 @@ class AppVersionSerializer(serializers.ModelSerializer):
     cover_end_date = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S", read_only=True)
     class Meta:
         model = AppVersion
+
+
+class ArticleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Article

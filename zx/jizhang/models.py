@@ -6,8 +6,10 @@ from django.db.models.signals import post_delete, pre_save
 from django.dispatch import receiver
 from jizhang.log.logger import logger
 from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
 from zx.settings import IS_LINUX, MEDIA_ROOT
 import os
+# from django_markdown.models import MarkdownField
 # class Province(models.Model):
 #     area_code = models.IntegerField(verbose_name='省份编码', unique=True)
 #     name = models.CharField(verbose_name='省份名称', unique=True, max_length=30)
@@ -48,6 +50,7 @@ class UserProfile(models.Model):
     decoration_style = models.CharField(verbose_name='装修风格', max_length=30, blank=True, null=True)
     budget = models.CharField(verbose_name='预算', max_length=10,  blank=True, null=True)
     company = models.CharField(verbose_name='装修公司', max_length=30, null=True, blank=True)
+    uuid = models.CharField(max_length=40, null=True, blank=True)
 
     def __str__(self):
         return '_'.join((self.user.username, self.city.name))
@@ -275,8 +278,9 @@ class AppVersion(models.Model):
 
 
 class Article(models.Model):
-    title = models.CharField(max_length=50, default='title')
-    content = RichTextField()
+    title = models.CharField(max_length=50, default='title', verbose_name='攻略标题')
+    content = RichTextUploadingField('装修攻略正文')
+    # content = MarkdownField()
 
     def __str__(self):
         return self.title
