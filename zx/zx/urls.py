@@ -80,6 +80,7 @@ urlpatterns = [
 
     # =========================Web View================================
     url(r'^web/share/$', WebSpendList.as_view(), name='share'),
+
     url(r'^web/tags/$', get_tags, name='tags'),
     url(r'^web/accounts/LoginView/$', login),
     url(r'^web/accounts/LoginView/index.html/$', login_after),

@@ -16,14 +16,15 @@ from jizhang.models import SpendDetail, UserProfile
 from rest_framework import permissions
 from jizhang.log.logger import logger
 from django.template import Template, Context, RequestContext
+from rest_framework import serializers
 
 
 class WebSpendList(APIView):
-	renderer_classes = [TemplateHTMLRenderer]
-	template_name = 'share.html'
 	permission_classes = (permissions.AllowAny,)
 
 	def get(self, request):
+		# renderer_classes = [TemplateHTMLRenderer]
+		# template_name = 'share.html'
 		uuid = request.GET.get('id', None)
 		try:
 			logger.info('id={}'.format(uuid))
@@ -31,23 +32,23 @@ class WebSpendList(APIView):
 			user = up.user
 			details_list = SpendDetail.objects.filter(owner=user)
 			logger.info(details_list)
-			return Response(locals())
+			return render_to_response('share.html', locals())
 		except:
 			logger.info('export spend detail list to web happened error')
 			raise Http404
 
 	def post(self, request):
-		# 生成分享web页面
+		# 生成uuid
 		user = request.user
 		try:
-			up = UserProfile.objects.filter(user=user)
+			up = UserProfile.objects.filter(user=user)[0]
+			logger.info(up.uuid)
 			if not up.uuid:
 				import uuid
 				uid = uuid.uuid5(uuid.NAMESPACE_DNS, self.request.user.username + "." + str(self.request.user.id))
 				up.uuid = uid
 				up.save()
-				# uid = uuid.uuid5(uuid.NAMESPACE_DNS, self.request.user.username + "." + str(self.request.user.id))
-			t = Template('share')
+			return Response({'uuid': up.uuid})
 		except:
 			logger.info('create share.html error')
 			return Response(status=status.HTTP_400_BAD_REQUEST)
