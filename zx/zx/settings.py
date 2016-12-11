@@ -27,7 +27,7 @@ SECRET_KEY = 'jonxb%8@%-=6lq4ny&*c8l21rhgn-^h8^=n(z8+$5^o*vgmn2t'
 # SECURITY WARNING: don't run with debug turned on in production!
 if IS_LINUX:
     DEBUG = False
-    ALLOWED_HOSTS = ['localhost','127.0.0.1', '139.196.166.79']
+    ALLOWED_HOSTS = ['localhost','127.0.0.1', '51zhuangxiula.com', 'www.51zhuangxiula.com']
 else:
     DEBUG = True
     ALLOWED_HOSTS = ['*', 'localhost']
@@ -47,14 +47,14 @@ INSTALLED_APPS = (
     'rest_framework.authtoken',
     'qrcode_model',
     'ckeditor',
-    'ckeditor_uploader'
+    'ckeditor_uploader',
+    # 'corsheaders',
     # 'anymail',
 )
 
-# INSTALLED_APPS += ('DjangoUeditor',)
-
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

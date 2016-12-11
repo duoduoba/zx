@@ -54,7 +54,6 @@ class WebSpendList(APIView):
 			return Response(status=status.HTTP_400_BAD_REQUEST)
 
 
-
 def register(request):
 	if request.method == 'POST':
 		form = UserCreationForm(request.POST)

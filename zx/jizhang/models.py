@@ -53,7 +53,7 @@ class UserProfile(models.Model):
     uuid = models.CharField(max_length=40, null=True, blank=True)
 
     def __str__(self):
-        return '_'.join((self.user.username, self.city.name))
+        return '_'.join((self.user.username, 'profile'))
 
 
 class Category(models.Model):

@@ -2096,3 +2096,209 @@
 2016-12-05 22:07:51,491 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
 2016-12-05 22:07:51,502 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
 2016-12-05 22:08:45,563 INFO [FILE:webviews.py LINE:45] 35014d05-c99e-533c-8623-f8811360707d
+2016-12-05 22:20:13,588 INFO [FILE:webviews.py LINE:45] 35014d05-c99e-533c-8623-f8811360707d
+2016-12-05 22:26:18,932 INFO [FILE:webviews.py LINE:45] 35014d05-c99e-533c-8623-f8811360707d
+2016-12-05 22:33:09,730 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-05 22:33:09,747 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-05 22:33:35,357 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-05 22:33:35,370 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-05 22:33:37,325 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-05 22:33:37,335 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-05 22:33:38,195 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-05 22:33:38,210 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-05 22:33:38,912 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-05 22:33:38,928 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-05 22:33:39,204 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-05 22:33:39,215 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-05 22:33:39,398 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-05 22:33:39,412 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-05 22:33:39,591 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-05 22:33:39,601 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-05 22:33:39,802 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-05 22:33:39,816 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-05 22:33:54,435 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-05 22:33:54,446 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-05 22:34:53,868 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-05 22:34:53,877 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 20:37:51,337 INFO [FILE:webviews.py LINE:30] id=123456
+2016-12-10 20:37:51,355 INFO [FILE:webviews.py LINE:37] export spend detail list to web happened error
+2016-12-10 20:38:14,015 INFO [FILE:webviews.py LINE:30] id=None
+2016-12-10 20:38:14,021 INFO [FILE:webviews.py LINE:37] export spend detail list to web happened error
+2016-12-10 20:38:39,913 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 20:38:39,918 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 20:38:54,032 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 20:38:54,042 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 20:39:20,991 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 20:39:20,999 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 20:39:22,252 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 20:39:22,261 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 20:40:22,428 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 20:40:22,437 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 20:40:23,180 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 20:40:23,192 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 20:40:23,774 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 20:40:23,786 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 20:40:24,341 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 20:40:24,351 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 20:42:49,885 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 20:42:49,914 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 20:42:51,739 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 20:42:51,758 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 20:46:01,324 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 20:46:01,333 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 20:56:21,580 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 20:56:21,593 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:00:25,900 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:00:25,978 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:00:45,939 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:00:45,950 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:03:05,907 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:03:05,921 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:08:31,699 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:08:31,707 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:08:33,094 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:08:33,105 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:12:10,004 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:12:10,012 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:12:11,060 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:12:11,070 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:12:11,862 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:12:11,873 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:12:13,263 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:12:13,273 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:12:52,126 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:12:52,133 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:12:53,154 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:12:53,164 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:13:23,227 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:13:23,238 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:13:27,666 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:13:27,680 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:18:13,357 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:18:13,366 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:18:27,498 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:18:27,506 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:18:28,221 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:18:28,229 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:18:28,733 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:18:28,743 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:23:11,636 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:23:11,645 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:23:32,418 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:23:32,430 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:23:33,351 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:23:33,362 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:23:33,746 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:23:33,756 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:23:34,127 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:23:34,134 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:23:34,459 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:23:34,469 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:23:34,856 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:23:34,866 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:23:35,204 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:23:35,214 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:26:22,117 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:26:22,130 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:26:37,790 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:26:37,797 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:26:40,262 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:26:40,270 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:06,088 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:06,097 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:06,827 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:06,836 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:07,438 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:07,449 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:07,918 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:07,928 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:08,320 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:08,331 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:08,689 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:08,697 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:09,080 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:09,088 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:09,347 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:09,357 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:41,595 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:41,606 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:42,305 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:42,316 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:42,786 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:42,793 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:42,989 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:42,997 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:43,355 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:43,366 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:43,737 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:43,747 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:44,104 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:44,114 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:44,313 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:44,323 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:44,654 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:44,665 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:28:44,897 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:28:44,908 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:30:17,808 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:30:17,816 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:30:18,508 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:30:18,517 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:30:18,833 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:30:18,843 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:30:19,070 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:30:19,080 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 21:30:19,316 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 21:30:19,325 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:04:03,606 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:04:03,617 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:04:25,912 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:04:25,920 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:04:28,593 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:04:28,604 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:04:50,312 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:04:50,320 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:04:52,761 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:04:52,769 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:06:09,310 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:06:09,320 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:06:11,798 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:06:11,806 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:06:54,720 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:06:54,728 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:09:12,239 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:09:12,247 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:09:14,377 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:09:14,385 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:09:41,268 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:09:41,278 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:12:07,591 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:12:07,602 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:14:17,952 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:14:17,961 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:22:19,399 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:22:19,405 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:30:51,617 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:30:51,623 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:32:32,348 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:32:32,357 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:38:16,502 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:38:16,509 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:41:56,501 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:41:56,509 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:45:30,501 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:45:30,510 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:56:32,985 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:56:32,992 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 22:57:02,277 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 22:57:02,284 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 23:16:35,357 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 23:16:35,430 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 23:18:56,283 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 23:18:56,293 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 23:19:40,003 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 23:19:40,012 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 23:21:12,920 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 23:21:12,928 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-10 23:26:25,616 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
+2016-12-10 23:26:25,634 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
