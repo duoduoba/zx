@@ -1,178 +1,45 @@
+{% load staticfiles %} 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript">
-    "use strict";
-    	var URL = 'http://localhost:8000/'
-    	String.prototype.format= function(){
-	        var args = arguments;
-	        return this.replace(/\{(\d+)\}/g,function(s,i){
-	          return args[i];
-        	});
-      	};
-      	//========================================================
-      	var city = '{{city}}';
-    	console.log(city);
-    	
-    	//var data = {};
-		//$("form").serializeArray().map(function(x){data[x.name] = x.value;});
-		function click_tag(index){
-			console.log('click tag callback');
-			console.log(index);
-			var btn = $('#data-area').children()[index];
-			var id = '#{0}'.format(btn.id);
-			var type = $(id).attr('data-type');
-			switch(type){
-				case 'brand':
-					$('#brand').val($(id).text());
-					break;
-				case 'tag':
-					$('#tag').val($(id).text());
-					break;
-				case 'addr':
-					$('#addr').val($(id).text());
-					break;
-			}
-			
-		};	
-		
-		$(document).ready(function(){
-			$('#detail-form').submit(function(){
-				console.log('submit detail form');
-    			var data = {};
-				$("#detail-form").serializeArray().map(function(x){data[x.name] = x.value;});
-				console.log(data);
-    		});
-			//get brand data from server
-			$('#addr').click(function(){
-				var tag = $('#tag').val().trim();
-				var brand = $('#brand').val().trim();
-				//var city = city;
-				if( tag == false || city == false || brand==false) {
-					alert('无效的城市或标签数据');return;
-				}
-				
-				var addr_url = URL + "jz/shops/hot/?city=" + city + "&tag=" + tag + "&brand=" + brand;
-				console.log(addr_url);
-				$.ajax({
-					type:"get",
-					url:addr_url,
-					async:true
-				}).done(hotaddr);
-			});
-			
-			//get brand data from server
-			$('#brand').click(function(){
-				var tag = $('#tag').val().trim();
-				//var city = city;
-				if( tag == false || city == false){
-					alert('无效的城市或标签数据');return;
-				}
-				
-				var brands_url = URL + "jz/brands/hot/?city=" + city + "&tag=" + tag;
-				console.log(brands_url);
-				$.ajax({
-					type:"get",
-					url:brands_url,
-					async:true
-				}).done(hotbrands);
-			});
-			
-			//get tag data from server
-			$('#tag').click(function(event){
-                var price = $('#price').val();
-                if(price.length < 1 || !parseFloat(price) ){
-                	alert('先输入正确的价格。。。');
-                	return;
-                }
-                //console.log(event)
-				//console.log('click button...');
-				var price_float = parseFloat(price);
-				$.ajax({
-					type:"get",
-					url:URL + "jz/tags/hot/?price="+price,
-					async:true
-				}).done(hottags);
-			});
+    <title>51装修记账-我的装修账单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+	<link href="{% static "jizhang/bootstrap-3.3.0/css/bootstrap.min.css" %}" rel="stylesheet"/>
+	<!--<link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
 
-			function hottags(data){
-			    console.log('got hot tags.......');
-			    $('#data-area').empty();
-			    for(var i=0; i < data.length; i++)
-			    {
-					var button = '<button type="button" onclick="click_tag({2})" id="tag{0}" data-type="tag"> {1} </button>'.format(i,data[i].name,i);
-			    	$('#data-area').append(button);			    	
-			    };
-			    //$('data-area').append('')
-			};
-			
-			function hotbrands(data){
-				console.log('got hot brands.....');
-				
-				$('#data-area').empty();
-				console.log(data);
-				for (var i = 0; i < data.length; i++){
-					var button = '<button type="button" onclick="click_tag({2})" id="brand{0}" data-type="brand"> {1} </button>'.format(i,data[i].brand,i);
-			    	$('#data-area').append(button);		
-				}
-			};
-			
-			function hotaddr(data){
-				console.log('got hot addr.....');
-				
-				$('#data-area').empty();
-				console.log(data);
-				for (var i = 0; i < data.length; i++){
-					var button = '<button type="button" onclick="click_tag({2})" id="brand{0}" data-type="addr"> {1} </button>'.format(i,data[i].shop,i);
-			    	$('#data-area').append(button);		
-				}
-			};
-			
-			
-		});
-
-    </script>
-    <title></title>
 </head>
 <body>
-{% if messages %}
- <ul class="message">
-	 {% for message in messages%}
-	 <li class="{{message.tags}}">{{message}}</li>
-	 {%endfor%}
- </ul>
-{%endif%}
-<br>
-{{message}}
-<br>
-欢迎你登陆 :{{ user }}
-<br>
-客户端地址：{{addr}}, 来自{{city}} <input type="button" id="logout" value="退出">
-<br>
-	<form action="" method="post" id="detail-form">
-		{% csrf_token %}
-		<font color="darkblue" size="5">记一笔</font>
-		<br>
-		价格:<input type="text" name="price" id='price'>
-		<br>
-		标签:<input type="text" name="tag" id="tag">
-		<br>
-		品牌:<input type="text" name="tag" id="brand">
-			<br>
-		地点:<input type="text" name="tag" id="addr">
-			<br>
-		备注:<input type="text" name="tag" id="note">
-			<br>
-		图片:<input type="file" name="tag" id="image1">
-		<br>	<input type="submit" value="提交"/>
-	</form>
-
-<div id="data-area">
-</div>
-<br>
-	----------------------------------------------<br>
-<button id="text-button" name="test-button" onclick="click_tag">test button</button>
+	<script src="{% static "jizhang/jquery/jquery-3.1.1.min.js"%}"></script>
+	<script src="{% static "jizhang/bootstrap-3.3.0/js/bootstrap.min.js"%}"></script>
+	<!--<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-6 column">
+				<div class="row clearfix">
+					<div class="col-md-4 column">
+						<h3>
+							51 装修App.
+						</h3>
+					</div>
+					<div class="col-md-4 column">
+						<img alt="140x140" src="v3/default3.jpg" />
+					</div>
+					<div class="col-md-4 column">
+					</div>
+				</div>
+				<h3>
+					h3. 这是一套可视化布局系统.
+				</h3>
+				<p class="text-left lead">
+					 <em>Git</em> 是一个分布式的版本控制系统，最初由 <strong>Linus Torvalds</strong> 编写，用作Linux内核代码的管理。在推出后，Git在其它项目中也取得了很大成功，尤其是在 <small>Ruby</small> 社区中。
+				</p>
+			</div>
+			<div class="col-md-6 column">
+				<img alt="140x140" src="v3/default3.jpg" />
+			</div>
+		</div>
+	</div>
 </body>
 </html>

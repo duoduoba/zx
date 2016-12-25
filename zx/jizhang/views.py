@@ -390,16 +390,20 @@ class SpendDetailEditView(generics.RetrieveUpdateDestroyAPIView, GetOrCreateMixi
     queryset = SpendDetail.objects.all()
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
     image_dict = {}
+
     def update(self, request, *args, **kwargs):
         data = request.data
         # instance = self.get_object()
-        logger.info(data)
+        # logger.info(data)
         self.image_dict.clear()
         for index in range(1, 5):
             image_name = 'image' + str(index)
-            logger.info(image_name)
-            img_obj = data.get(image_name, '')
-            if len(img_obj) < 2:
+            # logger.info(image_name)
+            img_obj = data.get(image_name, 'nothing')
+            # logger.info(img_obj)
+            if img_obj == 'nothing':
+                pass
+            elif len(img_obj) < 10:
                 logger.info('empty string')
                 self.image_dict.update({image_name: ''})
 
@@ -410,8 +414,10 @@ class SpendDetailEditView(generics.RetrieveUpdateDestroyAPIView, GetOrCreateMixi
         if not hasattr(self, 'place_obj'):
             logger.info('udpate spend detail')
             serializer.save(**self.image_dict)
+            # serializer.save()
         else:
             logger.info('update the place obj : %s' % self.place_obj)
+            # serializer.save(buy_place=self.place_obj)
             serializer.save(buy_place=self.place_obj, **self.image_dict)
 
     def destroy(self, request, *args, **kwargs):

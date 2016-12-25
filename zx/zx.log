@@ -2302,3 +2302,151 @@
 2016-12-10 23:21:12,928 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
 2016-12-10 23:26:25,616 INFO [FILE:webviews.py LINE:30] id=35014d05-c99e-533c-8623-f8811360707d
 2016-12-10 23:26:25,634 INFO [FILE:webviews.py LINE:34] [<SpendDetail: 2.0>, <SpendDetail: 4.0>, <SpendDetail: 48.0>, <SpendDetail: 1111.0>]
+2016-12-20 22:51:26,469 INFO [FILE:views.py LINE:358] create new item time is 0.000001 , local id is None
+2016-12-20 22:51:26,475 INFO [FILE:views.py LINE:305] None
+2016-12-20 22:51:26,476 INFO [FILE:views.py LINE:306] None
+2016-12-20 22:51:26,476 INFO [FILE:views.py LINE:349] user did not submit buy place infor.
+2016-12-20 22:51:26,563 INFO [FILE:views.py LINE:375] None
+2016-12-20 22:51:26,564 INFO [FILE:models.py LINE:165] 1.0
+2016-12-20 22:51:26,607 INFO [FILE:views.py LINE:380] perform_create end time is 1.205628, local id = None
+2016-12-20 22:54:25,373 INFO [FILE:views.py LINE:396] <QueryDict: {'price': ['1.1']}>
+2016-12-20 22:54:25,374 INFO [FILE:views.py LINE:400] image1
+2016-12-20 22:54:25,374 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:54:25,374 INFO [FILE:views.py LINE:400] image2
+2016-12-20 22:54:25,374 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:54:25,374 INFO [FILE:views.py LINE:400] image3
+2016-12-20 22:54:25,375 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:54:25,375 INFO [FILE:views.py LINE:400] image4
+2016-12-20 22:54:25,375 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:54:25,375 INFO [FILE:views.py LINE:305] None
+2016-12-20 22:54:25,376 INFO [FILE:views.py LINE:306] None
+2016-12-20 22:54:25,376 INFO [FILE:views.py LINE:349] user did not submit buy place infor.
+2016-12-20 22:54:25,378 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-12-20 22:54:25,380 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-12-20 22:54:48,760 INFO [FILE:views.py LINE:396] <QueryDict: {'created': ['2016-03-03'], 'price': ['1.1']}>
+2016-12-20 22:54:48,760 INFO [FILE:views.py LINE:400] image1
+2016-12-20 22:54:48,760 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:54:48,760 INFO [FILE:views.py LINE:400] image2
+2016-12-20 22:54:48,761 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:54:48,761 INFO [FILE:views.py LINE:400] image3
+2016-12-20 22:54:48,761 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:54:48,761 INFO [FILE:views.py LINE:400] image4
+2016-12-20 22:54:48,761 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:54:48,762 INFO [FILE:views.py LINE:305] None
+2016-12-20 22:54:48,762 INFO [FILE:views.py LINE:306] None
+2016-12-20 22:54:48,762 INFO [FILE:views.py LINE:349] user did not submit buy place infor.
+2016-12-20 22:54:48,765 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-12-20 22:54:48,767 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-12-20 22:55:24,289 INFO [FILE:views.py LINE:396] <QueryDict: {'created': ['2016-03-03 00:00:00'], 'price': ['1.1']}>
+2016-12-20 22:55:24,289 INFO [FILE:views.py LINE:400] image1
+2016-12-20 22:55:24,290 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:55:24,290 INFO [FILE:views.py LINE:400] image2
+2016-12-20 22:55:24,290 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:55:24,290 INFO [FILE:views.py LINE:400] image3
+2016-12-20 22:55:24,290 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:55:24,291 INFO [FILE:views.py LINE:400] image4
+2016-12-20 22:55:24,291 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:55:24,291 INFO [FILE:views.py LINE:305] None
+2016-12-20 22:55:24,291 INFO [FILE:views.py LINE:306] None
+2016-12-20 22:55:24,292 INFO [FILE:views.py LINE:349] user did not submit buy place infor.
+2016-12-20 22:55:24,294 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-12-20 22:55:24,295 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-12-20 22:55:24,299 INFO [FILE:views.py LINE:411] udpate spend detail
+2016-12-20 22:55:24,300 INFO [FILE:models.py LINE:165] 1.1
+2016-12-20 22:55:24,302 INFO [FILE:models.py LINE:173] image1
+2016-12-20 22:55:24,302 INFO [FILE:models.py LINE:179] old path is detail/2016-12-20/1.jpg
+2016-12-20 22:55:24,302 INFO [FILE:models.py LINE:180] new path is 
+2016-12-20 22:55:24,302 INFO [FILE:models.py LINE:187] delete old image
+2016-12-20 22:55:24,303 INFO [FILE:models.py LINE:143] E:\work\zx\media\detail\2016-12-20\1.jpg
+2016-12-20 22:55:24,310 INFO [FILE:models.py LINE:146] remove finish
+2016-12-20 22:55:24,311 INFO [FILE:models.py LINE:173] image2
+2016-12-20 22:55:24,311 INFO [FILE:models.py LINE:173] image3
+2016-12-20 22:55:24,311 INFO [FILE:models.py LINE:173] image4
+2016-12-20 22:56:38,443 INFO [FILE:views.py LINE:358] create new item time is 312.009207 , local id is None
+2016-12-20 22:56:38,443 INFO [FILE:views.py LINE:305] None
+2016-12-20 22:56:38,443 INFO [FILE:views.py LINE:306] None
+2016-12-20 22:56:38,444 INFO [FILE:views.py LINE:349] user did not submit buy place infor.
+2016-12-20 22:56:38,449 INFO [FILE:views.py LINE:375] None
+2016-12-20 22:56:38,451 INFO [FILE:models.py LINE:165] 2.0
+2016-12-20 22:56:38,471 INFO [FILE:views.py LINE:380] perform_create end time is 313.069474, local id = None
+2016-12-20 22:57:02,829 INFO [FILE:views.py LINE:396] <QueryDict: {'created': ['2016-03-03 00:00:00'], 'price': ['1.1']}>
+2016-12-20 22:57:02,829 INFO [FILE:views.py LINE:400] image1
+2016-12-20 22:57:02,829 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:57:02,830 INFO [FILE:views.py LINE:400] image2
+2016-12-20 22:57:02,830 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:57:02,830 INFO [FILE:views.py LINE:400] image3
+2016-12-20 22:57:02,830 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:57:02,830 INFO [FILE:views.py LINE:400] image4
+2016-12-20 22:57:02,831 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:57:02,831 INFO [FILE:views.py LINE:305] None
+2016-12-20 22:57:02,831 INFO [FILE:views.py LINE:306] None
+2016-12-20 22:57:02,831 INFO [FILE:views.py LINE:349] user did not submit buy place infor.
+2016-12-20 22:57:02,833 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-12-20 22:57:02,838 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-12-20 22:57:02,841 INFO [FILE:views.py LINE:411] udpate spend detail
+2016-12-20 22:57:02,841 INFO [FILE:models.py LINE:165] 1.1
+2016-12-20 22:57:02,843 INFO [FILE:models.py LINE:173] image1
+2016-12-20 22:57:02,844 INFO [FILE:models.py LINE:179] old path is detail/2016-12-20/1.jpg
+2016-12-20 22:57:02,844 INFO [FILE:models.py LINE:180] new path is 
+2016-12-20 22:57:02,844 INFO [FILE:models.py LINE:187] delete old image
+2016-12-20 22:57:02,844 INFO [FILE:models.py LINE:143] E:\work\zx\media\detail\2016-12-20\1.jpg
+2016-12-20 22:57:02,848 INFO [FILE:models.py LINE:146] remove finish
+2016-12-20 22:57:02,849 INFO [FILE:models.py LINE:173] image2
+2016-12-20 22:57:02,849 INFO [FILE:models.py LINE:173] image3
+2016-12-20 22:57:02,849 INFO [FILE:models.py LINE:173] image4
+2016-12-20 22:57:48,878 INFO [FILE:views.py LINE:358] create new item time is 0.000001 , local id is None
+2016-12-20 22:57:48,878 INFO [FILE:views.py LINE:305] None
+2016-12-20 22:57:48,878 INFO [FILE:views.py LINE:306] None
+2016-12-20 22:57:48,878 INFO [FILE:views.py LINE:349] user did not submit buy place infor.
+2016-12-20 22:57:48,904 INFO [FILE:views.py LINE:375] None
+2016-12-20 22:57:48,923 INFO [FILE:views.py LINE:380] perform_create end time is 1.050913, local id = None
+2016-12-20 22:58:20,864 INFO [FILE:views.py LINE:396] <QueryDict: {'created': ['2016-03-03 00:00:00'], 'price': ['2.1']}>
+2016-12-20 22:58:20,864 INFO [FILE:views.py LINE:400] image1
+2016-12-20 22:58:20,864 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:58:20,865 INFO [FILE:views.py LINE:400] image2
+2016-12-20 22:58:20,865 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:58:20,865 INFO [FILE:views.py LINE:400] image3
+2016-12-20 22:58:20,865 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:58:20,865 INFO [FILE:views.py LINE:400] image4
+2016-12-20 22:58:20,866 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 22:58:20,866 INFO [FILE:views.py LINE:305] None
+2016-12-20 22:58:20,866 INFO [FILE:views.py LINE:306] None
+2016-12-20 22:58:20,866 INFO [FILE:views.py LINE:349] user did not submit buy place infor.
+2016-12-20 22:58:20,869 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-12-20 22:58:20,871 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-12-20 22:58:20,874 INFO [FILE:views.py LINE:411] udpate spend detail
+2016-12-20 23:02:33,741 INFO [FILE:views.py LINE:358] create new item time is 0.000001 , local id is None
+2016-12-20 23:02:33,741 INFO [FILE:views.py LINE:305] None
+2016-12-20 23:02:33,742 INFO [FILE:views.py LINE:306] None
+2016-12-20 23:02:33,742 INFO [FILE:views.py LINE:349] user did not submit buy place infor.
+2016-12-20 23:02:33,771 INFO [FILE:views.py LINE:375] None
+2016-12-20 23:02:33,832 INFO [FILE:views.py LINE:380] perform_create end time is 1.109270, local id = None
+2016-12-20 23:02:53,297 INFO [FILE:views.py LINE:396] <QueryDict: {'price': ['2.2222'], 'created': ['2016-03-03 00:00:00']}>
+2016-12-20 23:02:53,297 INFO [FILE:views.py LINE:305] None
+2016-12-20 23:02:53,298 INFO [FILE:views.py LINE:306] None
+2016-12-20 23:02:53,298 INFO [FILE:views.py LINE:349] user did not submit buy place infor.
+2016-12-20 23:02:53,301 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-12-20 23:02:53,303 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-12-20 23:02:53,306 INFO [FILE:views.py LINE:411] udpate spend detail
+2016-12-20 23:03:42,026 INFO [FILE:views.py LINE:396] <QueryDict: {'price': ['2.2222'], 'image1': [''], 'created': ['2016-03-03 00:00:00']}>
+2016-12-20 23:03:42,027 INFO [FILE:views.py LINE:305] None
+2016-12-20 23:03:42,027 INFO [FILE:views.py LINE:306] None
+2016-12-20 23:03:42,027 INFO [FILE:views.py LINE:349] user did not submit buy place infor.
+2016-12-20 23:03:42,029 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-12-20 23:03:42,031 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-12-20 23:03:42,034 INFO [FILE:views.py LINE:411] udpate spend detail
+2016-12-20 23:38:08,084 INFO [FILE:views.py LINE:396] <QueryDict: {'image1': [''], 'price': ['2.2222'], 'created': ['2016-03-03 00:00:00']}>
+2016-12-20 23:38:08,085 INFO [FILE:views.py LINE:400] image1
+2016-12-20 23:38:08,085 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 23:38:08,085 INFO [FILE:views.py LINE:400] image2
+2016-12-20 23:38:08,086 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 23:38:08,086 INFO [FILE:views.py LINE:400] image3
+2016-12-20 23:38:08,086 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 23:38:08,086 INFO [FILE:views.py LINE:400] image4
+2016-12-20 23:38:08,087 INFO [FILE:views.py LINE:403] empty string
+2016-12-20 23:38:08,087 INFO [FILE:views.py LINE:305] None
+2016-12-20 23:38:08,087 INFO [FILE:views.py LINE:306] None
+2016-12-20 23:38:08,088 INFO [FILE:views.py LINE:349] user did not submit buy place infor.
+2016-12-20 23:38:08,090 INFO [FILE:permissions.py LINE:13] ==============IsOwnerOrReadOnly====================
+2016-12-20 23:38:08,092 INFO [FILE:permissions.py LINE:16] you are the owner, continue
+2016-12-20 23:38:08,096 INFO [FILE:views.py LINE:411] udpate spend detail

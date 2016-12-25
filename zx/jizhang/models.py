@@ -8,6 +8,7 @@ from jizhang.log.logger import logger
 from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
 from zx.settings import IS_LINUX, MEDIA_ROOT
+from django.core.files.base import ContentFile
 import os
 # from django_markdown.models import MarkdownField
 # class Province(models.Model):
@@ -171,22 +172,16 @@ def photo_put_delete_handler(sender, **kwargs):
         for index in range(1, 5):
             image_name = 'image' + str(index)
             logger.info(image_name)
-            new_path = detail.__dict__[image_name]
-
+            upload_obj = detail.__dict__[image_name]
             image_field = getattr(obj, image_name)
-            if image_field and image_field.name:
-                old_path = image_field.name
-                logger.info("old path is %s" % old_path)
-                logger.info('new path is %s' % new_path)
-                delete_old = True
-                if new_path == old_path:
-                    delete_old = False
-                    logger.info('leave old image')
-
-                if delete_old:
-                    logger.info('delete old image')
-                    remove_old_image(old_path)
-
+            old_path = image_field.name
+            logger.info(upload_obj)
+            if isinstance(upload_obj, ContentFile):
+                remove_old_image(old_path)
+            elif isinstance(upload_obj, str) and len(upload_obj) < 2:
+                remove_old_image(old_path)
+            else:
+                logger.info('leave old image')
 
 #############################################################
 # 根据用户的“记一笔”数据，统计完成
